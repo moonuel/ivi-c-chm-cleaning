@@ -9,9 +9,9 @@ This repo is meant to turn the vendor HTML pages into structured records that ar
 The normal workflow is:
 
 1. Read a page from `data/extracted/Html/`.
-2. Parse it into fields like `symbol`, `summary`, `prototype`, `parameters`, and `see_also`.
+2. Parse it into fields like `symbol`, `path_id`, `abstract`, `keywords`, `prototype`, `parameters`, and `see_also`.
 3. Build a local Whoosh index over the extracted pages.
-4. Query that index by symbol or keyword.
+4. Query that index with exact-first lookup and boosted full-text fallback.
 
 ## Requirements
 
@@ -62,9 +62,14 @@ Parsed documents currently include:
 
 - `symbol`
 - `kind`
+- `path_id`
 - `title`
 - `summary`
+- `abstract`
 - `prototype`
+- `keywords`
+- `function_tree_node`
+- `aliases`
 - `parameters`
 - `returns`
 - `remarks`

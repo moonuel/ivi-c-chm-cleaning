@@ -25,6 +25,7 @@ Use the extracted HTML corpus in this repo as the source of truth.
 - Use keyword search only when the exact symbol is unknown.
 - Cite the original `source_path` in explanations and changes.
 - Treat the parsed JSON fields as the canonical extracted record, not the rendered page text.
+- Search now prefers exact symbol/path matches, then normalized aliases, then boosted full-text results.
 
 ## Parsed fields
 
@@ -32,9 +33,14 @@ The parser returns:
 
 - `symbol`
 - `kind`
+- `path_id`
 - `title`
 - `summary`
+- `abstract`
 - `prototype`
+- `keywords`
+- `function_tree_node`
+- `aliases`
 - `parameters`
 - `returns`
 - `remarks`
