@@ -1,0 +1,2 @@
+[console_scripts]
+ivi-chm = ivi_chm.cli:main
