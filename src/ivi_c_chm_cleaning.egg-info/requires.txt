@@ -1,0 +1,7 @@
+beautifulsoup4>=4.12
+lxml>=5.0
+Whoosh>=2.7
+
+[test]
+pytest>=8
+pytest-cov>=5

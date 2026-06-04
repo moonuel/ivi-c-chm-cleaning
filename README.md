@@ -54,7 +54,7 @@ This scans every `*.html` file in `data/extracted/Html/` and writes a local sear
 
 This returns matching documents as JSON.
 
-If you want a different location, pass an explicit path as the second argument to `index` or the first argument to `search`.
+If you want a different location, pass an explicit path as the second argument to `index` or the second argument to `search`.
 
 ## Output fields
 

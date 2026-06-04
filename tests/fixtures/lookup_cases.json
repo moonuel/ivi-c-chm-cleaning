@@ -1,0 +1,147 @@
+[
+  {
+    "id": "exact_function_symbol",
+    "corpus": "real",
+    "category": "exact",
+    "query": "KtNA_ChannelFixtureSimulatorDraftDiscard",
+    "expected_symbol": "KtNA_ChannelFixtureSimulatorDraftDiscard",
+    "expected_source_suffix": "KtNA_ChannelFixtureSimulatorDraftDiscard.html",
+    "expected_matched_on": "exact",
+    "max_rank": 1
+  },
+  {
+    "id": "exact_attribute_symbol",
+    "corpus": "real",
+    "category": "exact",
+    "query": "KTNA_ATTR_CACHE",
+    "expected_symbol": "KTNA_ATTR_CACHE",
+    "expected_source_suffix": "KTNA_ATTR_CACHE.html",
+    "expected_matched_on": "exact",
+    "max_rank": 1
+  },
+  {
+    "id": "exact_function_symbol_2",
+    "corpus": "real",
+    "category": "exact",
+    "query": "KtNA_ChannelPulseGeneratorGetEnabledWithNo",
+    "expected_symbol": "KtNA_ChannelPulseGeneratorGetEnabledWithNo",
+    "expected_source_suffix": "KtNA_ChannelPulseGeneratorGetEnabledWithNo.html",
+    "expected_matched_on": "exact",
+    "max_rank": 1
+  },
+  {
+    "id": "exact_attribute_symbol_2",
+    "corpus": "real",
+    "category": "exact",
+    "query": "KTNA_ATTR_X_DISPLAY_WINDOW_NO",
+    "expected_symbol": "KTNA_ATTR_X_DISPLAY_WINDOW_NO",
+    "expected_source_suffix": "KTNA_ATTR_X_DISPLAY_WINDOW_NO.html",
+    "expected_matched_on": "exact",
+    "max_rank": 1
+  },
+  {
+    "id": "alias_function_base_name",
+    "corpus": "real",
+    "category": "alias",
+    "query": "ChannelFixtureSimulatorDraftDiscard",
+    "expected_symbol": "KtNA_ChannelFixtureSimulatorDraftDiscard",
+    "expected_source_suffix": "KtNA_ChannelFixtureSimulatorDraftDiscard.html",
+    "expected_matched_on": "alias",
+    "max_rank": 1
+  },
+  {
+    "id": "alias_function_normalized",
+    "corpus": "real",
+    "category": "alias",
+    "query": "channelfixturesimulatordraftdiscard",
+    "expected_symbol": "KtNA_ChannelFixtureSimulatorDraftDiscard",
+    "expected_source_suffix": "KtNA_ChannelFixtureSimulatorDraftDiscard.html",
+    "expected_matched_on": "alias",
+    "max_rank": 1
+  },
+  {
+    "id": "alias_function_base_name_2",
+    "corpus": "real",
+    "category": "alias",
+    "query": "ChannelPulseGeneratorGetEnabledWithNo",
+    "expected_symbol": "KtNA_ChannelPulseGeneratorGetEnabledWithNo",
+    "expected_source_suffix": "KtNA_ChannelPulseGeneratorGetEnabledWithNo.html",
+    "expected_matched_on": "alias",
+    "max_rank": 1
+  },
+  {
+    "id": "alias_attribute_short_name",
+    "corpus": "real",
+    "category": "alias",
+    "query": "cache",
+    "expected_symbol": "KTNA_ATTR_CACHE",
+    "expected_source_suffix": "KTNA_ATTR_CACHE.html",
+    "expected_matched_on": "alias",
+    "max_rank": 1
+  },
+  {
+    "id": "fulltext_attribute_summary",
+    "corpus": "real",
+    "category": "fulltext",
+    "query": "optionally",
+    "expected_symbol": "KTNA_ATTR_CACHE",
+    "expected_source_suffix": "KTNA_ATTR_CACHE.html",
+    "expected_matched_on": "fulltext",
+    "max_rank": 3,
+    "must_contain_terms": ["cache", "instrument"]
+  },
+  {
+    "id": "ambiguous_draft_keyword",
+    "corpus": "real",
+    "category": "ambiguous",
+    "query": "draft fixture",
+    "expected_symbol": "KtNA_ChannelFixtureSimulatorDraftDiscard",
+    "expected_source_suffix": "KtNA_ChannelFixtureSimulatorDraftDiscard.html",
+    "expected_matched_on": "fulltext",
+    "max_rank": 5,
+    "min_results": 2,
+    "must_contain_terms": ["draft"]
+  },
+  {
+    "id": "mini_normalized_alias",
+    "corpus": "mini",
+    "category": "normalized_alias",
+    "query": "mininormalizedalias",
+    "expected_symbol": "Mini_NormalizedAlias",
+    "expected_source_suffix": "Mini_NormalizedAlias.html",
+    "expected_matched_on": "alias",
+    "max_rank": 1
+  },
+  {
+    "id": "mini_fulltext_sharedterm",
+    "corpus": "mini",
+    "category": "fulltext",
+    "query": "sharedterm",
+    "expected_symbol": "Mini_FulltextAlpha",
+    "expected_source_suffix": "Mini_FulltextAlpha.html",
+    "expected_matched_on": "fulltext",
+    "max_rank": 1,
+    "min_results": 2,
+    "must_contain_terms": ["sharedterm"]
+  },
+  {
+    "id": "mini_negative_absentterm",
+    "corpus": "mini",
+    "category": "negative",
+    "query": "absentterm123",
+    "expected_symbol": "",
+    "expected_source_suffix": "",
+    "expected_matched_on": "",
+    "max_rank": 0
+  },
+  {
+    "id": "negative_unknown_symbol",
+    "corpus": "real",
+    "category": "negative",
+    "query": "NonExistentSymbol12345",
+    "expected_symbol": "",
+    "expected_source_suffix": "",
+    "expected_matched_on": "",
+    "max_rank": 0
+  }
+]

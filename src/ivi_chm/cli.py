@@ -20,8 +20,8 @@ def main() -> None:
     p_index.add_argument("index_dir", nargs="?", default=str(DEFAULT_INDEX_DIR))
 
     p_search = sub.add_parser("search")
-    p_search.add_argument("index_dir", nargs="?", default=str(DEFAULT_INDEX_DIR))
     p_search.add_argument("query")
+    p_search.add_argument("index_dir", nargs="?", default=str(DEFAULT_INDEX_DIR))
 
     args = parser.parse_args()
     if args.cmd == "parse":
