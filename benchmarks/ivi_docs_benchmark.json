@@ -1,0 +1,2783 @@
+{
+  "corpus": {
+    "root": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html",
+    "file_count": 2972,
+    "sha256": "fb47b638e8aeec09d4ac6ee2d2a844abb8270ffb1cfcf1b76e1c2955ebefe9cc"
+  },
+  "question_count": 100,
+  "questions": [
+    {
+      "id": "exact-001",
+      "category": "exact_lookup",
+      "question": "Which page documents Copyright?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\Copyright.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\Copyright.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Copyright"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-002",
+      "category": "exact_lookup",
+      "question": "Which page documents Welcome to KtNA Programming?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\GettingStarted.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\GettingStarted.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Welcome to KtNA Programming"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-003",
+      "category": "exact_lookup",
+      "question": "Which page documents IVI Driver Inherent Capabilities?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\InherentCapabilities.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\InherentCapabilities.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "IVI Driver Inherent Capabilities"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-004",
+      "category": "exact_lookup",
+      "question": "Which page documents IVI Driver Installation?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\Installation.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\Installation.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "IVI Driver Installation"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-005",
+      "category": "exact_lookup",
+      "question": "Which page documents Instrument-Specific Capabilities?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\InstrumentSpecificCapabilities.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\InstrumentSpecificCapabilities.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Instrument-Specific Capabilities"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-006",
+      "category": "exact_lookup",
+      "question": "Which page documents Instrument Interchangeability?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\Interchangeability.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\Interchangeability.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Instrument Interchangeability"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-007",
+      "category": "exact_lookup",
+      "question": "Which page documents About IVI?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviBackgrounder.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviBackgrounder.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "About IVI"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-008",
+      "category": "exact_lookup",
+      "question": "Which page documents KtNA Repeated Capabilities?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCAccessingRepCaps.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCAccessingRepCaps.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "KtNA Repeated Capabilities"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-009",
+      "category": "exact_lookup",
+      "question": "Which page documents Instrument Command Reference?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCCommandReference.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCCommandReference.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Instrument Command Reference"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-010",
+      "category": "exact_lookup",
+      "question": "Which page documents Visual C++?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCCpp.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCCpp.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Visual C++"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-011",
+      "category": "exact_lookup",
+      "question": "Which page documents IVI-C Programming Guide?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCDriver.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCDriver.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "IVI-C Programming Guide"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-012",
+      "category": "exact_lookup",
+      "question": "Which page documents KtNA Driver Reference?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCDriverReference.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCDriverReference.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "KtNA Driver Reference"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-013",
+      "category": "exact_lookup",
+      "question": "Which page documents ADE Programming?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCEnvironments.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCEnvironments.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "ADE Programming"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-014",
+      "category": "exact_lookup",
+      "question": "Which page documents Initializing the KtNA IVI-C Driver?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCInitialize.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCInitialize.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Initializing the KtNA IVI-C Driver"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-015",
+      "category": "exact_lookup",
+      "question": "Which page documents LabVIEW or Keysight VEE Pro?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCLabVIEW.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCLabVIEW.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "LabVIEW or Keysight VEE Pro"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-016",
+      "category": "exact_lookup",
+      "question": "Which page documents LabWindows/CVI?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCLabWindows.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCLabWindows.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "LabWindows/CVI"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-017",
+      "category": "exact_lookup",
+      "question": "Which page documents MATLAB?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCMATLAB.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCMATLAB.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "MATLAB"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-018",
+      "category": "exact_lookup",
+      "question": "Which page documents IVI Compliance Information?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCompliance.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCompliance.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "IVI Compliance Information"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-019",
+      "category": "exact_lookup",
+      "question": "Which page documents IVI Configuration Store?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviConfigStore.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviConfigStore.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "IVI Configuration Store"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-020",
+      "category": "exact_lookup",
+      "question": "Which page documents IVI-C Programming Basics?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCProgrammingBasics.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCProgrammingBasics.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "IVI-C Programming Basics"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-021",
+      "category": "exact_lookup",
+      "question": "Which page documents Using Driver Source Code?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSource.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSource.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Using Driver Source Code"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-022",
+      "category": "exact_lookup",
+      "question": "Which page documents Modifying the Driver?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSourceBuildAndDeploy.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSourceBuildAndDeploy.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Modifying the Driver"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-023",
+      "category": "exact_lookup",
+      "question": "Which page documents Driver Source Code Files?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSourceFiles.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSourceFiles.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Driver Source Code Files"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-024",
+      "category": "exact_lookup",
+      "question": "Which page documents Programming the Instrument?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSpecificDriver.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSpecificDriver.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Programming the Instrument"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "exact-025",
+      "category": "exact_lookup",
+      "question": "Which page documents Simulating an Instrument?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCUsingSimulation.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCUsingSimulation.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Simulating an Instrument"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-001",
+      "category": "section_location",
+      "question": "Which page explains remarks guidance about All models with Automatic Fixture Removal Option S9x007A?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetCalibrationReference.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetCalibrationReference.html",
+            "start": 219,
+            "end": 221
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "all",
+          "models",
+          "automatic"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-002",
+      "category": "section_location",
+      "question": "Which page explains requirements guidance about Supported Models All supported?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetCalibrationReference.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetCalibrationReference.html",
+            "start": 240,
+            "end": 242
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "supported",
+          "models",
+          "all"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-003",
+      "category": "section_location",
+      "question": "Which page explains commands guidance about AFR FIXTure REFZ?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetCalibrationReference.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetCalibrationReference.html",
+            "start": 232,
+            "end": 234
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "afr",
+          "fixture",
+          "refz"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-004",
+      "category": "section_location",
+      "question": "Which page explains parameters guidance about The ViSession handle that you obtain from the?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetCalibrationReference.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetCalibrationReference.html",
+            "start": 192,
+            "end": 194
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "visession",
+          "handle",
+          "that"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-005",
+      "category": "section_location",
+      "question": "Which page explains remarks guidance about All models with Automatic Fixture Removal Option S9x007A?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetFixtureDataFile.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetFixtureDataFile.html",
+            "start": 219,
+            "end": 221
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "all",
+          "models",
+          "automatic"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-006",
+      "category": "section_location",
+      "question": "Which page explains requirements guidance about Supported Models All supported?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetFixtureDataFile.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetFixtureDataFile.html",
+            "start": 240,
+            "end": 242
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "supported",
+          "models",
+          "all"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-007",
+      "category": "section_location",
+      "question": "Which page explains commands guidance about AFR SAVE FILename?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetFixtureDataFile.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetFixtureDataFile.html",
+            "start": 232,
+            "end": 234
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "afr",
+          "save",
+          "filename"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-008",
+      "category": "section_location",
+      "question": "Which page explains parameters guidance about The ViSession handle that you obtain from the?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetFixtureDataFile.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetFixtureDataFile.html",
+            "start": 192,
+            "end": 194
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "visession",
+          "handle",
+          "that"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-009",
+      "category": "section_location",
+      "question": "Which page explains remarks guidance about All models with Automatic Fixture Removal Option S9x007A?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetImpedanceAtSpecificPosition.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetImpedanceAtSpecificPosition.html",
+            "start": 227,
+            "end": 229
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "all",
+          "models",
+          "automatic"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-010",
+      "category": "section_location",
+      "question": "Which page explains requirements guidance about Supported Models All supported?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetImpedanceAtSpecificPosition.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetImpedanceAtSpecificPosition.html",
+            "start": 248,
+            "end": 250
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "supported",
+          "models",
+          "all"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-011",
+      "category": "section_location",
+      "question": "Which page explains commands guidance about AFR FIXTure PREView DATA IMPedance MARKer Y ASEN?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetImpedanceAtSpecificPosition.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetImpedanceAtSpecificPosition.html",
+            "start": 240,
+            "end": 242
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "afr",
+          "fixture",
+          "preview"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-012",
+      "category": "section_location",
+      "question": "Which page explains parameters guidance about The ViSession handle that you obtain from the?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetImpedanceAtSpecificPosition.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRGetImpedanceAtSpecificPosition.html",
+            "start": 193,
+            "end": 195
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "visession",
+          "handle",
+          "that"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-013",
+      "category": "section_location",
+      "question": "Which page explains remarks guidance about All models with Automatic Fixture Removal Option S9x007A?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRInitialize.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRInitialize.html",
+            "start": 203,
+            "end": 205
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "all",
+          "models",
+          "automatic"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-014",
+      "category": "section_location",
+      "question": "Which page explains requirements guidance about Supported Models All supported?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRInitialize.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRInitialize.html",
+            "start": 224,
+            "end": 226
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "supported",
+          "models",
+          "all"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-015",
+      "category": "section_location",
+      "question": "Which page explains commands guidance about AFR INITialize?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRInitialize.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRInitialize.html",
+            "start": 216,
+            "end": 218
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "afr",
+          "initialize"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-016",
+      "category": "section_location",
+      "question": "Which page explains parameters guidance about The ViSession handle that you obtain from the?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRInitialize.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRInitialize.html",
+            "start": 190,
+            "end": 192
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "visession",
+          "handle",
+          "that"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-017",
+      "category": "section_location",
+      "question": "Which page explains remarks guidance about All models with Automatic Fixture Removal Option S9x007A?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRQueryImpedanceProfile.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRQueryImpedanceProfile.html",
+            "start": 235,
+            "end": 237
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "all",
+          "models",
+          "automatic"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-018",
+      "category": "section_location",
+      "question": "Which page explains requirements guidance about Supported Models All supported?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRQueryImpedanceProfile.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRQueryImpedanceProfile.html",
+            "start": 256,
+            "end": 258
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "supported",
+          "models",
+          "all"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-019",
+      "category": "section_location",
+      "question": "Which page explains commands guidance about AFR FIXTure PREView DATA IMPedance ASEN BSEN ADIF?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRQueryImpedanceProfile.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRQueryImpedanceProfile.html",
+            "start": 248,
+            "end": 250
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "afr",
+          "fixture",
+          "preview"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-020",
+      "category": "section_location",
+      "question": "Which page explains parameters guidance about The ViSession handle that you obtain from the?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRQueryImpedanceProfile.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRQueryImpedanceProfile.html",
+            "start": 194,
+            "end": 196
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "visession",
+          "handle",
+          "that"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-021",
+      "category": "section_location",
+      "question": "Which page explains remarks guidance about All models with Automatic Fixture Removal Option S9x007A?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRRefreshPreview.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRRefreshPreview.html",
+            "start": 203,
+            "end": 205
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "all",
+          "models",
+          "automatic"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-022",
+      "category": "section_location",
+      "question": "Which page explains requirements guidance about Supported Models All supported?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRRefreshPreview.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRRefreshPreview.html",
+            "start": 224,
+            "end": 226
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "supported",
+          "models",
+          "all"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-023",
+      "category": "section_location",
+      "question": "Which page explains commands guidance about AFR FIXTure PREView?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRRefreshPreview.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRRefreshPreview.html",
+            "start": 216,
+            "end": 218
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "afr",
+          "fixture",
+          "preview"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-024",
+      "category": "section_location",
+      "question": "Which page explains parameters guidance about The ViSession handle that you obtain from the?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRRefreshPreview.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRRefreshPreview.html",
+            "start": 190,
+            "end": 192
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "visession",
+          "handle",
+          "that"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "section-025",
+      "category": "section_location",
+      "question": "Which page explains remarks guidance about All models with Automatic Fixture Removal Option S9x007A?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRSelectCalibrationReference.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA_AFRSelectCalibrationReference.html",
+            "start": 211,
+            "end": 213
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "all",
+          "models",
+          "automatic"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-001",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents Attribute Accessors and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Attribute_Accessors.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Attribute_Accessors.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Attribute Accessors",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-002",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents KtNA and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "KtNA",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-003",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents Advanced Session Information and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Inherent_IVI_Attributes.Advanced_Session_Information.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Inherent_IVI_Attributes.Advanced_Session_Information.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Advanced Session Information",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-004",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents Driver Capabilities and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Inherent_IVI_Attributes.Driver_Capabilities.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Inherent_IVI_Attributes.Driver_Capabilities.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Driver Capabilities",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-005",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents Driver Identification and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Inherent_IVI_Attributes.Driver_Identification.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Inherent_IVI_Attributes.Driver_Identification.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Driver Identification",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-006",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents Inherent IVIs and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Inherent_IVI_Attributes.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Inherent_IVI_Attributes.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Inherent IVIs",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-007",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents Instrument Identification and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Inherent_IVI_Attributes.Instrument_Identification.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Inherent_IVI_Attributes.Instrument_Identification.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Instrument Identification",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-008",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents User Options and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Inherent_IVI_Attributes.User_Options.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Inherent_IVI_Attributes.User_Options.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "User Options",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-009",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents AFR and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.AFR.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.AFR.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "AFR",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-010",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents Standard and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.AFR.Standard.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.AFR.Standard.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Standard",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-011",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents Attenuation and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalibrationSession.Attenuation.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalibrationSession.Attenuation.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Attenuation",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-012",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents GuidedCal and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalibrationSession.GuidedCal.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalibrationSession.GuidedCal.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "GuidedCal",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-013",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents CalibrationSession and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalibrationSession.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalibrationSession.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "CalibrationSession",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-014",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents IndependentPowerCal and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalibrationSession.IndependentPowerCal.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalibrationSession.IndependentPowerCal.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "IndependentPowerCal",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-015",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents MeasurementClass and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalibrationSession.MeasurementClass.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalibrationSession.MeasurementClass.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "MeasurementClass",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-016",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents ErrorTerm and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalSets.ErrorTerm.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalSets.ErrorTerm.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "ErrorTerm",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-017",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents CalSets and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalSets.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.CalSets.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "CalSets",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-018",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents ActiveParameters and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.ActiveParameters.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.ActiveParameters.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "ActiveParameters",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-019",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents Sweep and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.ActiveParameters.Sweep.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.ActiveParameters.Sweep.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Sweep",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-020",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents Averaging and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.Averaging.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.Averaging.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Averaging",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-021",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents Characterization and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.CalKit.ECalModule.Characterization.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.CalKit.ECalModule.Characterization.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Characterization",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-022",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents ECalModule and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.CalKit.ECalModule.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.CalKit.ECalModule.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "ECalModule",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-023",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents CalKit and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.CalKit.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.CalKit.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "CalKit",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-024",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents CalSets and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.CalSets.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.CalSets.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "CalSets",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "multi-hop-025",
+      "category": "multi_hop_synthesis",
+      "question": "Which page documents Connector and also points to Functions ands?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.Correction.CalKit.Connector.html",
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA.Instrument_Specific.Channel.Correction.CalKit.Connector.html",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\KtNA-FunctionsAndAttributes.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "Connector",
+          "Functions ands"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-001",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses Keysight Technologies may have patents patent applications trademarks copyrights or?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\Copyright.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\Copyright.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "keysight",
+          "technologies",
+          "may",
+          "have"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-002",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses Welcome to KtNA Programming?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\GettingStarted.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\GettingStarted.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "welcome",
+          "ktna",
+          "programming"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-003",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses IVI Driver Inherent Capabilities?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\InherentCapabilities.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\InherentCapabilities.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "ivi",
+          "driver",
+          "inherent",
+          "capabilities"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-004",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses IVI Driver Installation?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\Installation.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\Installation.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "ivi",
+          "driver",
+          "installation"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-005",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses Instrument Specific Capabilities?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\InstrumentSpecificCapabilities.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\InstrumentSpecificCapabilities.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "instrument",
+          "specific",
+          "capabilities"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-006",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses Instrument Interchangeability?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\Interchangeability.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\Interchangeability.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "instrument",
+          "interchangeability"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-007",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses About IVI?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviBackgrounder.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviBackgrounder.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "about",
+          "ivi"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-008",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses KtNA Repeated Capabilities?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCAccessingRepCaps.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCAccessingRepCaps.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "ktna",
+          "repeated",
+          "capabilities"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-009",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses This is the reference for all the instrument commands issued?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCCommandReference.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCCommandReference.html",
+            "start": 129,
+            "end": 131
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "this",
+          "reference",
+          "all",
+          "instrument"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-010",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses Visual C?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCCpp.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCCpp.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "visual",
+          "c"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-011",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses IVI C Programming Guide?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCDriver.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCDriver.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "ivi",
+          "c",
+          "programming",
+          "guide"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-012",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses KtNA Driver Reference?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCDriverReference.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCDriverReference.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "ktna",
+          "driver",
+          "reference"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-013",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses ADE Programming?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCEnvironments.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCEnvironments.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "ade",
+          "programming"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-014",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses Initializing the KtNA IVI C Driver?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCInitialize.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCInitialize.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "initializing",
+          "ktna",
+          "ivi",
+          "c"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-015",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses LabVIEW or Keysight VEE Pro?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCLabVIEW.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCLabVIEW.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "labview",
+          "keysight",
+          "vee",
+          "pro"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-016",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses LabWindows CVI?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCLabWindows.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCLabWindows.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "labwindows",
+          "cvi"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-017",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses MATLAB?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCMATLAB.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCMATLAB.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "matlab"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-018",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses IVI Compliance Information?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCompliance.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCompliance.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "ivi",
+          "compliance",
+          "information"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-019",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses IVI Configuration Store?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviConfigStore.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviConfigStore.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "ivi",
+          "configuration",
+          "store"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-020",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses IVI C Programming Basics?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCProgrammingBasics.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCProgrammingBasics.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "ivi",
+          "c",
+          "programming",
+          "basics"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-021",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses Using Driver Source Code?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSource.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSource.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "using",
+          "driver",
+          "source",
+          "code"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-022",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses Modifying the Driver?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSourceBuildAndDeploy.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSourceBuildAndDeploy.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "modifying",
+          "driver"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-023",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses Driver Source Code Files?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSourceFiles.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSourceFiles.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "driver",
+          "source",
+          "code",
+          "files"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-024",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses Programming the Instrument?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSpecificDriver.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCSpecificDriver.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "programming",
+          "instrument"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    },
+    {
+      "id": "paraphrase-025",
+      "category": "paraphrase_semantic_match",
+      "question": "Which page discusses Simulating an Instrument?",
+      "gold": {
+        "source_files": [
+          "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCUsingSimulation.html"
+        ],
+        "answer_spans": [
+          {
+            "file": "C:\\Users\\test\\Desktop\\ivi-c-chm-cleaning\\data\\extracted\\Html\\IviCUsingSimulation.html",
+            "start": 4,
+            "end": 6
+          }
+        ]
+      },
+      "acceptance": {
+        "must_contain": [
+          "simulating",
+          "instrument"
+        ],
+        "must_not_contain": [
+          "unsupported speculation"
+        ]
+      }
+    }
+  ]
+}
