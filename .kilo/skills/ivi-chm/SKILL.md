@@ -14,11 +14,12 @@ Use the extracted HTML corpus in this repo as the source of truth.
 
 ## Recommended workflow
 
-1. Build or refresh the local index with `./.venv/bin/ivi-chm index data/extracted/Html`.
-2. Search by exact symbol first with `./.venv/bin/ivi-chm search <query>`.
-3. If the query is partial or normalized, rely on the alias result before broad full-text hits.
-4. Use the returned `source_path` to open the exact HTML page when more detail is needed.
-5. Parse that page with `./.venv/bin/ivi-chm parse <source_path>` to get the full structured record.
+1. Search by exact symbol first with `./.venv/bin/ivi-chm search <query> ./.ivi-chm-index.sqlite3`.
+2. If the query is partial or normalized, rely on the alias result before broad full-text hits.
+3. Use the returned `source_path` to open the exact HTML page when more detail is needed.
+4. Parse that page with `./.venv/bin/ivi-chm parse <source_path>` to get the full structured record.
+
+If the SQLite index is missing, raise the concern to the user and do not build it during normal doc lookup work.
 
 ## How to reference docs in code work
 
@@ -26,7 +27,7 @@ Use the extracted HTML corpus in this repo as the source of truth.
 - Use keyword search only when the exact symbol is unknown.
 - Cite the original `source_path` in explanations and changes.
 - Treat the parsed JSON fields as the canonical extracted record, not the rendered page text.
-- Search now prefers exact symbol/path matches, then normalized aliases, then deterministic text fallback over stored fields.
+- Search prefers exact symbol/path matches, then normalized aliases, then deterministic text fallback over stored fields.
 - When a search result is ambiguous, prefer the one whose `matched_on` is `exact` or `alias` before opening additional pages.
 - For user-facing answers, cite the canonical `symbol` and `source_path`, not the query string.
 
@@ -52,6 +53,11 @@ The parser returns:
 - `defined_values`
 - `see_also`
 - `source_path`
+
+## Required vs redistributable
+
+- Required locally: `data/extracted/Html/`, Python, and the `.venv`
+- Redistributable artifacts: `./.ivi-chm-index.sqlite3` and, if built, `dist\ivi-chm.exe`
 
 ## Validation habits
 
