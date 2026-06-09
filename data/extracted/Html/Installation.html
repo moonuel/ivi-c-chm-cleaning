@@ -1,0 +1,348 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>IVI Driver Installation</title>
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+    <script type="text/javascript" src="../scripts/script_loc.js"> </script>
+    <script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+    <script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+    <script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+    <script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+    <xml>
+		<mshelp:toctitle title="IVI Driver Installation" />
+		<mshelp:rltitle title="IVI Driver Installation" />
+		<mshelp:keyword index="K" term="IVI Driver Installation" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbArticle" />
+		</xml>
+		<!-- begin: Microsoft Help 1.0 -->
+		<meta name="Microsoft.Help.Id" content="" />
+		<meta name="Microsoft.Help.TocParent" content="" />
+		<meta name="Microsoft.Help.TocOrder" content="" />
+		<meta name="Microsoft.Help.ContentType" content="" />
+		<meta name="Microsoft.Help.SelfBranded" content="true" />
+		<meta name="Microsoft.Help.Locale" content="en-us" />
+		<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+		<!--$$Microsoft.Help.F1$$-->
+		<!--$$Microsoft.Help.Keywords$$-->
+		<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+	
+	<img id="collapseImage"  height="0" width="0"  style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0"  style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0"  style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0"  style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">IVI Driver Installation</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+                    <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+			
+            <div class="introduction">
+                      </div>
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(section1Toggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)"
+                    tabindex="0">
+                    <img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+					Updating to a New Driver Version
+				</span>
+            </h1>
+            <div id="section1Section" class="section" name="collapseableSection" style="">
+                <p>
+                    <strong>Only a single version of an IVI-C driver can be installed
+                    on a system at once.</strong> This rule is dictated by the IVI specifications. To ensure
+                    that only a single version of the KtNA driver exists on the system,
+                    the KtNA installer automatically uninstalls any previous version of
+                    the driver. Although you can always explicitly uninstall the driver, this is typically
+                    not necessary.
+                </p>
+            </div>
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(section2Toggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(section2Toggle, event)"
+                    tabindex="0">
+                    <img id="section2Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+					File Locations
+				</span>
+            </h1>
+            <div id="Div1" class="section" name="collapseableSection" style="">
+                <p>
+                    The KtNA installer deploys a variety of files on the target
+                    computer. The notation &lt;IviInstallDir&gt; is used to denote the directory that contains the <a href="IviSharedComponents.html">IVI Shared Component</a> (default is <strong>C:\&lt;Program Files&gt;\IVI Foundation\IVI)</strong>. Substitute the
+                    install directory if your IVI Shared Components are in an alternate location.
+                </p>
+                <table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+                    <tr>
+                        <th>
+							File
+						</th>
+                        <th>
+							Description
+						</th>
+                    </tr>
+                    <tr>
+                        <td>
+							&lt;IviInstallDir&gt;\Bin\KtNA.dll
+						</td>
+                        <td>
+							Driver DLL.</td>
+                    </tr>
+                    <tr valign="top">
+    <td width="70%">
+        &lt;IviInstallDir&gt;\Include\KtNA.h</td>
+    <td width="30%">
+        Driver header file.</td>
+</tr>
+<tr valign="top">
+    <td width="70%">
+        &lt;IviInstallDir&gt;\Lib\msc\KtNA.lib</td>
+    <td width="30%">
+        Microsoft-format import library.</td>
+</tr>
+<tr valign="top">
+    <td width="70%">
+        &lt;IviInstallDir&gt;\Drivers\KtNA\KtNA.fp</td>
+    <td width="30%">
+        Function panel file.</td>
+</tr>
+<tr valign="top">
+    <td width="70%">
+        &lt;IviInstallDir&gt;\Drivers\KtNA\KtNA.sub</td>
+    <td width="30%">
+        Attribute information file.</td>
+</tr>
+
+                    <tr>
+                        <td>
+							&lt;IviInstallDir&gt;\Drivers\KtNA\KtNA.chm
+						</td>
+                        <td>
+							HTML 1.0 format help file.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;IviInstallDir&gt;\Drivers\KtNA\KtNA.msha
+						</td>
+                        <td>
+                            Help Viewer manifest file.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;IviInstallDir&gt;\Drivers\KtNA\KtNA.cab
+                        </td>
+                        <td>
+                            Help Viewer signed content cabinet file.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;IviInstallDir&gt;\Drivers\KtNA\Examples\
+                        </td>
+                        <td>
+                            Driver example programs.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;IviInstallDir&gt;\Drivers\KtNA\Source\
+                        </td>
+                        <td>
+                            Optionally installed driver source code project.</td>
+                    </tr>
+                </table>
+            </div>
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(section3Toggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(section3Toggle, event)"
+                    tabindex="0">
+                    <img id="section3Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+					IVI Shared Components
+				</span>
+            </h1>
+            <div id="Div2" class="section" name="collapseableSection" style="">
+                <p>
+                    Before any IVI driver may be installed on a system, the 
+                        <a href="IviSharedComponents.html">IVI shared
+                        components</a> must be properly installed. <strong>Keysight IO Libraries Suite</strong> (which must be installed before you install your Keysight driver) installs these shared components.
+                </p>
+                <p>
+                    For additional information on the IVI shared components, visit the <a target="_blank"
+                        href="http://www.ivifoundation.org">IVI Foundation web site</a>.
+                </p>
+                <p>
+					To determine which version of the shared components are installed on your system:</p>
+                <div class="subSection">
+                    <ol>
+                        <li>Open the <strong>&lt;IviInstallDir&gt;\Bin</strong> folder (typically <em>C:\Program Files\IVI Foundation\IVI\Bin</em>).</li>
+                  
+                   
+                        <li>Right-click <strong>IviSharedComponentVersion.dll</strong> and choose <b>Properties</b>.</li>
+                        <li>In the <strong>Properties</strong> dialog, click the <b>Version</b> tab.</li>
+						
+                    </ol><p>The <b>File version</b> field indicates which version of the IVI shared components
+							are installed.</p>
+                </div>
+            </div>
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(section4Toggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(section4Toggle, event)"
+                    tabindex="0">
+                    <img id="section4Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+					Uninstallation
+				</span>
+            </h1>
+            <div id="Div3" class="section" name="collapseableSection" style="">
+                <p>
+                    The only proper way to explicitly remove the driver from the system is to run&nbsp; the
+                    uninstallation program. Simply removing the installed files does not properly uninstall
+                    the driver.
+                </p>
+                
+                    <p>To uninstall the driver:</p><ol>
+						<li>
+							From the Windows <b>Start</b> menu, open the <b>
+								Control
+								Panel</b>.
+						</li>
+                        <li>Double-click <b>Add or Remove Programs</b>.</li>
+                        <li>Select the driver and click <b>Remove</b>.</li>
+                    </ol>
+                <div class="alert">
+                    <table>
+                        <th>
+                            <img src="../icons/alert_note.gif" title="Note" />
+                            <b>Note:</b>
+                            <tr>
+                                <td>
+                                    <p>
+                                        In order to prevent loss of important user configuration information between uninstall/reinstall
+                                        operations, the uninstallation program does <i>not</i> remove any of the following
+                                        items from the IVI Configuration Store:</p>
+                                        <ul>
+                                            <li><strong>Logical Name</strong></li>
+                                            <li><strong>Driver Session</strong></li>
+                                            <li><strong>Hardware Asset</strong></li>
+                                        </ul>
+                                        <p>The <strong>Software Module</strong> is the only IVI Configuration Store item that is deleted during an uninstall.</p><p>
+                                        See <a href="IviConfigStore.html">IVI Configuration Store</a> for more information on Config Store entries.</p>
+                                </td>
+                            </tr>
+                        </th>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

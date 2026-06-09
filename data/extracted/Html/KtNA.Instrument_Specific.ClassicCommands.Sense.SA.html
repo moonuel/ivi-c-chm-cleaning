@@ -1,0 +1,1427 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>SA</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="SA" />
+		<mshelp:rltitle title="SA" />
+		<mshelp:keyword index="K" term="SA" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">SA</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\ClassicCommands\Sense\SA <!-- Branches -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(branchTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(branchTableToggle, event)"
+        tabindex="0">
+        <img id="branchTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Branches</span>
+</h1>
+<div id="branchTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="nameColumn">
+                Name</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Sense.SA.ADC.html">ADC</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Sense.SA.Coherence.html">Coherence</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Sense.SA.Data.html">Data</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Sense.SA.Source.html">Source</a></td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSABandwidthResolutionCatalogQuery.html">Bandwidth Resolution Catalog Query</a></td>
+    <td>
+        Read the list of all Resolution Bandwidth values currently supported with spectrum analyzer current settings.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSABandwidthVideoAverageCountQuery.html">Bandwidth Video Average Count Query</a></td>
+    <td>
+        Reads the number of Video bandwidth sweeps that are averaged together. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADFTRecordSizeQuery.html">DFT Record Size Query</a></td>
+    <td>
+        Read the current DFT record size.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADFTResolutionQuery.html">DFT Resolution Query</a></td>
+    <td>
+        Read the DFT resolution.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSAFFTResolutionQuery.html">FFT Resolution Query</a></td>
+    <td>
+        Read the FFT resolution.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSAFrequencyTuneImmediate.html">Frequency Tune Immediate</a></td>
+    <td>
+        Auto tunes and zooms in on a signal within a SA sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSAFrequencyTuneImmediateWithSync.html">Frequency Tune Immediate With Sync</a></td>
+    <td>
+        Auto tunes and zooms in on a signal within a SA sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaBandwidth.html">GetX Sense Sa Bandwidth</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_BANDWIDTH attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaBandwidthResolutionAuto.html">GetX Sense Sa Bandwidth Resolution Auto</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_BANDWIDTH_RESOLUTION_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaBandwidthSearchOccupiedMin.html">GetX Sense Sa Bandwidth Search Occupied Min</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_BANDWIDTH_SEARCH_OCCUPIED_MIN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaBandwidthShape.html">GetX Sense Sa Bandwidth Shape</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_BANDWIDTH_SHAPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaBandwidthVideo.html">GetX Sense Sa Bandwidth Video</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_BANDWIDTH_VIDEO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaBandwidthVideoAuto.html">GetX Sense Sa Bandwidth Video Auto</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_BANDWIDTH_VIDEO_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaBandwidthVideoAverType.html">GetX Sense Sa Bandwidth Video Aver Type</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_BANDWIDTH_VIDEO_AVER_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaBandwidthVideoRatio.html">GetX Sense Sa Bandwidth Video Ratio</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_BANDWIDTH_VIDEO_RATIO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDetectorBypass.html">GetX Sense Sa Detector Bypass</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DETECTOR_BYPASS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDetectorFunction.html">GetX Sense Sa Detector Function</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DETECTOR_FUNCTION attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDftBandwidthAuto.html">GetX Sense Sa Dft Bandwidth Auto</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DFT_BANDWIDTH_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDftBandwidthNarrowMax.html">GetX Sense Sa Dft Bandwidth Narrow Max</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DFT_BANDWIDTH_NARROW_MAX attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDftBandwidthNarrowMin.html">GetX Sense Sa Dft Bandwidth Narrow Min</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DFT_BANDWIDTH_NARROW_MIN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDftBandwidthWideMax.html">GetX Sense Sa Dft Bandwidth Wide Max</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DFT_BANDWIDTH_WIDE_MAX attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDftBandwidthWideMin.html">GetX Sense Sa Dft Bandwidth Wide Min</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DFT_BANDWIDTH_WIDE_MIN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDftType.html">GetX Sense Sa Dft Type</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DFT_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaFftDither.html">GetX Sense Sa Fft Dither</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_FFT_DITHER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaFrequencyConverter.html">GetX Sense Sa Frequency Converter</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_FREQUENCY_CONVERTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaFrequencyConverterInputCenter.html">GetX Sense Sa Frequency Converter Input Center</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_INPUT_CENTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaFrequencyConverterInputPort.html">GetX Sense Sa Frequency Converter Input Port</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_INPUT_PORT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaFrequencyConverterInputSource.html">GetX Sense Sa Frequency Converter Input Source</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_INPUT_SOURCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaFrequencyConverterOutputCenter.html">GetX Sense Sa Frequency Converter Output Center</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_OUTPUT_CENTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaFrequencyConverterOutputInverted.html">GetX Sense Sa Frequency Converter Output Inverted</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_OUTPUT_INVERTED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaFrequencyConverterOutputOffset.html">GetX Sense Sa Frequency Converter Output Offset</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_OUTPUT_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaFrequencyConverterOutputPort.html">GetX Sense Sa Frequency Converter Output Port</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_OUTPUT_PORT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaFrequencySpanBandwidthRatio.html">GetX Sense Sa Frequency Span Bandwidth Ratio</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_FREQUENCY_SPAN_BANDWIDTH_RATIO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaImageReject.html">GetX Sense Sa Image Reject</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_IMAGE_REJECT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaImageStrength.html">GetX Sense Sa Image Strength</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_IMAGE_STRENGTH attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaLoRandom.html">GetX Sense Sa Lo Random</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_LO_RANDOM attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaLobasebandState.html">GetX Sense Sa Lobaseband State</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_LOBASEBAND_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaLoforce.html">GetX Sense Sa Loforce</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_LOFORCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaLoforceFrequency.html">GetX Sense Sa Loforce Frequency</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_LOFORCE_FREQUENCY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaLoforceOffsetDivider.html">GetX Sense Sa Loforce Offset Divider</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_LOFORCE_OFFSET_DIVIDER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaLoforceOffsetMultiplier.html">GetX Sense Sa Loforce Offset Multiplier</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_LOFORCE_OFFSET_MULTIPLIER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaLoforceOffsetSource.html">GetX Sense Sa Loforce Offset Source</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_LOFORCE_OFFSET_SOURCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaTraceImage.html">GetX Sense Sa Trace Image</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_TRACE_IMAGE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaTriggerLevel.html">GetX Sense Sa Trigger Level</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_TRIGGER_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaTriggerLevelValue.html">GetX Sense Sa Trigger Level Value</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_TRIGGER_LEVEL_VALUE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaTriggerPercounter.html">GetX Sense Sa Trigger Percounter</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_TRIGGER_PERCOUNTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaTriggerPercounterValue.html">GetX Sense Sa Trigger Percounter Value</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_TRIGGER_PERCOUNTER_VALUE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSALOCountQuery.html">LO Count Query</a></td>
+    <td>
+        Returns the number of LO acquisitions determined by the Image Reject selection and the span.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaBandwidth.html">SetX Sense Sa Bandwidth</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_BANDWIDTH attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaBandwidthResolutionAuto.html">SetX Sense Sa Bandwidth Resolution Auto</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_BANDWIDTH_RESOLUTION_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaBandwidthSearchOccupiedMin.html">SetX Sense Sa Bandwidth Search Occupied Min</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_BANDWIDTH_SEARCH_OCCUPIED_MIN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaBandwidthShape.html">SetX Sense Sa Bandwidth Shape</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_BANDWIDTH_SHAPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaBandwidthVideo.html">SetX Sense Sa Bandwidth Video</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_BANDWIDTH_VIDEO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaBandwidthVideoAuto.html">SetX Sense Sa Bandwidth Video Auto</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_BANDWIDTH_VIDEO_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaBandwidthVideoAverType.html">SetX Sense Sa Bandwidth Video Aver Type</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_BANDWIDTH_VIDEO_AVER_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaBandwidthVideoRatio.html">SetX Sense Sa Bandwidth Video Ratio</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_BANDWIDTH_VIDEO_RATIO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDetectorBypass.html">SetX Sense Sa Detector Bypass</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DETECTOR_BYPASS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDetectorFunction.html">SetX Sense Sa Detector Function</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DETECTOR_FUNCTION attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDftBandwidthAuto.html">SetX Sense Sa Dft Bandwidth Auto</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DFT_BANDWIDTH_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDftBandwidthNarrowMax.html">SetX Sense Sa Dft Bandwidth Narrow Max</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DFT_BANDWIDTH_NARROW_MAX attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDftBandwidthNarrowMin.html">SetX Sense Sa Dft Bandwidth Narrow Min</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DFT_BANDWIDTH_NARROW_MIN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDftBandwidthWideMax.html">SetX Sense Sa Dft Bandwidth Wide Max</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DFT_BANDWIDTH_WIDE_MAX attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDftBandwidthWideMin.html">SetX Sense Sa Dft Bandwidth Wide Min</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DFT_BANDWIDTH_WIDE_MIN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDftType.html">SetX Sense Sa Dft Type</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DFT_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaFftDither.html">SetX Sense Sa Fft Dither</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_FFT_DITHER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaFrequencyConverter.html">SetX Sense Sa Frequency Converter</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_FREQUENCY_CONVERTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaFrequencyConverterInputCenter.html">SetX Sense Sa Frequency Converter Input Center</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_INPUT_CENTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaFrequencyConverterInputPort.html">SetX Sense Sa Frequency Converter Input Port</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_INPUT_PORT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaFrequencyConverterInputSource.html">SetX Sense Sa Frequency Converter Input Source</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_INPUT_SOURCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaFrequencyConverterOutputCenter.html">SetX Sense Sa Frequency Converter Output Center</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_OUTPUT_CENTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaFrequencyConverterOutputInverted.html">SetX Sense Sa Frequency Converter Output Inverted</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_OUTPUT_INVERTED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaFrequencyConverterOutputOffset.html">SetX Sense Sa Frequency Converter Output Offset</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_OUTPUT_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaFrequencyConverterOutputPort.html">SetX Sense Sa Frequency Converter Output Port</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_FREQUENCY_CONVERTER_OUTPUT_PORT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaFrequencySpanBandwidthRatio.html">SetX Sense Sa Frequency Span Bandwidth Ratio</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_FREQUENCY_SPAN_BANDWIDTH_RATIO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaImageReject.html">SetX Sense Sa Image Reject</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_IMAGE_REJECT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaImageStrength.html">SetX Sense Sa Image Strength</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_IMAGE_STRENGTH attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaLoRandom.html">SetX Sense Sa Lo Random</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_LO_RANDOM attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaLobasebandState.html">SetX Sense Sa Lobaseband State</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_LOBASEBAND_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaLoforce.html">SetX Sense Sa Loforce</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_LOFORCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaLoforceFrequency.html">SetX Sense Sa Loforce Frequency</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_LOFORCE_FREQUENCY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaLoforceOffsetDivider.html">SetX Sense Sa Loforce Offset Divider</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_LOFORCE_OFFSET_DIVIDER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaLoforceOffsetMultiplier.html">SetX Sense Sa Loforce Offset Multiplier</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_LOFORCE_OFFSET_MULTIPLIER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaLoforceOffsetSource.html">SetX Sense Sa Loforce Offset Source</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_LOFORCE_OFFSET_SOURCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaTraceImage.html">SetX Sense Sa Trace Image</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_TRACE_IMAGE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaTriggerLevel.html">SetX Sense Sa Trigger Level</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_TRIGGER_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaTriggerLevelValue.html">SetX Sense Sa Trigger Level Value</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_TRIGGER_LEVEL_VALUE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaTriggerPercounter.html">SetX Sense Sa Trigger Percounter</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_TRIGGER_PERCOUNTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaTriggerPercounterValue.html">SetX Sense Sa Trigger Percounter Value</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_TRIGGER_PERCOUNTER_VALUE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSASpanBinsCountQuery.html">Span Bins Count Query</a></td>
+    <td>
+        Read the number of DFT points to be exported across the total RF span.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_BANDWIDTH.html">Bandwidth</a></td>
+    <td>
+        Set and read the resolution bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_BANDWIDTH_RESOLUTION_AUTO.html">Bandwidth Resolution Auto</a></td>
+    <td>
+        Set and read how the resolution bandwidth is set. When ON, the resolution bandwidth is set based on Span or RBW ratio.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_BANDWIDTH_SEARCH_OCCUPIED_MIN.html">Bandwidth Search Occupied Min</a></td>
+    <td>
+        Set and read the minimum search frequency to use during an Occupied BW search measurement. Default 250MHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_BANDWIDTH_SHAPE.html">Bandwidth Shape</a></td>
+    <td>
+        Set and read the resolution bandwidth shape. Default Gaussian.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_BANDWIDTH_VIDEO.html">Bandwidth Video</a></td>
+    <td>
+        Set and read the  video bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_BANDWIDTH_VIDEO_AUTO.html">Bandwidth Video Auto</a></td>
+    <td>
+        Set and read how the video bandwidth is set. When ON, video bandwidth is set based on RBW or VBW ratio.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_BANDWIDTH_VIDEO_AVER_TYPE.html">Bandwidth Video Aver Type</a></td>
+    <td>
+        Set and read the averaging type. Default Power.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_BANDWIDTH_VIDEO_RATIO.html">Bandwidth Video Ratio</a></td>
+    <td>
+        Set and read the RBW or VBW ratio. Default 1.0</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DETECTOR_BYPASS.html">Detector Bypass</a></td>
+    <td>
+        Set and read the ON or OFF state of the detector bypass setting.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DETECTOR_FUNCTION.html">Detector Function</a></td>
+    <td>
+        Set and read the detector type. Default Peak.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DFT_BANDWIDTH_AUTO.html">Dft Bandwidth Auto</a></td>
+    <td>
+        Set and read the default values for DFT bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DFT_BANDWIDTH_NARROW_MAX.html">Dft Bandwidth Narrow Max</a></td>
+    <td>
+        Set and read the maximum value for narrow DFT bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DFT_BANDWIDTH_NARROW_MIN.html">Dft Bandwidth Narrow Min</a></td>
+    <td>
+        Set and read the minimum value for narrow DFT bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DFT_BANDWIDTH_WIDE_MAX.html">Dft Bandwidth Wide Max</a></td>
+    <td>
+        Set and read the maximum value for wide DFT bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DFT_BANDWIDTH_WIDE_MIN.html">Dft Bandwidth Wide Min</a></td>
+    <td>
+        Set and read the minimum value for wide DFT bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DFT_TYPE.html">Dft Type</a></td>
+    <td>
+        Set and return the DFT record size type. Default Radix.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_FFT_DITHER.html">Fft Dither</a></td>
+    <td>
+        Set and read the ON or OFF state of the FFT grid dither setting</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_FREQUENCY_CONVERTER.html">Frequency Converter</a></td>
+    <td>
+        Set and read the ON on OFF state of the dual band configuration for fast setting of the frequency converter DUT.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_FREQUENCY_CONVERTER_INPUT_CENTER.html">Frequency Converter Input Center</a></td>
+    <td>
+        Set and read the frequency converter DUT input center frequency in Hz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_FREQUENCY_CONVERTER_INPUT_PORT.html">Frequency Converter Input Port</a></td>
+    <td>
+        Set and read the port number of the VNA connected to the input of the frequency converter DUT. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_FREQUENCY_CONVERTER_INPUT_SOURCE.html">Frequency Converter Input Source</a></td>
+    <td>
+        Set and read the source name that generates the modulated signal. Default &quot;None&quot;.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_FREQUENCY_CONVERTER_OUTPUT_CENTER.html">Frequency Converter Output Center</a></td>
+    <td>
+        Set and read the frequency converter DUT output center frequency in Hz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_FREQUENCY_CONVERTER_OUTPUT_INVERTED.html">Frequency Converter Output Inverted</a></td>
+    <td>
+        Enable or disable inverting the spectrum (or mirror) by the frequency converter operation.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_FREQUENCY_CONVERTER_OUTPUT_OFFSET.html">Frequency Converter Output Offset</a></td>
+    <td>
+        Set and read the LO offset value in Hz. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_FREQUENCY_CONVERTER_OUTPUT_PORT.html">Frequency Converter Output Port</a></td>
+    <td>
+        Set and read the port number of the VNA connected to the output of the frequency converter DUT. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_FREQUENCY_SPAN_BANDWIDTH_RATIO.html">Frequency Span Bandwidth Ratio</a></td>
+    <td>
+        Set and read the Frequency Span or RBW ratio.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_IMAGE_REJECT.html">Image Reject</a></td>
+    <td>
+        Set and read the image reject mode. Default Normal.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_IMAGE_STRENGTH.html">Image Strength</a></td>
+    <td>
+        Sets and returns the image rejection strength. Default Medium</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_LO_RANDOM.html">Lo Random</a></td>
+    <td>
+        Set and read the LO randomize state.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_LOBASEBAND_STATE.html">Lobaseband State</a></td>
+    <td>
+        Enables and disables baseband sweep independent of the LO sweep to allow signals down to 1 Hz to be analyzed.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_LOFORCE.html">Loforce</a></td>
+    <td>
+        Set and read enable force LO to frequency mode.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_LOFORCE_FREQUENCY.html">Loforce Frequency</a></td>
+    <td>
+        Set and read enable force LO to the specified frequency in Hz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_LOFORCE_OFFSET_DIVIDER.html">Loforce Offset Divider</a></td>
+    <td>
+        Set and read the divider in the equation for setting LO frequency. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_LOFORCE_OFFSET_MULTIPLIER.html">Loforce Offset Multiplier</a></td>
+    <td>
+        Set and read the multiplier in the equation for setting LO frequency. Default1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_LOFORCE_OFFSET_SOURCE.html">Loforce Offset Source</a></td>
+    <td>
+        Set and read the source name  in the equation for setting LO frequency.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_TRACE_IMAGE.html">Trace Image</a></td>
+    <td>
+        Set and read the show or hide state of the image reject traces in the measurement parameters dialog.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_TRIGGER_LEVEL.html">Trigger Level</a></td>
+    <td>
+        Set and read the ON or OFF state of a measurement trigger event that will occur whenever the ADC level is greater than the value specified</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_TRIGGER_LEVEL_VALUE.html">Trigger Level Value</a></td>
+    <td>
+        Set and read the ADC trigger level.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_TRIGGER_PERCOUNTER.html">Trigger Percounter</a></td>
+    <td>
+        Set and read the ON or OFF state of a measurement trigger event based on the specified period.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_TRIGGER_PERCOUNTER_VALUE.html">Trigger Percounter Value</a></td>
+    <td>
+        Set and read the periodic counter value. This command initiates a measurement trigger event based on the specified period.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

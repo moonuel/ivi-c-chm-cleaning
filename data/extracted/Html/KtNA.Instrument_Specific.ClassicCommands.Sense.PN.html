@@ -1,0 +1,778 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>PN</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="PN" />
+		<mshelp:rltitle title="PN" />
+		<mshelp:keyword index="K" term="PN" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">PN</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\ClassicCommands\Sense\PN <!-- Branches -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(branchTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(branchTableToggle, event)"
+        tabindex="0">
+        <img id="branchTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Branches</span>
+</h1>
+<div id="branchTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="nameColumn">
+                Name</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Sense.PN.Power.html">Power</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Sense.PN.Segment.html">Segment</a></td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSensePNBasebandDischarge.html">BasebandDischarge</a></td>
+    <td>
+        Executes the Dischage DC Block C.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnAdjustConfigureFrequencySearch.html">GetX Sense Pn Adjust Configure Frequency Search</a></td>
+    <td>
+        Gets the value of the ENABLED202 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnAdjustConfigureLevelThreshold.html">GetX Sense Pn Adjust Configure Level Threshold</a></td>
+    <td>
+        Gets the value of the THRESHOLD4 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnAttenuationAuto.html">GetX Sense Pn Attenuation Auto</a></td>
+    <td>
+        Gets the value of the ATTENUATION_AUTO_ENABLED4 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnAttenuationValue.html">GetX Sense Pn Attenuation Value</a></td>
+    <td>
+        Gets the value of the ATTENUATION4 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnBasebandGain.html">GetX Sense Pn Baseband Gain</a></td>
+    <td>
+        Gets the value of the RF_PATH_GAIN2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnBasebandInputCoupling.html">GetX Sense Pn Baseband Input Coupling</a></td>
+    <td>
+        Gets the value of the RF_PATH_INPUT2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnBwidthRatio.html">GetX Sense Pn Bwidth Ratio</a></td>
+    <td>
+        Gets the value of the RESOLUTIONBW_RATIO2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnCompositionModel.html">GetX Sense Pn Composition Model</a></td>
+    <td>
+        Gets the value of the DECOMPOSITION_MODEL2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnCompositionRange.html">GetX Sense Pn Composition Range</a></td>
+    <td>
+        Gets the value of the COMPOSITION_RANGE2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnCorrelationCount.html">GetX Sense Pn Correlation Count</a></td>
+    <td>
+        Gets the value of the CROSS_CORRELATION_COUNT2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnFaverageFactor.html">GetX Sense Pn Faverage Factor</a></td>
+    <td>
+        Gets the value of the FFT_AVERAGE_FACTOR2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnNtype.html">GetX Sense Pn Ntype</a></td>
+    <td>
+        Gets the value of the NOISE2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnPulsePeriod.html">GetX Sense Pn Pulse Period</a></td>
+    <td>
+        Gets the value of the PULSE_PERIOD2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnPulseState.html">GetX Sense Pn Pulse State</a></td>
+    <td>
+        Gets the value of the PULSE_ENABLED4 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnSweepCarrierFrequency.html">GetX Sense Pn Sweep Carrier Frequency</a></td>
+    <td>
+        Gets the value of the CARRIER_FREQUENCY2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnSweepNoiseMode.html">GetX Sense Pn Sweep Noise Mode</a></td>
+    <td>
+        Gets the value of the SWEEP_NOISE_MODE2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnSweepOffsetExtend.html">GetX Sense Pn Sweep Offset Extend</a></td>
+    <td>
+        Gets the value of the OFFSET_FREQUENCY_EXTENSION2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnSweepType.html">GetX Sense Pn Sweep Type</a></td>
+    <td>
+        Gets the value of the SWEEP_TYPE4 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSensePnXgindicator.html">GetX Sense Pn Xgindicator</a></td>
+    <td>
+        Gets the value of the X_CORRELATION_GAIN_INDICATOR_ENABLED2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnAdjustConfigureFrequencySearch.html">SetX Sense Pn Adjust Configure Frequency Search</a></td>
+    <td>
+        Sets the value of the ENABLED202 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnAdjustConfigureLevelThreshold.html">SetX Sense Pn Adjust Configure Level Threshold</a></td>
+    <td>
+        Sets the value of the THRESHOLD4 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnAttenuationAuto.html">SetX Sense Pn Attenuation Auto</a></td>
+    <td>
+        Sets the value of the ATTENUATION_AUTO_ENABLED4 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnAttenuationValue.html">SetX Sense Pn Attenuation Value</a></td>
+    <td>
+        Sets the value of the ATTENUATION4 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnBasebandGain.html">SetX Sense Pn Baseband Gain</a></td>
+    <td>
+        Sets the value of the RF_PATH_GAIN2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnBasebandInputCoupling.html">SetX Sense Pn Baseband Input Coupling</a></td>
+    <td>
+        Sets the value of the RF_PATH_INPUT2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnBwidthRatio.html">SetX Sense Pn Bwidth Ratio</a></td>
+    <td>
+        Sets the value of the RESOLUTIONBW_RATIO2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnCompositionModel.html">SetX Sense Pn Composition Model</a></td>
+    <td>
+        Sets the value of the DECOMPOSITION_MODEL2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnCompositionRange.html">SetX Sense Pn Composition Range</a></td>
+    <td>
+        Sets the value of the COMPOSITION_RANGE2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnCorrelationCount.html">SetX Sense Pn Correlation Count</a></td>
+    <td>
+        Sets the value of the CROSS_CORRELATION_COUNT2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnFaverageFactor.html">SetX Sense Pn Faverage Factor</a></td>
+    <td>
+        Sets the value of the FFT_AVERAGE_FACTOR2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnNtype.html">SetX Sense Pn Ntype</a></td>
+    <td>
+        Sets the value of the NOISE2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnPulsePeriod.html">SetX Sense Pn Pulse Period</a></td>
+    <td>
+        Sets the value of the PULSE_PERIOD2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnPulseState.html">SetX Sense Pn Pulse State</a></td>
+    <td>
+        Sets the value of the PULSE_ENABLED4 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnSweepCarrierFrequency.html">SetX Sense Pn Sweep Carrier Frequency</a></td>
+    <td>
+        Sets the value of the CARRIER_FREQUENCY2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnSweepNoiseMode.html">SetX Sense Pn Sweep Noise Mode</a></td>
+    <td>
+        Sets the value of the SWEEP_NOISE_MODE2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnSweepOffsetExtend.html">SetX Sense Pn Sweep Offset Extend</a></td>
+    <td>
+        Sets the value of the OFFSET_FREQUENCY_EXTENSION2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnSweepType.html">SetX Sense Pn Sweep Type</a></td>
+    <td>
+        Sets the value of the SWEEP_TYPE4 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSensePnXgindicator.html">SetX Sense Pn Xgindicator</a></td>
+    <td>
+        Sets the value of the X_CORRELATION_GAIN_INDICATOR_ENABLED2 attribute.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_ADJUST_CONFIGURE_FREQUENCY_SEARCH.html">AdjustConfigureFrequencySearch</a></td>
+    <td>
+        Enables and disables a broadband carrier search within the range specified. Default 1 (On).</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_ADJUST_CONFIGURE_LEVEL_THRESHOLD.html">AdjustConfigureLevelThreshold</a></td>
+    <td>
+        Sets and returns the threshold to use during a carrier search. Default -20dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_ATTENUATION_AUTO.html">AttenuationAuto</a></td>
+    <td>
+        Enable and disable the automatic attenuation control. Default 1 (On).</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_ATTENUATION_VALUE.html">AttenuationValue</a></td>
+    <td>
+        Sets the attenuation level for the selected channel. The range is from 0 to 30 dB with the step size 1 dB. Default 10.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_BASEBAND_GAIN.html">BasebandGain</a></td>
+    <td>
+        Sets and returns the setting for baseband gain. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_BASEBAND_INPUT_COUPLING.html">BasebandInputCoupling</a></td>
+    <td>
+        Sets and returns the setting for baseband input. Default ACLF.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_BWIDTH_RATIO.html">BwidthRatio</a></td>
+    <td>
+        Sets and returns the resolution bandwidth ratio, which is the specified resolution bandwidth percentage of every half decade offset frequency. Default 10.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_COMPOSITION_MODEL.html">CompositionModel</a></td>
+    <td>
+        Choose decomposition model of AM/PM composite measurement range. Default 4.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_COMPOSITION_RANGE.html">CompositionRange</a></td>
+    <td>
+        Choose the range of AM/PM composite measurement. Default R30.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_CORRELATION_COUNT.html">CorrelationCount</a></td>
+    <td>
+        Sets and returns the cross correlation count number. Correlation count number from 1 to 100,000. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_FAVERAGE_FACTOR.html">FaverageFactor</a></td>
+    <td>
+        Sets and returns the FFT average factor number. FFT average factor number from 1 to 10,000. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_NTYPE.html">Ntype</a></td>
+    <td>
+        Sets and returns the noise type to phase, residual or baseband noise. Default Phase.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_PULSE_PERIOD.html">PulsePeriod</a></td>
+    <td>
+        Set or returns Pulse period for phase noise measurement. Default 100E-6.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_PULSE_STATE.html">PulseState</a></td>
+    <td>
+        Enables or disables Pulse setup for phase noise measurement. Default 0 (Off).</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_SWEEP_CARRIER_FREQUENCY.html">SweepCarrierFrequency</a></td>
+    <td>
+         Sets and returns the carrier frequency. Default 1 GHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_SWEEP_NOISE_MODE.html">SweepNoiseMode</a></td>
+    <td>
+        Sets and returns the sweep noise mode. Default Normal.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_SWEEP_OFFSET_EXTEND.html">SweepOffsetExtend</a></td>
+    <td>
+        Sets and returns the Offset frequency extension status. Default 0 (Off).</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_SWEEP_TYPE.html">SweepType</a></td>
+    <td>
+        Sets and returns the phase noise sweep type to logarithmic or segment.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_PN_XGINDICATOR.html">Xgindicator</a></td>
+    <td>
+        This command turns the cross-correlation gain indicator on and off. Default 0 (Off).</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

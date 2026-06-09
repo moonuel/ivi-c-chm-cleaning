@@ -1,0 +1,544 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>Limit</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="Limit" />
+		<mshelp:rltitle title="Limit" />
+		<mshelp:keyword index="K" term="Limit" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">Limit</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\Channel\Measurement\Limit  <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_MeasurementLimitDeleteData.html">DeleteData</a></td>
+    <td>
+        Deletes all limit line data for the selected measurement on the specified channel.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetMeasurementLimitDisplayEnabled.html">Get Measurement Limit Display Enabled</a></td>
+    <td>
+        Gets the value of the MEASUREMENT_LIMIT_DISPLAY_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetMeasurementLimitEnabled.html">Get Measurement Limit Enabled</a></td>
+    <td>
+        Gets the value of the MEASUREMENT_LIMIT_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetMeasurementLimitSegmentNo.html">Get Measurement Limit Segment No</a></td>
+    <td>
+        Gets the value of the SEGMENT_NO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetMeasurementLimitSegmentType.html">Get Measurement Limit Segment Type</a></td>
+    <td>
+        Gets the value of the SEGMENT_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetMeasurementLimitSegmentXStart.html">Get Measurement Limit SegmentX Start</a></td>
+    <td>
+        Gets the value of the SEGMENTX_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetMeasurementLimitSegmentXStop.html">Get Measurement Limit SegmentX Stop</a></td>
+    <td>
+        Gets the value of the SEGMENTX_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetMeasurementLimitSegmentYStart.html">Get Measurement Limit SegmentY Start</a></td>
+    <td>
+        Gets the value of the SEGMENTY_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetMeasurementLimitSegmentYStop.html">Get Measurement Limit SegmentY Stop</a></td>
+    <td>
+        Gets the value of the SEGMENTY_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetMeasurementLimitTestingFailSoundEnabled.html">Get Measurement Limit Testing Fail Sound Enabled</a></td>
+    <td>
+        Gets the value of the MEASUREMENT_LIMIT_TESTING_FAIL_SOUND_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_MeasurementLimitGetNoOfFailedPoints.html">Get No Of Failed Points</a></td>
+    <td>
+        Reads the number of the measurement points that failed the limit test, for the active trace of selected channel. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_MeasurementLimitGetSegmentCount.html">GetSegmentCount</a></td>
+    <td>
+        Returns the number of segments used in a limit test. All segments are counted, whether they are on or not.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_MeasurementLimitIsPassing.html">Is Passing</a></td>
+    <td>
+        Returns the Pass / Fail status of the limit line test. Returns 1 (Fail) if any data point fails for any limit segment.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_MeasurementLimitQueryData.html">Query Data</a></td>
+    <td>
+        Returns data for limit segments.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_MeasurementLimitQueryTestResult.html">Query Test Result</a></td>
+    <td>
+        Returns the test results (stimulus value, limit test result, upper limit value and lower limit value of all measurement points), for the selected trace.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_MeasurementLimitQueryXValuesOfFailedPoints.html">Query X Values Of Failed Points</a></td>
+    <td>
+        Returns the stimulus values (frequency, power level or time) at all the measurement points that failed the limit test, for the selected trace.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_MeasurementLimitSetData.html">Set Data</a></td>
+    <td>
+        Sets data for limit segments.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetMeasurementLimitDisplayEnabled.html">Set Measurement Limit Display Enabled</a></td>
+    <td>
+        Sets the value of the MEASUREMENT_LIMIT_DISPLAY_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetMeasurementLimitEnabled.html">Set Measurement Limit Enabled</a></td>
+    <td>
+        Sets the value of the MEASUREMENT_LIMIT_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetMeasurementLimitSegmentNo.html">Set Measurement Limit Segment No</a></td>
+    <td>
+        Sets the value of the SEGMENT_NO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetMeasurementLimitSegmentType.html">Set Measurement Limit Segment Type</a></td>
+    <td>
+        Sets the value of the SEGMENT_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetMeasurementLimitSegmentXStart.html">Set Measurement Limit SegmentX Start</a></td>
+    <td>
+        Sets the value of the SEGMENTX_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetMeasurementLimitSegmentXStop.html">Set Measurement Limit SegmentX Stop</a></td>
+    <td>
+        Sets the value of the SEGMENTX_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetMeasurementLimitSegmentYStart.html">Set Measurement Limit SegmentY Start</a></td>
+    <td>
+        Sets the value of the SEGMENTY_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetMeasurementLimitSegmentYStop.html">Set Measurement Limit SegmentY Stop</a></td>
+    <td>
+        Sets the value of the SEGMENTY_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetMeasurementLimitTestingFailSoundEnabled.html">Set Measurement Limit Testing Fail Sound Enabled</a></td>
+    <td>
+        Sets the value of the MEASUREMENT_LIMIT_TESTING_FAIL_SOUND_ENABLED attribute.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_MEASUREMENT_LIMIT_DISPLAY_ENABLED.html">DisplayEnabled</a></td>
+    <td>
+        Turns the display of limit segments ON or OFF (if the data trace is turned ON).</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_MEASUREMENT_LIMIT_ENABLED.html">Enabled</a></td>
+    <td>
+        Turns limit segment testing ON or OFF.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_MEASUREMENT_LIMIT_SEGMENT_NO.html">SegmentNo</a></td>
+    <td>
+        Segment number, if unspecified, value is set to 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_MEASUREMENT_LIMIT_SEGMENT_TYPE.html">SegmentType</a></td>
+    <td>
+        Sets the type of limit segment. Default Off.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_MEASUREMENT_LIMIT_SEGMENT_X_START.html">SegmentXStart</a></td>
+    <td>
+        Sets the start (beginning) of the X-axis stimulus value.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_MEASUREMENT_LIMIT_SEGMENT_X_STOP.html">SegmentXStop</a></td>
+    <td>
+        Sets the stop (end) of the X-axis stimulus value.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_MEASUREMENT_LIMIT_SEGMENT_Y_START.html">SegmentYStart</a></td>
+    <td>
+        Sets the start (beginning) of the Y-axis amplitude (response) value.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_MEASUREMENT_LIMIT_SEGMENT_Y_STOP.html">SegmentYStop</a></td>
+    <td>
+        Sets the stop (end) of the Y-axis amplitude (response) value.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_MEASUREMENT_LIMIT_TESTING_FAIL_SOUND_ENABLED.html">TestingFailSoundEnabled</a></td>
+    <td>
+        Turns limit testing fail sound ON or OFF.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

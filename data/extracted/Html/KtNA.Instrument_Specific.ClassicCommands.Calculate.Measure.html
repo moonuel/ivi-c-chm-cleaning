@@ -1,0 +1,760 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>Measure</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="Measure" />
+		<mshelp:rltitle title="Measure" />
+		<mshelp:keyword index="K" term="Measure" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">Measure</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\ClassicCommands\Calculate\Measure <!-- Branches -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(branchTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(branchTableToggle, event)"
+        tabindex="0">
+        <img id="branchTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Branches</span>
+</h1>
+<div id="branchTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="nameColumn">
+                Name</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.BLimit.html">BLimit</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.Correction.html">Correction</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.Data.html">Data</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.Distortion.html">Distortion</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.Equation.html">Equation</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.Filter.html">Filter</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.Function.html">Function</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.GCData.html">GCData</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.GCMeasAnalysis.html">GCMeasAnalysis</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.GDelay.html">GDelay</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.Limit.html">Limit</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.LRegression.html">LRegression</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.Marker.html">Marker</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.Math.html">Math</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.Phase.html">Phase</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.PN.html">PN</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.RLimit.html">RLimit</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.SAMarker.html">SAMarker</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.Smoothing.html">Smoothing</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Calculate.Measure.Transform.html">Transform</a></td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xCalculateMeasureDataQuery.html">Data Query</a></td>
+    <td>
+        Reads Measurement data, Memory data, or Normalization Divisor data from the Data Access Map location.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xCalculateMeasureDataSet.html">Data Set</a></td>
+    <td>
+        Writes Measurement data, Memory data, or Normalization Divisor data to the Data Access Map location.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xCalculateMeasureDefine.html">Define</a></td>
+    <td>
+        Creates a measurement but does NOT display it, on an existing or new channel.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xCalculateMeasureDelete.html">Delete</a></td>
+    <td>
+        Deletes the specified measurement.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xCalculateMeasureDeleteAll.html">Delete All</a></td>
+    <td>
+        Deletes all measurements on the VNA.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xCalculateMeasureFormatUnit.html">FormatUnit</a></td>
+    <td>
+        Sets the units for the specified data format. Measurements with display formats other than those specified are not affected.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xCalculateMeasureFormatUnitQuery.html">FormatUnitQuery</a></td>
+    <td>
+        Returns the units for the specified data format. Measurements with display formats other than those specified are not affected.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXCalculateMeasureComputationDeviation.html">GetX Calculate Measure Computation Deviation</a></td>
+    <td>
+        Gets the value of the LEAST_SQUARES_DEVIATION2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXCalculateMeasureConversionFunction.html">GetX Calculate Measure Conversion Function</a></td>
+    <td>
+        Gets the value of the CONVERSION_FUNCTION2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXCalculateMeasureFormat.html">GetX Calculate Measure Format</a></td>
+    <td>
+        Gets the value of the DISPLAY_FORMAT2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXCalculateMeasureFrequencyReference.html">GetX Calculate Measure Frequency Reference</a></td>
+    <td>
+        Gets the value of the FREQUENCY_REFERENCE2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXCalculateMeasureFrequencySensitivityAperture.html">GetX Calculate Measure Frequency Sensitivity Aperture</a></td>
+    <td>
+        Gets the value of the SENSITIVITY_APERTURE2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXCalculateMeasureHoldType.html">GetX Calculate Measure Hold Type</a></td>
+    <td>
+        Gets the value of the HOLD_TYPE2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXCalculateMeasureMeasurementNo.html">GetX Calculate Measure Measurement No</a></td>
+    <td>
+        Gets the value of the X_CALCULATE_MEASURE_MEASUREMENT_NO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXCalculateMeasureMixerXAxis.html">GetX Calculate Measure MixerX Axis</a></td>
+    <td>
+        Gets the value of the X_CALCULATE_MEASURE_MIXER_X_AXIS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXCalculateMeasureOffsetMagnitude.html">GetX Calculate Measure Offset Magnitude</a></td>
+    <td>
+        Gets the value of the MAGNITUDE_OFFSET2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXCalculateMeasureOffsetMagnitudeSlope.html">GetX Calculate Measure Offset Magnitude Slope</a></td>
+    <td>
+        Gets the value of the SLOPE_OFFSET2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXCalculateMeasureOffsetPhase.html">GetX Calculate Measure Offset Phase</a></td>
+    <td>
+        Gets the value of the PHASE_OFFSET2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xCalculateMeasureHoldClear.html">HoldClear</a></td>
+    <td>
+        Resets the currently-stored data points to the live data trace and restarts the currently-selected Trace Hold type.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xCalculateMeasureParameter.html">Parameter</a></td>
+    <td>
+        Sets a measurement parameter for the specified measurement.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xCalculateMeasureParameterQuery.html">Parameter Query</a></td>
+    <td>
+        Gets a measurement parameter for the specified measurement.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xCalculateMeasureRDataQuery.html">RDataQuery</a></td>
+    <td>
+        Returns receiver data for the selected measurement.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXCalculateMeasureComputationDeviation.html">SetX Calculate Measure Computation Deviation</a></td>
+    <td>
+        Sets the value of the LEAST_SQUARES_DEVIATION2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXCalculateMeasureConversionFunction.html">SetX Calculate Measure Conversion Function</a></td>
+    <td>
+        Sets the value of the CONVERSION_FUNCTION2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXCalculateMeasureFormat.html">SetX Calculate Measure Format</a></td>
+    <td>
+        Sets the value of the DISPLAY_FORMAT2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXCalculateMeasureFrequencyReference.html">SetX Calculate Measure Frequency Reference</a></td>
+    <td>
+        Sets the value of the FREQUENCY_REFERENCE2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXCalculateMeasureFrequencySensitivityAperture.html">SetX Calculate Measure Frequency Sensitivity Aperture</a></td>
+    <td>
+        Sets the value of the SENSITIVITY_APERTURE2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXCalculateMeasureHoldType.html">SetX Calculate Measure Hold Type</a></td>
+    <td>
+        Sets the value of the HOLD_TYPE2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXCalculateMeasureMeasurementNo.html">SetX Calculate Measure Measurement No</a></td>
+    <td>
+        Sets the value of the X_CALCULATE_MEASURE_MEASUREMENT_NO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXCalculateMeasureMixerXAxis.html">SetX Calculate Measure MixerX Axis</a></td>
+    <td>
+        Sets the value of the X_CALCULATE_MEASURE_MIXER_X_AXIS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXCalculateMeasureOffsetMagnitude.html">SetX Calculate Measure Offset Magnitude</a></td>
+    <td>
+        Sets the value of the MAGNITUDE_OFFSET2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXCalculateMeasureOffsetMagnitudeSlope.html">SetX Calculate Measure Offset Magnitude Slope</a></td>
+    <td>
+        Sets the value of the SLOPE_OFFSET2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXCalculateMeasureOffsetPhase.html">SetX Calculate Measure Offset Phase</a></td>
+    <td>
+        Sets the value of the PHASE_OFFSET2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xCalculateMeasureXAxisUnitQuery.html">XAxisUnitQuery</a></td>
+    <td>
+        Returns the current units of the X-axis</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xCalculateMeasureYAxisUnitQuery.html">YAxisUnitQuery</a></td>
+    <td>
+        Returns the current units of the Y-axis</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_CALCULATE_MEASURE_COMPUTATION_DEVIATION.html">ComputationDeviation</a></td>
+    <td>
+        Calculates the deviation from a least-squares best fit line.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_CALCULATE_MEASURE_CONVERSION_FUNCTION.html">ConversionFunction</a></td>
+    <td>
+        Sets or gets the parameter after conversion using the parameter conversion function, for the active trace of selected channel. Default Off.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_CALCULATE_MEASURE_FORMAT.html">Format</a></td>
+    <td>
+        Sets the display format for the measurement. Default Log.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_CALCULATE_MEASURE_FREQUENCY_REFERENCE.html">FrequencyReference</a></td>
+    <td>
+        Set and read the frequency reference for delta frequency in VCO Characteristic measurement. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_CALCULATE_MEASURE_FREQUENCY_SENSITIVITY_APERTURE.html">FrequencySensitivityAperture</a></td>
+    <td>
+        Set and read the sensitivity aperture for Freq/V in VCO Characteristic measurement. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_CALCULATE_MEASURE_HOLD_TYPE.html">HoldType</a></td>
+    <td>
+        Sets the type of trace hold to perform.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_CALCULATE_MEASURE_MEASUREMENT_NO.html">Measurement No</a></td>
+    <td>
+        Measurement number for each measurement. Choose from 1 to 2000. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_CALCULATE_MEASURE_MIXER_X_AXIS.html">Mixer X Axis</a></td>
+    <td>
+        Sets or returns the swept parameter to display on the X-axis for the selected FCA and GCX measurement. Default Input.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_CALCULATE_MEASURE_OFFSET_MAGNITUDE.html">OffsetMagnitude</a></td>
+    <td>
+        Offsets the data trace magnitude by the specified value. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_CALCULATE_MEASURE_OFFSET_MAGNITUDE_SLOPE.html">OffsetMagnitudeSlope</a></td>
+    <td>
+        Offsets the data trace magnitude to a value that changes linearly with frequency. The offset slope begins at 0 Hz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_CALCULATE_MEASURE_OFFSET_PHASE.html">OffsetPhase</a></td>
+    <td>
+        Sets the phase offset for the selected measurement. Default 0 degrees.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

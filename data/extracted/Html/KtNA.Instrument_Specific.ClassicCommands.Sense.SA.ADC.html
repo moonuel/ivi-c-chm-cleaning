@@ -1,0 +1,688 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>ADC</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="ADC" />
+		<mshelp:rltitle title="ADC" />
+		<mshelp:keyword index="K" term="ADC" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">ADC</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\ClassicCommands\Sense\SA\ADC  <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSAADCACQTimeQuery.html">ACQ Time Query</a></td>
+    <td>
+        Returns the LO acquisition time.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcDither.html">GetX Sense Sa Adc Dither</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_DITHER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcFilter.html">GetX Sense Sa Adc Filter</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_FILTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcFilterAuto.html">GetX Sense Sa Adc Filter Auto</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_FILTER_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcMrecPeriod.html">GetX Sense Sa Adc Mrec Period</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_MREC_PERIOD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcMrecSize.html">GetX Sense Sa Adc Mrec Size</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_MREC_SIZE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcMrecState.html">GetX Sense Sa Adc Mrec State</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_MREC_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcOverloadPercent.html">GetX Sense Sa Adc Overload Percent</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_OVERLOAD_PERCENT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcRecordSizeForce.html">GetX Sense Sa Adc Record Size Force</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_RECORD_SIZE_FORCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcRecordSizeForceValue.html">GetX Sense Sa Adc Record Size Force Value</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_RECORD_SIZE_FORCE_VALUE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcSampleDecimationFir.html">GetX Sense Sa Adc Sample Decimation Fir</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_SAMPLE_DECIMATION_FIR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcSampleRate.html">GetX Sense Sa Adc Sample Rate</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_SAMPLE_RATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcSampleRateAuto.html">GetX Sense Sa Adc Sample Rate Auto</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_SAMPLE_RATE_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcStackingState.html">GetX Sense Sa Adc Stacking State</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_STACKING_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaAdcStackingValue.html">GetX Sense Sa Adc Stacking Value</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_ADC_STACKING_VALUE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSAADCOverloadCountQuery.html">Overload Count Query</a></td>
+    <td>
+        Read the count of ADCs or receivers in overload status for the previous sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSAADCOverloadListQuery.html">Overload List Query</a></td>
+    <td>
+        Read the list of measured receivers in overload status for the previous sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSAADCRangePercentMinimumQuery.html">Range Percent Minimum Query</a></td>
+    <td>
+        Read the minimum ADC percentage range of all receivers in use.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSAADCRangePercentQuery.html">Range Percent Query</a></td>
+    <td>
+        Read the maximum ADC percentage range of all receivers in use.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSAADCRangePercentReceiverQuery.html">Range Percent Receiver Query</a></td>
+    <td>
+        Read the ADC percentage range for the specified receiver.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSAADCRecordSizeMaxQuery.html">Record Size Max Query</a></td>
+    <td>
+        Read the current maximum available ADC record size.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSAADCRecordSizeMinQuery.html">Record Size Min Query</a></td>
+    <td>
+        Read the current minimum available ADC record size.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSAADCRecordSizeValueQuery.html">Record Size Value Query</a></td>
+    <td>
+        Read ADC record size value.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcDither.html">SetX Sense Sa Adc Dither</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_DITHER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcFilter.html">SetX Sense Sa Adc Filter</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_FILTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcFilterAuto.html">SetX Sense Sa Adc Filter Auto</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_FILTER_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcMrecPeriod.html">SetX Sense Sa Adc Mrec Period</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_MREC_PERIOD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcMrecSize.html">SetX Sense Sa Adc Mrec Size</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_MREC_SIZE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcMrecState.html">SetX Sense Sa Adc Mrec State</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_MREC_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcOverloadPercent.html">SetX Sense Sa Adc Overload Percent</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_OVERLOAD_PERCENT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcRecordSizeForce.html">SetX Sense Sa Adc Record Size Force</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_RECORD_SIZE_FORCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcRecordSizeForceValue.html">SetX Sense Sa Adc Record Size Force Value</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_RECORD_SIZE_FORCE_VALUE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcSampleDecimationFir.html">SetX Sense Sa Adc Sample Decimation Fir</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_SAMPLE_DECIMATION_FIR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcSampleRate.html">SetX Sense Sa Adc Sample Rate</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_SAMPLE_RATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcSampleRateAuto.html">SetX Sense Sa Adc Sample Rate Auto</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_SAMPLE_RATE_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcStackingState.html">SetX Sense Sa Adc Stacking State</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_STACKING_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaAdcStackingValue.html">SetX Sense Sa Adc Stacking Value</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_ADC_STACKING_VALUE attribute.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_DITHER.html">Dither</a></td>
+    <td>
+        Set and read the ON or OFF state of the FFT grid dither setting</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_FILTER.html">Filter</a></td>
+    <td>
+        Set and read the ADC filter cutoff frequency.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_FILTER_AUTO.html">Filter Auto</a></td>
+    <td>
+        Set and read how the ADC filter is set. When ON, the ADC filter is set based on the start and stop frequencies and the ADC sampling frequency.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_MREC_PERIOD.html">Mrec Period</a></td>
+    <td>
+        Set and read the period to wait between ADC record chunks.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_MREC_SIZE.html">Mrec Size</a></td>
+    <td>
+        Set and read the size of the ADC record chunks.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_MREC_STATE.html">Mrec State</a></td>
+    <td>
+        Set and read the ON or OFF state of the multiple recording function.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_OVERLOAD_PERCENT.html">Overload Percent</a></td>
+    <td>
+        Set and read the ADC overload threshold percentage. Default 80.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_RECORD_SIZE_FORCE.html">Record Size Force</a></td>
+    <td>
+        Set and read the ADC record size mode.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_RECORD_SIZE_FORCE_VALUE.html">Record Size Force Value</a></td>
+    <td>
+        Set and read the integer size value for the force ADC record size feature.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_SAMPLE_DECIMATION_FIR.html">Sample Decimation Fir</a></td>
+    <td>
+        Set and read the FIR filter for 25 MHz decimation.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_SAMPLE_RATE.html">Sample Rate</a></td>
+    <td>
+        Set and read the IQ sample rate.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_SAMPLE_RATE_AUTO.html">Sample Rate Auto</a></td>
+    <td>
+        Set and read the ADC sample rate mode.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_STACKING_STATE.html">Stacking State</a></td>
+    <td>
+        Set and read the ON or OFF state of the ADC sample stacking.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_ADC_STACKING_VALUE.html">Stacking Value</a></td>
+    <td>
+        Set and read the ADC stacking value.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

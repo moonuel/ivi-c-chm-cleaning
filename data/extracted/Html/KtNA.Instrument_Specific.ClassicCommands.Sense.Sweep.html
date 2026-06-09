@@ -1,0 +1,773 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>Sweep</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="Sweep" />
+		<mshelp:rltitle title="Sweep" />
+		<mshelp:keyword index="K" term="Sweep" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">Sweep</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\ClassicCommands\Sense\Sweep <!-- Branches -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(branchTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(branchTableToggle, event)"
+        tabindex="0">
+        <img id="branchTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Branches</span>
+</h1>
+<div id="branchTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="nameColumn">
+                Name</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Sense.Sweep.Pulse.html">Pulse</a></td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSweepBlockedQuery.html">Blocked Query</a></td>
+    <td>
+        Reads whether the specified channel is currently 'blocked' from sweeping.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepDwell.html">GetX Sense Sweep Dwell</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_DWELL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepDwellAuto.html">GetX Sense Sweep Dwell Auto</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_DWELL_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepDwellSdelay.html">GetX Sense Sweep Dwell Sdelay</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_DWELL_SDELAY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepGeneration.html">GetX Sense Sweep Generation</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_GENERATION attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepGenerationPointSweep.html">GetX Sense Sweep Generation Point Sweep</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_GENERATION_POINT_SWEEP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepGroupsCount.html">GetX Sense Sweep Groups Count</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_GROUPS_COUNT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepLfExtensionState.html">GetX Sense Sweep Lf Extension State</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_LF_EXTENSION_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepMode.html">GetX Sense Sweep Mode</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepPoints.html">GetX Sense Sweep Points</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_POINTS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepSlocalMaximum.html">GetX Sense Sweep Slocal Maximum</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_SLOCAL_MAXIMUM attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepSlocalState.html">GetX Sense Sweep Slocal State</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_SLOCAL_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepSpeed.html">GetX Sense Sweep Speed</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_SPEED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepStep.html">GetX Sense Sweep Step</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_STEP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepTime.html">GetX Sense Sweep Time</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_TIME attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepTimeAuto.html">GetX Sense Sweep Time Auto</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_TIME_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepTriggerDelay.html">GetX Sense Sweep Trigger Delay</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_TRIGGER_DELAY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepTriggerMode.html">GetX Sense Sweep Trigger Mode</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_TRIGGER_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSweepTypeFacw.html">GetX Sense Sweep Type Facw</a></td>
+    <td>
+        Gets the value of the X_SENSE_SWEEP_TYPE_FACW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepDwell.html">SetX Sense Sweep Dwell</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_DWELL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepDwellAuto.html">SetX Sense Sweep Dwell Auto</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_DWELL_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepDwellSdelay.html">SetX Sense Sweep Dwell Sdelay</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_DWELL_SDELAY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepGeneration.html">SetX Sense Sweep Generation</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_GENERATION attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepGenerationPointSweep.html">SetX Sense Sweep Generation Point Sweep</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_GENERATION_POINT_SWEEP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepGroupsCount.html">SetX Sense Sweep Groups Count</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_GROUPS_COUNT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepLfExtensionState.html">SetX Sense Sweep Lf Extension State</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_LF_EXTENSION_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepMode.html">SetX Sense Sweep Mode</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepPoints.html">SetX Sense Sweep Points</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_POINTS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepSlocalMaximum.html">SetX Sense Sweep Slocal Maximum</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_SLOCAL_MAXIMUM attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepSlocalState.html">SetX Sense Sweep Slocal State</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_SLOCAL_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepSpeed.html">SetX Sense Sweep Speed</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_SPEED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepStep.html">SetX Sense Sweep Step</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_STEP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepTime.html">SetX Sense Sweep Time</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_TIME attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepTimeAuto.html">SetX Sense Sweep Time Auto</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_TIME_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepTriggerDelay.html">SetX Sense Sweep Trigger Delay</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_TRIGGER_DELAY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepTriggerMode.html">SetX Sense Sweep Trigger Mode</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_TRIGGER_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSweepTypeFacw.html">SetX Sense Sweep Type Facw</a></td>
+    <td>
+        Sets the value of the X_SENSE_SWEEP_TYPE_FACW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSweepTimeStartQuery.html">Time Start Query</a></td>
+    <td>
+        </td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSweepType.html">Type</a></td>
+    <td>
+        Sets the type of analyzer sweep mode.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSweepTypeQuery.html">Type Query</a></td>
+    <td>
+        Returns the type of analyzer sweep mode.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_DWELL.html">Dwell</a></td>
+    <td>
+        Sets or returns the dwell time in seconds between each sweep point.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_DWELL_AUTO.html">Dwell Auto</a></td>
+    <td>
+        Specifies whether or not to automatically calculate and set the minimum possible dwell time.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_DWELL_SDELAY.html">Dwell SDelay</a></td>
+    <td>
+        Sets or returns the time in seconds to wait just before acquisition begins for each sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_GENERATION.html">Generation</a></td>
+    <td>
+        Sets sweep as Stepped or Analog.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_GENERATION_POINT_SWEEP.html">Generation Point Sweep</a></td>
+    <td>
+        Turns ON and OFF point sweep mode.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_GROUPS_COUNT.html">Groups Count</a></td>
+    <td>
+        Sets the trigger count (groups) for the specified channel. Set trigger mode to group after setting this count.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_LF_EXTENSION_STATE.html">LF Extension State</a></td>
+    <td>
+        Turns ON or OFF low frequency extension for extending the range down to 1 kHz start frequency.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_MODE.html">Mode</a></td>
+    <td>
+        Sets the number of trigger signals the specified channel will ACCEPT.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_POINTS.html">Points</a></td>
+    <td>
+        Sets or returns the number of data points for the measurement.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_SLOCAL_MAXIMUM.html">SLocal Maximum</a></td>
+    <td>
+        Sets the Shift LO maximum frequency for the selected channel.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_SLOCAL_STATE.html">SLocal State</a></td>
+    <td>
+        Turns ON or OFF the Shift LO mode for the selected channel.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_SPEED.html">Speed</a></td>
+    <td>
+        Sets and returns the state of Fast Sweep mode.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_STEP.html">Step</a></td>
+    <td>
+        Sets the frequency step size in Hz across the selected frequency range. This effectively sets the number of data points.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_TIME.html">Time</a></td>
+    <td>
+        Sets or Returns the time in seconds the analyzer takes to complete one sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_TIME_AUTO.html">Time Auto</a></td>
+    <td>
+        Turns the automatic sweep time function ON or OFF.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_TRIGGER_DELAY.html">Trigger Delay</a></td>
+    <td>
+        Sets and reads the trigger delay in seconds for all measurements in the specified CHANNEL.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_TRIGGER_MODE.html">Trigger Mode</a></td>
+    <td>
+        Sets and reads the trigger mode for the specified channel. This determines what EACH signal will trigger.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SWEEP_TYPE_FACW.html">Type FACW</a></td>
+    <td>
+        Enables Fast CW sweep and sets the number of data points for the channel.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

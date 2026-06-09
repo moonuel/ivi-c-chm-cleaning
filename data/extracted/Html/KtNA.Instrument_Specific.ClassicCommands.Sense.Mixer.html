@@ -1,0 +1,971 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>Mixer</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="Mixer" />
+		<mshelp:rltitle title="Mixer" />
+		<mshelp:keyword index="K" term="Mixer" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">Mixer</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\ClassicCommands\Sense\Mixer <!-- Branches -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(branchTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(branchTableToggle, event)"
+        tabindex="0">
+        <img id="branchTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Branches</span>
+</h1>
+<div id="branchTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="nameColumn">
+                Name</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Sense.Mixer.LO.html">LO</a></td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseMixerApply.html">Apply</a></td>
+    <td>
+        Applies the mixer setup settings and turns the channel ON.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseMixerCalculate.html">Calculate</a></td>
+    <td>
+        Calculates the Input, IF, or Output frequencies of the mixer setup and updates the channel settings.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseMixerDiscard.html">Discard</a></td>
+    <td>
+        Cancels changes that have been made to the Converter setup and reverts to the previously-saved setup.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerEloState.html">GetX Sense Mixer Elo State</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_ELO_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerIfFrequencySideband.html">GetX Sense Mixer If Frequency Sideband</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_IF_FREQUENCY_SIDEBAND attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerIfFrequencyStart.html">GetX Sense Mixer If Frequency Start</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_IF_FREQUENCY_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerIfFrequencyStop.html">GetX Sense Mixer If Frequency Stop</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_IF_FREQUENCY_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerInputFrequencyDenominator.html">GetX Sense Mixer Input Frequency Denominator</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_INPUT_FREQUENCY_DENOMINATOR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerInputFrequencyFixed.html">GetX Sense Mixer Input Frequency Fixed</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_INPUT_FREQUENCY_FIXED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerInputFrequencyMode.html">GetX Sense Mixer Input Frequency Mode</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_INPUT_FREQUENCY_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerInputFrequencyNumerator.html">GetX Sense Mixer Input Frequency Numerator</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_INPUT_FREQUENCY_NUMERATOR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerInputFrequencyStart.html">GetX Sense Mixer Input Frequency Start</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_INPUT_FREQUENCY_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerInputFrequencyStop.html">GetX Sense Mixer Input Frequency Stop</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_INPUT_FREQUENCY_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerInputPower.html">GetX Sense Mixer Input Power</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_INPUT_POWER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerInputPowerStart.html">GetX Sense Mixer Input Power Start</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_INPUT_POWER_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerInputPowerStop.html">GetX Sense Mixer Input Power Stop</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_INPUT_POWER_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerInputPowerUseNominal.html">GetX Sense Mixer Input Power Use Nominal</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_INPUT_POWER_USE_NOMINAL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerNormalizePoint.html">GetX Sense Mixer Normalize Point</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_NORMALIZE_POINT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerOutputFrequencyFixed.html">GetX Sense Mixer Output Frequency Fixed</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_OUTPUT_FREQUENCY_FIXED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerOutputFrequencyMode.html">GetX Sense Mixer Output Frequency Mode</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_OUTPUT_FREQUENCY_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerOutputFrequencySideband.html">GetX Sense Mixer Output Frequency Sideband</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_OUTPUT_FREQUENCY_SIDEBAND attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerOutputFrequencyStart.html">GetX Sense Mixer Output Frequency Start</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_OUTPUT_FREQUENCY_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerOutputFrequencyStop.html">GetX Sense Mixer Output Frequency Stop</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_OUTPUT_FREQUENCY_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerPhaseAbsoluteState.html">GetX Sense Mixer Phase Absolute State</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_PHASE_ABSOLUTE_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerPhaseState.html">GetX Sense Mixer Phase State</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_PHASE_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerStage.html">GetX Sense Mixer Stage</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_STAGE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseMixerXAxis.html">GetX Sense MixerX Axis</a></td>
+    <td>
+        Gets the value of the X_SENSE_MIXER_X_AXIS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseMixerLoad.html">Load</a></td>
+    <td>
+        Loads a previously-configured mixer attributes file (.mxr)</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseMixerPMap.html">P Map</a></td>
+    <td>
+        Sets the VNA to DUT port map for FCA measurements.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseMixerPMapInputQuery.html">P Map Input Query</a></td>
+    <td>
+        Returns the VNA port that is mapped to the DUT input. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseMixerPMapOutputQuery.html">P Map Output Query</a></td>
+    <td>
+        Returns the VNA port that is mapped to the DUT output. Default 2.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseMixerSave.html">Save</a></td>
+    <td>
+        Saves the settings for the mixer , converter test setup to a mixer attributes file.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerEloState.html">SetX Sense Mixer Elo State</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_ELO_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerIfFrequencySideband.html">SetX Sense Mixer If Frequency Sideband</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_IF_FREQUENCY_SIDEBAND attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerIfFrequencyStart.html">SetX Sense Mixer If Frequency Start</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_IF_FREQUENCY_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerIfFrequencyStop.html">SetX Sense Mixer If Frequency Stop</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_IF_FREQUENCY_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerInputFrequencyDenominator.html">SetX Sense Mixer Input Frequency Denominator</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_INPUT_FREQUENCY_DENOMINATOR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerInputFrequencyFixed.html">SetX Sense Mixer Input Frequency Fixed</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_INPUT_FREQUENCY_FIXED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerInputFrequencyMode.html">SetX Sense Mixer Input Frequency Mode</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_INPUT_FREQUENCY_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerInputFrequencyNumerator.html">SetX Sense Mixer Input Frequency Numerator</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_INPUT_FREQUENCY_NUMERATOR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerInputFrequencyStart.html">SetX Sense Mixer Input Frequency Start</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_INPUT_FREQUENCY_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerInputFrequencyStop.html">SetX Sense Mixer Input Frequency Stop</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_INPUT_FREQUENCY_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerInputPower.html">SetX Sense Mixer Input Power</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_INPUT_POWER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerInputPowerStart.html">SetX Sense Mixer Input Power Start</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_INPUT_POWER_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerInputPowerStop.html">SetX Sense Mixer Input Power Stop</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_INPUT_POWER_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerInputPowerUseNominal.html">SetX Sense Mixer Input Power Use Nominal</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_INPUT_POWER_USE_NOMINAL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerNormalizePoint.html">SetX Sense Mixer Normalize Point</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_NORMALIZE_POINT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerOutputFrequencyFixed.html">SetX Sense Mixer Output Frequency Fixed</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_OUTPUT_FREQUENCY_FIXED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerOutputFrequencyMode.html">SetX Sense Mixer Output Frequency Mode</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_OUTPUT_FREQUENCY_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerOutputFrequencySideband.html">SetX Sense Mixer Output Frequency Sideband</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_OUTPUT_FREQUENCY_SIDEBAND attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerOutputFrequencyStart.html">SetX Sense Mixer Output Frequency Start</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_OUTPUT_FREQUENCY_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerOutputFrequencyStop.html">SetX Sense Mixer Output Frequency Stop</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_OUTPUT_FREQUENCY_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerPhaseAbsoluteState.html">SetX Sense Mixer Phase Absolute State</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_PHASE_ABSOLUTE_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerPhaseState.html">SetX Sense Mixer Phase State</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_PHASE_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerStage.html">SetX Sense Mixer Stage</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_STAGE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseMixerXAxis.html">SetX Sense MixerX Axis</a></td>
+    <td>
+        Sets the value of the X_SENSE_MIXER_X_AXIS attribute.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_ELO_STATE.html">Elo State</a></td>
+    <td>
+        Sets and returns the ON or OFF state of Embedded LO.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_IF_FREQUENCY_SIDEBAND.html">If Frequency Sideband</a></td>
+    <td>
+        When two LO stages are used, sets or returns whether to select the sum or difference for the IF1 product.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_IF_FREQUENCY_START.html">If Frequency Start</a></td>
+    <td>
+        Sets or returns the IF start frequency value of the mixer.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_IF_FREQUENCY_STOP.html">If Frequency Stop</a></td>
+    <td>
+        Sets or returns the stop frequency value of the mixer IF frequency.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_INPUT_FREQUENCY_DENOMINATOR.html">Input Frequency Denominator</a></td>
+    <td>
+        Sets or returns the denominator value of the Input Fractional Multiplier.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_INPUT_FREQUENCY_FIXED.html">Input Frequency Fixed</a></td>
+    <td>
+        Sets or returns the fixed frequency of the input.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_INPUT_FREQUENCY_MODE.html">Input Frequency Mode</a></td>
+    <td>
+        Sets or returns the Input sweep mode. Default Fixed.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_INPUT_FREQUENCY_NUMERATOR.html">Input Frequency Numerator</a></td>
+    <td>
+        Sets or returns the numerator value of the Input Fractional Multiplier.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_INPUT_FREQUENCY_START.html">Input Frequency Start</a></td>
+    <td>
+        Sets or returns the Input start frequency value of the mixer.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_INPUT_FREQUENCY_STOP.html">Input Frequency Stop</a></td>
+    <td>
+        Sets or returns the Input stop frequency value of the mixer.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_INPUT_POWER.html">Input Power</a></td>
+    <td>
+        Sets or returns the value of the Input Power.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_INPUT_POWER_START.html">Input Power Start</a></td>
+    <td>
+        Sets the input start power for a power sweep in a mixer channel like SMC. The value is only used when the sweep type is power sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_INPUT_POWER_STOP.html">Input Power Stop</a></td>
+    <td>
+        Sets the input stop power for a power sweep in a mixer channel . The value is only used when the sweep type is power sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_INPUT_POWER_USE_NOMINAL.html">Input Power Use Nominal</a></td>
+    <td>
+        Toggles the Use Nominal Incident Power setting ON and OFF. This setting is ONLY to be used with SMC measurements.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_NORMALIZE_POINT.html">Normalize Point</a></td>
+    <td>
+        Sets or returns the data point for normalizing the phase measurement.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_OUTPUT_FREQUENCY_FIXED.html">Output Frequency Fixed</a></td>
+    <td>
+        Sets or returns the output fixed frequency of the mixer.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_OUTPUT_FREQUENCY_MODE.html">Output Frequency Mode</a></td>
+    <td>
+        Sets or returns the Output sweep mode. Default Fixed.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_OUTPUT_FREQUENCY_SIDEBAND.html">Output Frequency Sideband</a></td>
+    <td>
+        Specify whether to select the sum (High) or difference (Low) products.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_OUTPUT_FREQUENCY_START.html">Output Frequency Start</a></td>
+    <td>
+        Sets or returns the Output start frequency of the mixer.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_OUTPUT_FREQUENCY_STOP.html">Output Frequency Stop</a></td>
+    <td>
+        Sets or returns the Output stop frequency of the mixer.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_PHASE_ABSOLUTE_STATE.html">Phase Absolute State</a></td>
+    <td>
+        Sets and returns the state of SMC Phase measurements to use absolute phase</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_PHASE_STATE.html">Phase State</a></td>
+    <td>
+        Sets and returns the state of SMC Phase measurements and calibrations.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_STAGE.html">Stage</a></td>
+    <td>
+        Number of IF stages (LOs) used in the mixer.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_MIXER_X_AXIS.html">X Axis</a></td>
+    <td>
+        Sets or returns the swept frequency range to display on the X-axis for the IMDx or NFx channel. Default Output.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>IVI Driver Inherent Capabilities</title>   <!-- IVI-C version -->
+    <link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+    <script type="text/javascript" src="../scripts/script_loc.js"> </script>
+    <script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+    <script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+    <script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+    <script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+    <xml>
+		<mshelp:toctitle title="IVI Driver Inherent Capabilities" />
+		<mshelp:rltitle title="IVI Driver Inherent Capabilities" />
+		<mshelp:keyword index="K" term="IVI Driver Inherent Capabilities" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbArticle" />
+		</xml>
+		<!-- begin: Microsoft Help 1.0 -->
+		<meta name="Microsoft.Help.Id" content="" />
+		<meta name="Microsoft.Help.TocParent" content="" />
+		<meta name="Microsoft.Help.TocOrder" content="" />
+		<meta name="Microsoft.Help.ContentType" content="" />
+		<meta name="Microsoft.Help.SelfBranded" content="true" />
+		<meta name="Microsoft.Help.Locale" content="en-us" />
+		<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+		<!--$$Microsoft.Help.F1$$-->
+		<!--$$Microsoft.Help.Keywords$$-->
+		<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">IVI Driver Inherent Capabilities</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+                    <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+			
+            <div class="introduction">
+                <p>
+                    <strong>IVI inherent capabilities </strong>are a set of functions and attributes that all IVI drivers must support, regardless of the IVI instrument class they support, and even it they support no class. This ensures that instrument users have a standard, recognizable way to perform basic operations with an IVI driver. Users who have programmed with any type of IVI driver will immediately know how to perform basic tasks with any new IVI driver encountered.
+                </p>
+                <p>For more information, see <em>IVI-3.2: Inherent Capabilities </em>in the <a href="http://www.ivifoundation.org/specifications/default.aspx" target="_blank" rel="noopener">IVI Specifications</a>.</p>
+                </div>
+           
+                <h1 class="heading">
+                <span onclick="ExpandCollapse(section1)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1, event)" tabindex="0">
+                <img id="section1" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                Required Driver Tasks
+                </span>
+                </h1>
+                <div id="section1" class="section" name="collapseableSection" style="">
+
+                <p>
+                   Tasks that fall under the inherent capabilities specification include:  </p>
+                    <ul>
+                        <li>Initializing the driver</li>
+                        <li>Querying errors from the driver</li>
+						<li>
+							Enabling standard driver features, such as simulation, state caching, and range checking</li>
+						<li>
+							Identifying the capabilities of the driver, such as the supported instrument classes,
+							capability groups.</li>
+                        <li>Reading driver and instrument identification information</li>
+                        <li>Performing instrument self-test and reset operations</li>
+                    </ul>
+               
+                <p>
+                    For more information, see <a href="IviCInitialize.html">Initializing the IVI-C Driver</a>, <a href="KtNA.Inherent_IVI_Attributes.html">Inherent IVI Attributes</a> and 
+                    <a href="KtNA.Utility.html">Utility Functions</a>.</p>
+            </div>
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(section1Toggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)"
+                    tabindex="0">
+                    <img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+					Standard Driver Features
+				</span>
+            </h1>
+            <div id="section1Section" class="section" name="collapseableSection" style="">
+                <p>
+                    The behavior of the following features has been standardized by the IVI Foundation. Although these are referred to as standard driver features, only simulation must supported.</p>
+                <ul>
+                <li><strong>Simulation&nbsp;</strong>&mdash; Required</li>
+                <li><strong>State caching&nbsp;</strong>&mdash; Optional</li>
+                <li><strong>Range checking</strong> &mdash; Optional</li>
+                <li><strong>Coercion and coercion recording</strong>&nbsp;&mdash; Optional</li>
+                <li><strong>Interchangeability checking</strong>&nbsp;&mdash; Optional</li>
+                </ul>
+                <p>
+                    This 
+                    following sections describe each feature in detail. For more information on any feature, see the appropriate specification on the <a href="http://www.ivifoundation.org/specifications/default.aspx" target="_blank" rel="noopener">IVI Specifications</a> webpage.</p>
+                    </div>
+            
+            <h1 class="heading">
+            <span onclick="ExpandCollapse(section2)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section2, event)" tabindex="0">
+            <img id="section2" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+            Simulation (required)
+            </span>
+            </h1>
+            <div id="section2" class="section" name="collapseableSection" style="">
+
+                    <p>
+                        IVI drivers are often constructed for complex instruments that are difficult to procure or that are in high demand at the end user's facility. In these cases, users must be able to test their programs without being physically connected to an instrument. IVI driver <em>simulation</em> makes this possible.
+                    </p>
+                    <p>
+                        When an end user enables simulation in an IVI driver, the driver performs no I/O
+                        communication whatsoever. IVI drivers are free in their choice of mechanisms for
+                        returning meaningful output values to the end user, but the intent is that the user
+                        program should be able to proceed normally when calling functions on the driver.
+                        This allows the end user to exercise their test application before the actual hardware
+                        is available.
+                    </p>
+                </div>
+                
+                <h1 class="heading">
+                <span onclick="ExpandCollapse(section2)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section2, event)" tabindex="0">
+                <img id="section2" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                State Caching</span></h1>
+                <div id="section2" class="section" name="collapseableSection" style="">
+
+                    <p><strong>State caching</strong> is a way to offer better performance in customer test applications. The principle of state caching is quite simple, although in practice it can be extraordinarily difficult to implement properly.</p>
+                    <p>When state caching is enabled, the driver attempts to determine if new settings passed into the driver are different from the actual instrument state. This reduces I/O traffic between the driver and the instrument because fewer I/O calls are performed.</p>
+                    <p>In a simple example of how state caching improves performance, consider what happens when a user passes identical values several times in a row for the frequency property on a function generator driver:</p>
+                    <ul>
+                    <li><strong>Without state caching</strong>, each call into the driver results in an I/O function call to the instrument.</li>
+                    <li><strong>With state caching</strong>, the driver detects that subsequent calls to the frequency property are redundant, and thus does not communicate with the instrument. Correspondingly, the driver "remembers" the last known value for instrument properties, and performs queries by retrieving data from computer memory, rather than by performing instrument I/O.</li>
+                    </ul>
+                    <p>As with caching schemes in other types of software systems, IVI driver state caching is fraught with potential pitfalls. The chief challenge in properly implementing state caching is maintaining cache coherency. Complex instruments often have complex couplings between instrument settings, making it difficult for the driver to track whether or not settings stored in the driver cache are valid. Consequently, many instrument vendors choose not to implement state caching in the driver (Keysight typically does not support it).</p>
+                </div>
+                
+                <h1 class="heading">
+                <span onclick="ExpandCollapse(section3)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section3, event)" tabindex="0">
+                <img id="section3" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                Range Checking</span></h1>
+                <div id="section3" class="section" name="collapseableSection" style="">
+
+                    <p>
+                        <em>Range checking </em>refers to the driver's ability to determine if input values passed to the driver are within an acceptable range. End users typically use range checking during debugging, then disable it after validation to maximize performance. 
+                    </p>
+                </div>
+                
+                <h1 class="heading">
+                <span onclick="ExpandCollapse(section3)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section3, event)" tabindex="0">
+                <img id="section3" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                Coercion and Coercion Recording</span></h1>
+                <div id="section3" class="section" name="collapseableSection" style="">
+
+                    <p>
+                        Instruments often accept only a discrete set of values for certain properties. These discrete value sets are different for different
+                        vendor's instruments. For example, a Keysight DMM may accept <strong>10 V</strong>, <strong>100 V</strong>,<strong> 300 V </strong>for the voltage range setting, while a Fluke DMM accepts<strong> 20 V</strong>, <strong> 200 V</strong>, <strong> and 400 V</strong>. As a result, IVI class specifications
+                        are forced to define such real-valued properties as accepting a continuous range
+                        of values, even though the underlying instrument only accepts a discrete set of
+                        values.
+                    </p>
+                    <p>
+                        Following along with the DMM voltage range example, if a user sends a value of 150
+                        V for the voltage range, the instrument will internally coerce the value to one
+                        of the accepted values, such as 300 V. To maximize interchangeability, the IVI class
+                        specifications provide guidance on how IVI drivers should coerce user requested
+                        values for specific properties.
+                    </p>
+                    <p>
+                        To aid end users in building interchangeable applications, IVI drivers may implement
+                        a feature called <i>coercion recording</i>. If a user enables coercion recording,
+                        the IVI driver retains a log of each user value that it coerces. Standard functions
+                        in the IVI inherent capabilities provide the user with access to the driver's coercion
+                        log.
+                    </p>
+                </div>
+
+                <h1 class="heading">
+                <span onclick="ExpandCollapse(section3)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section3, event)" tabindex="0">
+                <img id="section3" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                Interchangeability Checking</span></h1>
+                <div id="section3" class="section" name="collapseableSection" style="">
+                
+                    <p>
+                        A program written using an IVI driver is not interchangeable if the program
+                        relies upon default settings within the instrument. This is because different instruments
+                        have different default values for many important settings. Repeatable results
+                        can only be obtained if all of the instrument settings on which an operation depends
+                        are in a user-specified state.
+                    </p>
+                    <p>
+                        IVI drivers may implement a feature called <i>interchangeability checking</i> to
+                        ensure that driver attributes relevant to a particular operation are in a user-specified
+                        state whenever that operation is performed. All IVI instrument class specifications
+                        include class-specific sections that specify which driver attributes must be
+                        in a known state for particular operations. The driver can then track these attributes
+                        and report a warning if one or more are not set explicitly by the client program
+                        before an important operation is performed.
+                    </p>
+                    <p>
+                        Standard functions in the IVI inherent capabilities provide the user with the ability
+                        to enable interchangeability checking in the driver and to retrieve any warnings
+                        that occur. Typically, this feature is only used during development and debug of
+                        an application, then are disabled during normal operation so as not to adversely impact
+                        performance.
+                    </p>
+                </div>
+            
+           
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

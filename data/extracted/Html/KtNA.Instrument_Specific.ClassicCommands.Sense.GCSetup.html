@@ -1,0 +1,1156 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>GCSetup</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="GCSetup" />
+		<mshelp:rltitle title="GCSetup" />
+		<mshelp:keyword index="K" term="GCSetup" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">GCSetup</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\ClassicCommands\Sense\GCSetup  <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupAmode.html">GetX Sense Gc Setup Amode</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_AMODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupCompressionAlgorithm.html">GetX Sense Gc Setup Compression Algorithm</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_COMPRESSION_ALGORITHM attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupCompressionBackoffLevel.html">GetX Sense Gc Setup Compression Backoff Level</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_COMPRESSION_BACKOFF_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupCompressionDeltaX.html">GetX Sense Gc Setup Compression DeltaX</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_COMPRESSION_DELTA_X attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupCompressionDeltaY.html">GetX Sense Gc Setup Compression DeltaY</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_COMPRESSION_DELTA_Y attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupCompressionInterpolate.html">GetX Sense Gc Setup Compression Interpolate</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_COMPRESSION_INTERPOLATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupCompressionLevel.html">GetX Sense Gc Setup Compression Level</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_COMPRESSION_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupCompressionPhaseLevel.html">GetX Sense Gc Setup Compression Phase Level</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_COMPRESSION_PHASE_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupCompressionPhaseMode.html">GetX Sense Gc Setup Compression Phase Mode</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_COMPRESSION_PHASE_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupCompressionSaturationLevel.html">GetX Sense Gc Setup Compression Saturation Level</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_COMPRESSION_SATURATION_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupEosOperation.html">GetX Sense Gc Setup Eos Operation</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_EOS_OPERATION attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupPmapSourceOverride.html">GetX Sense Gc Setup Pmap Source Override</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_PMAP_SOURCE_OVERRIDE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupPowerLinearInputComputeAperture.html">GetX Sense Gc Setup Power Linear Input Compute Aperture</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_POWER_LINEAR_INPUT_COMPUTE_APERTURE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupPowerLinearInputLevel.html">GetX Sense Gc Setup Power Linear Input Level</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_POWER_LINEAR_INPUT_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupPowerReverseLevel.html">GetX Sense Gc Setup Power Reverse Level</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_POWER_REVERSE_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupPowerStartLevel.html">GetX Sense Gc Setup Power Start Level</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_POWER_START_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupPowerStopLevel.html">GetX Sense Gc Setup Power Stop Level</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_POWER_STOP_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSafeCpAdjustment.html">GetX Sense Gc Setup Safe Cp Adjustment</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SAFE_CP_ADJUSTMENT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSafeDcMlimit.html">GetX Sense Gc Setup Safe Dc Mlimit</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SAFE_DC_MLIMIT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSafeDcParameter.html">GetX Sense Gc Setup Safe Dc Parameter</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SAFE_DC_PARAMETER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSafeEnable.html">GetX Sense Gc Setup Safe Enable</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SAFE_ENABLE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSafeFpAdjustment.html">GetX Sense Gc Setup Safe Fp Adjustment</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SAFE_FP_ADJUSTMENT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSafeMlimit.html">GetX Sense Gc Setup Safe Mlimit</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SAFE_MLIMIT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSafeThreshold.html">GetX Sense Gc Setup Safe Threshold</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SAFE_THRESHOLD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSmartCdc.html">GetX Sense Gc Setup Smart Cdc</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SMART_CDC attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSmartMiterations.html">GetX Sense Gc Setup Smart Miterations</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SMART_MITERATIONS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSmartSiterations.html">GetX Sense Gc Setup Smart Siterations</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SMART_SITERATIONS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSmartStime.html">GetX Sense Gc Setup Smart Stime</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SMART_STIME attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSmartTolerance.html">GetX Sense Gc Setup Smart Tolerance</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SMART_TOLERANCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSweepFrequencyPoints.html">GetX Sense Gc Setup Sweep Frequency Points</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SWEEP_FREQUENCY_POINTS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSweepPowerPoints.html">GetX Sense Gc Setup Sweep Power Points</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SWEEP_POWER_POINTS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSweepPowerSmooth.html">GetX Sense Gc Setup Sweep Power Smooth</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SWEEP_POWER_SMOOTH attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseGcSetupSweepPowerSmoothAperture.html">GetX Sense Gc Setup Sweep Power Smooth Aperture</a></td>
+    <td>
+        Gets the value of the X_SENSE_GC_SETUP_SWEEP_POWER_SMOOTH_APERTURE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseGCSetupPMap.html">P Map</a></td>
+    <td>
+        Set the DUT-to-VNA port mapping for the Gain Compression measurement.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseGCSetupPMapPInputQuery.html">PMapPInput Query</a></td>
+    <td>
+        Read the VNA port number to be connected to the DUT Input. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseGCSetupPMapPOutputQuery.html">PMapPOutput Query</a></td>
+    <td>
+        Read the VNA port number to be connected to the DUT Output. Default 2.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseGCSetupSFailuresQuery.html">S Failures Query</a></td>
+    <td>
+        Returns a comma-separated list of the frequency indexes that were out of tolerance for SMART Sweep mode, or at the power limit for 2D acquisition modes.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupAmode.html">SetX Sense Gc Setup Amode</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_AMODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupCompressionAlgorithm.html">SetX Sense Gc Setup Compression Algorithm</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_COMPRESSION_ALGORITHM attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupCompressionBackoffLevel.html">SetX Sense Gc Setup Compression Backoff Level</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_COMPRESSION_BACKOFF_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupCompressionDeltaX.html">SetX Sense Gc Setup Compression DeltaX</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_COMPRESSION_DELTA_X attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupCompressionDeltaY.html">SetX Sense Gc Setup Compression DeltaY</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_COMPRESSION_DELTA_Y attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupCompressionInterpolate.html">SetX Sense Gc Setup Compression Interpolate</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_COMPRESSION_INTERPOLATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupCompressionLevel.html">SetX Sense Gc Setup Compression Level</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_COMPRESSION_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupCompressionPhaseLevel.html">SetX Sense Gc Setup Compression Phase Level</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_COMPRESSION_PHASE_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupCompressionPhaseMode.html">SetX Sense Gc Setup Compression Phase Mode</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_COMPRESSION_PHASE_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupCompressionSaturationLevel.html">SetX Sense Gc Setup Compression Saturation Level</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_COMPRESSION_SATURATION_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupEosOperation.html">SetX Sense Gc Setup Eos Operation</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_EOS_OPERATION attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupPmapSourceOverride.html">SetX Sense Gc Setup Pmap Source Override</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_PMAP_SOURCE_OVERRIDE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupPowerLinearInputComputeAperture.html">SetX Sense Gc Setup Power Linear Input Compute Aperture</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_POWER_LINEAR_INPUT_COMPUTE_APERTURE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupPowerLinearInputLevel.html">SetX Sense Gc Setup Power Linear Input Level</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_POWER_LINEAR_INPUT_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupPowerReverseLevel.html">SetX Sense Gc Setup Power Reverse Level</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_POWER_REVERSE_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupPowerStartLevel.html">SetX Sense Gc Setup Power Start Level</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_POWER_START_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupPowerStopLevel.html">SetX Sense Gc Setup Power Stop Level</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_POWER_STOP_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSafeCpAdjustment.html">SetX Sense Gc Setup Safe Cp Adjustment</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SAFE_CP_ADJUSTMENT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSafeDcMlimit.html">SetX Sense Gc Setup Safe Dc Mlimit</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SAFE_DC_MLIMIT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSafeDcParameter.html">SetX Sense Gc Setup Safe Dc Parameter</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SAFE_DC_PARAMETER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSafeEnable.html">SetX Sense Gc Setup Safe Enable</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SAFE_ENABLE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSafeFpAdjustment.html">SetX Sense Gc Setup Safe Fp Adjustment</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SAFE_FP_ADJUSTMENT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSafeMlimit.html">SetX Sense Gc Setup Safe Mlimit</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SAFE_MLIMIT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSafeThreshold.html">SetX Sense Gc Setup Safe Threshold</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SAFE_THRESHOLD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSmartCdc.html">SetX Sense Gc Setup Smart Cdc</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SMART_CDC attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSmartMiterations.html">SetX Sense Gc Setup Smart Miterations</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SMART_MITERATIONS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSmartSiterations.html">SetX Sense Gc Setup Smart Siterations</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SMART_SITERATIONS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSmartStime.html">SetX Sense Gc Setup Smart Stime</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SMART_STIME attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSmartTolerance.html">SetX Sense Gc Setup Smart Tolerance</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SMART_TOLERANCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSweepFrequencyPoints.html">SetX Sense Gc Setup Sweep Frequency Points</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SWEEP_FREQUENCY_POINTS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSweepPowerPoints.html">SetX Sense Gc Setup Sweep Power Points</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SWEEP_POWER_POINTS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSweepPowerSmooth.html">SetX Sense Gc Setup Sweep Power Smooth</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SWEEP_POWER_SMOOTH attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseGcSetupSweepPowerSmoothAperture.html">SetX Sense Gc Setup Sweep Power Smooth Aperture</a></td>
+    <td>
+        Sets the value of the X_SENSE_GC_SETUP_SWEEP_POWER_SMOOTH_APERTURE attribute.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_AMODE.html">Amode</a></td>
+    <td>
+        Set and read the method by which gain compression data is acquired. Default SmartSweep</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_COMPRESSION_ALGORITHM.html">Compression Algorithm</a></td>
+    <td>
+        Set and read the algorithm method used to compute gain compression. Default LinearGain.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_COMPRESSION_BACKOFF_LEVEL.html">Compression Backoff Level</a></td>
+    <td>
+        Set and read value for the BackOff compression algorithm in dB.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_COMPRESSION_DELTA_X.html">Compression Delta X</a></td>
+    <td>
+        Set and read the 'X' value in the delta X or Y compression algorithm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_COMPRESSION_DELTA_Y.html">Compression Delta Y</a></td>
+    <td>
+        Set and read the 'Y' value in the delta X or Y compression algorithm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_COMPRESSION_INTERPOLATE.html">Compression Interpolate</a></td>
+    <td>
+        Sets whether or not interpolation should be performed on 2D measured compression data.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_COMPRESSION_LEVEL.html">Compression Level</a></td>
+    <td>
+        Set and read the desired gain reduction (from reference gain).</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_COMPRESSION_PHASE_LEVEL.html">Compression Phase Level</a></td>
+    <td>
+        Set and read the desired phase to measure compression.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_COMPRESSION_PHASE_MODE.html">Compression Phase Mode</a></td>
+    <td>
+        Set and read compression format to be either magnitude, phase, or magnitude and phase. Default Magnitude.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_COMPRESSION_SATURATION_LEVEL.html">Compression Saturation Level</a></td>
+    <td>
+        Set and read the deviation dB from the maximum Pout. This is the point of saturation.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_EOS_OPERATION.html">Eos Operation</a></td>
+    <td>
+        This setting is used to protect a sensitive device from too much power during the sweep retrace. Default Standard.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_PMAP_SOURCE_OVERRIDE.html">Pmap Source Override</a></td>
+    <td>
+        This function is used when GCX channels with a reference mixer and one GCA channel without a reference mixer are set up simultaneously and you want to use the same path configuration for all channels. This remaps the source port to Port 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_POWER_LINEAR_INPUT_COMPUTE_APERTURE.html">Power Linear Input Compute Aperture</a></td>
+    <td>
+        Set and read the aperture to use when computing the linear input power.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_POWER_LINEAR_INPUT_LEVEL.html">Power Linear Input Level</a></td>
+    <td>
+        Set and read the input power at which Linear Gain and all S-parameters are measured.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_POWER_REVERSE_LEVEL.html">Power Reverse Level</a></td>
+    <td>
+        Set and read the reverse power level to the DUT.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_POWER_START_LEVEL.html">Power Start Level</a></td>
+    <td>
+        Set and read the start power level.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_POWER_STOP_LEVEL.html">Power Stop Level</a></td>
+    <td>
+        Set and read the stop power level.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SAFE_CP_ADJUSTMENT.html">Safe Cp Adjustment</a></td>
+    <td>
+        Set and read the Safe Sweep COARSE power adjustment in dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SAFE_DC_MLIMIT.html">Safe Dc Mlimit</a></td>
+    <td>
+        Set and read the maximum limit of the external DC device. Default -5.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SAFE_DC_PARAMETER.html">Safe Dc Parameter</a></td>
+    <td>
+        Set and read the name of the external DC device.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SAFE_ENABLE.html">Safe Enable</a></td>
+    <td>
+        Set and read the (ON or OFF) state of Safe Sweep mode.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SAFE_FP_ADJUSTMENT.html">Safe Fp Adjustment</a></td>
+    <td>
+        Set and read the Safe Sweep FINE power adjustment in dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SAFE_MLIMIT.html">Safe Mlimit</a></td>
+    <td>
+        When the VNA port that is connected to the DUT Output measures this value, the input power to the DUT is no longer incremented at that frequency.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SAFE_THRESHOLD.html">Safe Threshold</a></td>
+    <td>
+        Set and read the compression level in which Safe Sweep changes from the COARSE power adjustment to the FINE power adjustment.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SMART_CDC.html">Smart Cdc</a></td>
+    <td>
+        Set and read the DC readings at the compression point in the last iteration of a smart sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SMART_MITERATIONS.html">Smart Miterations</a></td>
+    <td>
+        Set and read the maximum permitted number of iterations which SMART Sweep may utilize to find the desired compression level, to within the specified tolerance.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SMART_SITERATIONS.html">Smart Siterations</a></td>
+    <td>
+        Set and read enable for showing intermediate results for each iteration of SMART Sweep</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SMART_STIME.html">Smart Stime</a></td>
+    <td>
+        Set and read the amount of time SMART Sweep will dwell at the first point where the input power changes by the Backoff or X level.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SMART_TOLERANCE.html">Smart Tolerance</a></td>
+    <td>
+        Set and read the acceptable range SMART Sweep will allow for the measured compression level.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SWEEP_FREQUENCY_POINTS.html">Sweep Frequency Points</a></td>
+    <td>
+        Set and read the number of data points in each frequency sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SWEEP_POWER_POINTS.html">Sweep Power Points</a></td>
+    <td>
+        Set and read the number of data points in each power sweep. Default 21.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SWEEP_POWER_SMOOTH.html">Sweep Power Smooth</a></td>
+    <td>
+        Set and read the state of the power smoothing.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_GC_SETUP_SWEEP_POWER_SMOOTH_APERTURE.html">Sweep Power Smooth Aperture</a></td>
+    <td>
+        Set and read the power smoothing aperture in percent. Default 25.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

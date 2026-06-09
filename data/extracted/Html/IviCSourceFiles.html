@@ -1,0 +1,315 @@
+<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+	<head>
+		<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+		<meta NAME="save" CONTENT="history" />
+		<title>Driver Source Code Files</title>
+		<link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+		<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+		<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+		<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+		<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+		<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+		<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+		<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+		<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+		<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+		<xml>
+            <mshelp:toctitle title="Driver Source Code Files" />
+            <mshelp:rltitle title="Driver Source Code Files" />
+            <mshelp:keyword index="K" term="Driver Source Code Files" />
+			<MSHelp:Attr Name="DocSet" Value="KtNA" />
+			<MSHelp:Attr Name="DevLang" Value="VB" />
+			<MSHelp:Attr Name="DevLang" Value="CSharp" />
+			<MSHelp:Attr Name="DevLang" Value="C++" />
+			<MSHelp:Attr Name="Locale" Value="en-us" />
+			<MSHelp:Attr Name="TopicType" Value="kbArticle" />
+		</xml>
+
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+	</head>
+	<body>
+		<input type="hidden" id="userDataCache" class="userDataStyle" />
+		<input type="hidden" id="hiddenScrollOffset" />
+
+
+	<img id="collapseImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+    <img id="collapseAllImage" height="0" width="0" style="display: none; height: 0; width: 0;" src="../icons/collapse_all.gif" />
+    <img id="expandAllImage" height="0" width="0" style="display: none; height: 0; width: 0;" src="../icons/expand_all.gif" />
+	<img id="copyImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+	<div id="header" style="border: 0px">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td>
+                        <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor: default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                            <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+                            <label id="collapseAllLabel" for="toggleAllImage" style="display: none;"> Collapse All</label>
+                            <label id="expandAllLabel" for="toggleAllImage" style="display: none;"> Expand All</label>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+            <table id="bottomTable" cellpadding="0" cellspacing="0">
+                <tr id="headerTableRow1">
+                    <td align="left">
+                        <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                    </td>
+                    <td align="right">
+                        <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                    </td>
+                </tr>
+				<tr id="headerTableRow2">
+					<td align="left">
+						<span id="nsrTitle">Driver Source Code Files</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow3">
+					<td align="left">
+						<span id="headfb" class="feedbackhead" />
+					</td>
+				</tr>
+			</table>
+			<table id="gradientTable">
+				<tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div id="mainSection">
+
+
+            <div id="mainBody">
+                <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()">
+                    <font color="DarkGray"></font>
+                    <p />
+                </div>
+
+                <!-- Introduction -->
+                <div class="introduction">
+                    <p>
+                        This section describes the files that are included with the source code and explains how they
+                        relate to each other.
+                    </p>
+                    <p>
+                        There are multiple references to <i>Nimbus</i>.  This driver was
+                        developed using <i><b>Nimbus Driver Studio</b></i>, and many of the driver source code files
+                        are either provided as part of Nimbus or generated (partially or wholly) by Nimbus.  However,
+                        the source code was designed to be used without installing Nimbus Driver Studio.  Everything
+                        that you need to use the source code is included in the installation.
+                    </p>
+                    <p>
+                        Driver source code is not installed by default — it is selected and installed during driver installation. To install the source code later:
+                    </p>
+                    <ol>
+                        <li>
+                            Select <b>Programs and Features</b> from
+                            the Windows Control Panel.
+                        </li>
+                        <li>
+                            In the list of programs, select the KtNA driver.
+                        </li>
+                        <li>
+                            Click <strong>Change</strong> to modify the driver installation.
+                        </li>
+                    </ol>
+                    <p>
+                        All IVI drivers are installed in the standard IVI Foundation drivers directory, typically:
+                    </p>
+                    <ul>
+                        <li><strong>C:\Program Files\IVI Foundation\IVI&nbsp;</strong>(64-bit systems)</li>
+                        <li><strong>C:\Program Files (x86)\IVI Foundation\IVI </strong>(32-bit systems)</li>
+                    </ul>
+                    <p>
+                        Refer
+                        to the <span sdata="link"><a href="Installation.html">Installation</a></span> topic for information about the directory. The driver source code is installed in the
+                        <i><b>Source</b></i> subdirectory of the
+                        <i>Keysight.KtNA 3.0.8</i> driver directory.
+                    </p>
+                </div>
+
+                <!-- The Source Directory Section -->
+                <h1 class="heading">
+                    <span onclick="ExpandCollapse(section2Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section2Toggle, event)" tabindex="0">
+                        <img id="section2Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                        The Source Directory
+                    </span>
+                </h1>
+                <div id="section1Section" class="section" name="collapseableSection" style="">
+                    <p>
+                        The <b><i>Source</i></b> directory includes:
+                    </p>
+                    <ul>
+                        <li>All files needed to rebuild the driver dll</li>
+                        <li><strong>RCL</strong> (Reusable Class Library), which contains Keysight driver class library header and source files used by the driver to control the instrument via an external external C++ dll library (CppApi).</li>
+                    </ul>
+                    <p>
+                        After building the driver, the <b>Source</b> directory also includes <b>\bin</b> and
+                        <b>\obj</b>, the standard directories Visual Studio uses during the build process.
+                    </p>
+                    <p>
+                        The following table describes the files in the <b>Source</b> directory that you might reasonably expect to edit when
+                        modifying the driver.  Other files in the source, RCL, and its subdirectories are needed to build the driver, but should not be modified when making changes related to instrument functionality.
+                    </p>
+                    <table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+                        <tr valign="top">
+                            <th width="20%">File Name</th>
+                            <th width="80%">Description</th>
+                        </tr>
+
+                        <tr valign="top">
+                            <td width="20%"><strong>KtNADriver.vcxproj</strong></td>
+                            <td width="80%">
+                                Visual Studio 2010 project file for the driver (open in Visual Studio 2010 or higher).
+                            </td>
+                        </tr>
+
+                        <tr valign="top">
+                            <td width="20%"><strong>KtNA.cpp</strong></td>
+                            <td width="80%">
+                                Implementation code for the driver's functionality. To modifiy the driver, this is the file to edit.</td>
+                        </tr>
+
+                        <tr valign="top">
+                            <td width="20%">
+                                <strong>
+                                    RepCaps.h
+                                </strong>
+                            </td>
+                            <td width="80%">
+                                Implementation code for any parameter-style repeated capabilities.
+                            </td>
+                        </tr>
+
+                        <tr valign="top">
+                            <td width="20%"><strong>Enums.h</strong></td>
+                            <td width="80%">
+                                Enumerations defined in the KtNA driver.
+                                The file does not include enumerations defined in by IVI Inherent or IVI Instrument Classes.
+                            </td>
+                        </tr>
+
+                        <tr valign="top">
+                            <td width="20%"><strong>DriverSession.h</strong></td>
+                            <td width="80%">
+                                Functionality to manage the driver session class that is instantiated each time	the driver is initialized.
+                            </td>
+                        </tr>
+
+                        <tr valign="top">
+                            <td width="20%"><strong>Utility.h</strong></td>
+                            <td width="80%">
+                                Helper methods and variables used internally by the driver.
+                            </td>
+                        </tr>
+
+                        <tr valign="top">
+                            <td width="20%"><strong>Models.cpp</strong></td>
+                            <td width="80%">
+                                Defines the instrument models and model families supported by this driver.
+                            </td>
+                        </tr>
+
+                        <tr valign="top">
+                            <td width="20%"><strong>Errors.cpp</strong></td>
+                            <td width="80%">
+                                Defines the instrument error codes and messages supported by this driver.
+                            </td>
+                        </tr>
+
+                        <tr valign="top">
+                            <td width="20%"><strong>ConfigStore.xml</strong></td>
+                            <td width="80%">
+                                Valid IVI Configuration Store that includes the entries to
+                                be made when this driver is installed (file is for reference only - do not modify).
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>      <!-- End of The Source Directory section -->
+
+                <!-- The nrt.h Section -->
+                <h1 class="heading">
+                    <span onclick="ExpandCollapse(section3Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section3Toggle, event)" tabindex="0">
+                        <img id="section3Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                        The nrt.h File
+                    </span>
+                </h1>
+                <div id="section2Section" class="section" name="collapseableSection" style="">
+                    <p>
+                        The <b>Source\nrt.h</b> file contains the Nimbus Runtime Library (NRT).  The
+                        NRT library is:
+                    </p>
+                    <ul>
+                        <li>A class/template library that provides a variety of support functions for IVI-C compliant driver development</li>
+                        <li>Part of the Pacific MindWorks <strong>Nimbus Driver Studio </strong>(version 4.0 or above) IVI driver development tool</li>
+                        <li>Covered by the license terms contained in the Keysight EULA and the <strong>Keysight IVI Drivers Supplemental License Terms.rtf</strong> file</li>
+                    </ul>
+
+                    <p>
+                        Each driver comes with its own copy of the NRT library source, so there is never a
+                        question as to which version of the library is being used.  Consequently, the NRT code for the
+                        KtNA driver can be modified without affecting other installed drivers.  However,
+                        Keysight recommends that you do <strong>NOT</strong> edit NRT code because subtle interconnections exist and it is easy to compromise IVI-C compliance when modifying NRT code.
+                    </p>
+                    <p>
+                        The KtNA driver does not use all of the functionality in the NRT library.  For
+                        example, the Cache attribute is typically not used in Keysight IVI-C drivers because of
+                        difficulty in implementing caching correctly.  Also, many of the NRT attributes are designed
+                        for use in the NRT library code only, and should not be used by driver developers. In these
+                        cases, the attribute source code file usually has a comment to that effect.
+                    </p>
+                </div>      <!-- End of The NRT Library section -->
+
+                <!-- The RCL Directory Section -->
+                <h1 class="heading">
+                    <span onclick="ExpandCollapse(section4Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section4Toggle, event)" tabindex="0">
+                        <img id="section4Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                        The RCL_NET Directory
+                    </span>
+                </h1>
+                <div id="section2Section" class="section" name="collapseableSection" style="">
+                    <p>
+                        The <b>Source\RCL</b> directory and sub-directories contains the Keysight Reuseable .NET Class Library (RCL) files.  The
+                        RCL library is:
+                    </p>
+                    <ul>
+                        <li>A library of header and implementation files required to build the IVI-C driver source.  These files allow the IVI-C driver to call the underlying CppApi dll that controls the instrument including marshalling of various data types to/from the instrument control dll.</li>
+                        <li>Covered by the license terms contained in the Keysight EULA and the <strong>Keysight IVI Drivers Supplemental License Terms.rtf</strong> file</li>
+                    </ul>
+
+                    <p>
+                        Each driver comes with its own copy of the RCL library source, so there is never a
+                        question as to which version of the library is being used.  Keysight recommends that you do <strong>NOT</strong> edit RCL
+                        code because subtle interconnections exist between the IVI-C driver and its CppApi dll that could be compromized by editing resulting in corrupt data or unexpected behavior.
+                    </p>
+                </div>      <!-- End of The RCL_NET Library section -->
+
+                        <!-- End of main body section -->
+                </div>
+                <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+            </div>
+	</body>
+</html>

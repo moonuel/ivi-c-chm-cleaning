@@ -1,0 +1,362 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="save" content="history" />
+		<title>KtNA Repeated Capabilities</title>
+		<link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+		<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+		<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+		<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+		<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+		<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+		<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+		<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+		<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+		<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+		<xml>
+		<mshelp:toctitle title="KtNA Repeated Capabilities" />
+		<mshelp:rltitle title="KtNA Repeated Capabilities" />
+		<mshelp:keyword index="K" term="KtNA Repeated Capabilities" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbArticle" />
+		</xml>
+
+		<!-- begin: Microsoft Help 1.0 -->
+		<meta name="Microsoft.Help.Id" content="" />
+		<meta name="Microsoft.Help.TocParent" content="" />
+		<meta name="Microsoft.Help.TocOrder" content="" />
+		<meta name="Microsoft.Help.ContentType" content="" />
+		<meta name="Microsoft.Help.SelfBranded" content="true" />
+		<meta name="Microsoft.Help.Locale" content="en-us" />
+		<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+		<!--$$Microsoft.Help.F1$$-->
+		<!--$$Microsoft.Help.Keywords$$-->
+		<!-- end: Microsoft Help 1.0 -->
+	</head>
+	<body>
+		<input type="hidden" id="userDataCache" class="userDataStyle" />
+		<input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+		<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+		<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+		<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+		<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+		<div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+						<img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+							<label id="collapseAllLabel" for="toggleAllImage" style="display:none;"> Collapse All</label>
+							<label id="expandAllLabel" for="toggleAllImage" style="display:none;"> Expand All</label>
+						</span>
+						<span> &nbsp; &nbsp; </span>
+<!--                        <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+				<tr id="headerTableRow1">
+					<td align="left">
+						<span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+					</td>
+					<td align="right">
+						<span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow2">
+					<td align="left">
+						<span id="nsrTitle">KtNA Repeated Capabilities</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow3">
+					<td align="left">
+						<span id="headfb" class="feedbackhead" />
+					</td>
+				</tr>
+			</table>
+			<table id="gradientTable">
+				<tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+				</tr>
+			</table>
+		</div>
+
+	
+		<div id="mainSection">
+
+			<div id="mainBody">
+
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+					<span style="color: DarkGray"></span>
+
+				<div class="introduction">
+					<p>
+						This topic describes the supported repeated capabilities and repeated capability names
+						for the KtNA driver.&nbsp;
+						For a detailed explanation of repeated capabilities, including repeated capability styles, physical names, and
+						dynamic repeated capabilities, see <a href="RepeatedCapabilities.html">Repeated Capabilities</a>.
+					</p>
+				</div>
+
+			
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section1Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)" tabindex="0">
+						<img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+						Repeated Capabilities
+					</span>
+				</h1>
+				<div id="section1Section" class="section" name="collapseableSection" style="">
+					<p>
+						The KtNA driver supports the following repeated capabilities:
+					</p>
+					<ul>
+                        <strong><li>Channel</li>
+<li>Window</li>
+<li>Trace</li>
+<li>Measurement</li>
+<li>AuxConnector</li>
+<li>SourcePort</li>
+<li>Step</li>
+<li>CalibrationSession</li>
+<li>ECalModule</li>
+
+					</strong>
+					</ul>
+					<p>
+						The details for each repeated capability are described in the following table.
+					</p>
+					
+					<table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+						<tr>
+							<th width="20%">Repeated&nbsp;Capability</th>
+							<th width="20%">IVI-C&nbsp;Style</th>
+							<th width="20%">Dynamic</th>
+							<th width="20%">Physical&nbsp;Names</th>
+						</tr>
+<tr valign="top" id="Channel">
+    <td width="20%">
+        Channel</td>
+    <td width="20%">
+        Parameter </td>
+    <td width="20%">
+        Yes </td>
+    <td width="20%">
+        </td>
+</tr>
+<tr valign="top" id="Window">
+    <td width="20%">
+        Window</td>
+    <td width="20%">
+        Parameter </td>
+    <td width="20%">
+        Yes </td>
+    <td width="20%">
+        </td>
+</tr>
+<tr valign="top" id="Trace">
+    <td width="20%">
+        Trace</td>
+    <td width="20%">
+        Parameter </td>
+    <td width="20%">
+        Yes </td>
+    <td width="20%">
+        </td>
+</tr>
+<tr valign="top" id="Measurement">
+    <td width="20%">
+        Measurement</td>
+    <td width="20%">
+        Parameter </td>
+    <td width="20%">
+        Yes </td>
+    <td width="20%">
+        </td>
+</tr>
+<tr valign="top" id="AuxConnector">
+    <td width="20%">
+        AuxConnector</td>
+    <td width="20%">
+        Parameter </td>
+    <td width="20%">
+        Yes </td>
+    <td width="20%">
+        </td>
+</tr>
+<tr valign="top" id="SourcePort">
+    <td width="20%">
+        SourcePort</td>
+    <td width="20%">
+        Parameter </td>
+    <td width="20%">
+        Yes </td>
+    <td width="20%">
+        </td>
+</tr>
+<tr valign="top" id="Step">
+    <td width="20%">
+        Step</td>
+    <td width="20%">
+        Parameter </td>
+    <td width="20%">
+        Yes </td>
+    <td width="20%">
+        </td>
+</tr>
+<tr valign="top" id="CalibrationSession">
+    <td width="20%">
+        CalibrationSession</td>
+    <td width="20%">
+        Parameter </td>
+    <td width="20%">
+        Yes </td>
+    <td width="20%">
+        CalibrationSession1<br />
+</td>
+</tr>
+<tr valign="top" id="ECalModule">
+    <td width="20%">
+        ECalModule</td>
+    <td width="20%">
+        Parameter </td>
+    <td width="20%">
+        Yes </td>
+    <td width="20%">
+        </td>
+</tr>
+
+					</table>
+
+                    <!-- TODO: Dynamic Repeated Capability Naming Conventions - Uncomment and edit for your driver if it uses Dynamic Repeated Capabilites.
+                               Edit 'Channel' row below and add additional rows as needed to match your driver's dynamic repeated capabilities. -->
+
+            
+                    <p>
+                        Dynamic Repeated Capability instances and physical names are determined at run time depending on instrument model's 
+                        actual capabilities.  The following table lists the naming conventions used with this driver's dynamic repeated capabilites.
+                    </p>
+                    <table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+                        <tr>
+                            <th width="20%">Repeated&nbsp;Capability</th>
+                            <th>Physical Names Naming Convention</th>
+                        </tr>
+
+                        
+                        <tr>
+                            <td>Channel</td>
+                            <td>Channel1 to Channel500.</td>
+                        </tr>
+						
+						<tr>
+                            <td>AuxConnector</td>
+                            <td>AuxConnector1 and AuxConnector2.</td>
+                        </tr>
+						
+						<tr>
+						    <td>CalibrationSession</td>
+                            <td>CalibrationSession1 to CalibrationSession250.</td>
+						</tr>
+						
+						<tr>
+						    <td>ECalModule</td>
+                            <td>ECalModule1 and ECalModule254.</td>
+						</tr>
+						
+						<tr>
+                            <td>Measurement</td>
+                            <td>Measurement1 to Measurement2000.</td>
+                        </tr>
+						
+						<tr>
+                            <td>SourcePort</td>
+                            <td>Port1 to Port50.</td>
+                        </tr>
+						
+						<tr>
+                            <td>Step</td>
+                            <td>Step1 to Step1000.</td>
+                        </tr>
+						
+						<tr>
+                            <td>Window</td>
+                            <td>Window1 to Window500.</td>
+                        </tr>
+						
+						<tr>
+                            <td>Trace</td>
+                            <td>Trace1 to Trace100.</td>
+                        </tr>
+
+                    </table>
+           
+
+
+				</div>
+
+			
+			</div>
+<!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,260 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="save" content="history" />
+		<title>Programming the Instrument</title>
+		<link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+		<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+		<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+		<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+		<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+		<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+		<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+		<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+		<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+		<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+		<xml>
+		<mshelp:toctitle title="Programming the Instrument" />
+		<mshelp:rltitle title="Programming the Instrument" />
+		<mshelp:keyword index="K" term="Programming the Instrument" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbArticle" />
+		</xml>
+
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+	</head>
+	<body>
+		<input type="hidden" id="userDataCache" class="userDataStyle" />
+		<input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+		<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+		<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+		<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+		<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+		<div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+						<img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+							<label id="collapseAllLabel" for="toggleAllImage" style="display:none;"> Collapse All</label>
+							<label id="expandAllLabel" for="toggleAllImage" style="display:none;"> Expand All</label>
+						</span>
+						<span> &nbsp; &nbsp; </span>
+<!--                        <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+				<tr id="headerTableRow1">
+					<td align="left">
+						<span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+					</td>
+					<td align="right">
+						<span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow2">
+					<td align="left">
+						<span id="nsrTitle">Programming the Instrument</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow3">
+					<td align="left">
+						<span id="headfb" class="feedbackhead" />
+					</td>
+				</tr>
+			</table>
+			<table id="gradientTable">
+				<tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+				</tr>
+			</table>
+		</div>
+
+	
+		<div id="mainSection">
+
+			<div id="mainBody">
+
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+					<span style="color: DarkGray"></span>
+
+				<div class="introduction">
+                    <p>After you have initialized the driver, you are ready to use all the functionality that the driver provides.  Note that:</p>
+                    <ul><li>All driver functions begin with <strong>KtNA_</strong>, the instrument prefix.</li>
+                    <li>All driver attributes begin with <strong>KTNA_ATTR_</strong>.
+</li></ul>
+                   
+                    
+				</div>
+
+			
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section1Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)" tabindex="0">
+						<img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Example: Accessing Functionality</span></h1>
+				<div id="section1Section" class="section" name="collapseableSection" style="">
+					<div class="subsection">
+						<p>
+							The following example shows how to access the KtNA driver functionality.  </p>
+						<div name="snippetGroup">
+							<div class="code">
+							<span codelanguage="ManagedCPlusPlus">
+									<table width="100%" cellspacing="0" cellpadding="0">
+									<tr><th>C++<span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+										<tr>
+											<td colspan="2">
+<pre>
+#include "KtNA.h"
+void main()
+{
+  ViStatus status;
+  ViSession session;
+  ViReal64 reading;
+  
+  status = KtNA_InitWithOptions("MyVisaAlias", VI_TRUE, VI_TRUE, "", &amp;session);
+  status = KtNA_ReadEx(session, 2000, 3, &amp;reading);
+  status = KtNA_close(session);
+}
+</pre>
+											</td>
+										</tr>
+									</table>
+								</span>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+					<h1 class="heading">
+					<span onclick="ExpandCollapse(section1Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)" tabindex="0">
+						<img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Setting and Retrieving Instrument Settings (Attributes)</span></h1>
+                <div>
+                    <p>IVI-C instrument settings are called <em>attributes</em>. Each driver uses <em>constants</em> to define a set of attributes.&nbsp; For example, if the instrument has a voltage setting, the IVI-C attribute constant might be KTNA_ATTR_VOLTAGE.</p>
+                <p>Each attribute has an associated type. IVI drivers use attributes set and get functions, one set of functions per type, to set or retrieve attribute values.&nbsp; For example, if voltage is a real, then the following functions would be used to set or retrieve the value of the voltage setting:</p>
+                <ul>
+                <li>Set: <strong>KtNA_SetAttributeViReal64()</strong></li>
+                <li>Retrieve: <strong>KtNA_GetAttributeViReal64()</strong></li>
+                </ul>
+                    <p>This driver provides functions to get and set attributes associated with the following types:</p>
+                <ul>
+                <li><strong>ViInt32</strong> &ndash; Signed&nbsp;32-bit integer</li>
+                <li><strong>ViInt64</strong> &ndash; Signed&nbsp;64-bit integer</li>
+                <li><strong>ViReal64</strong> &ndash; 64-bit floating-point number</li>
+                <li><strong>ViBoolean</strong> &ndash; Boolean value</li>
+                <li><strong>ViSession</strong> (pointers) &ndash; Instrument driver session handle</li>
+                <li><strong>ViString</strong> &ndash; Sequence of characters</li>
+                </ul>
+                <p>Note that all attributes are scalars, except for strings.</p>
+                </div>
+                
+                </div>
+					<h1 class="heading">
+					<span onclick="ExpandCollapse(section1Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)" tabindex="0">
+						<img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Example Code</span></h1>
+                <div>
+                <p>The following example shows how to get and set instrument settings in IVI-C.</p>
+                    	<div name="snippetGroup">
+							<div class="code">
+							<span codelanguage="ManagedCPlusPlus">
+									<table width="100%" cellspacing="0" cellpadding="0">
+									<tr><th>C++<span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+										<tr>
+											<td colspan="2">
+<pre>
+#include "KtNA.h"
+void main()
+{
+  ViStatus status;
+  ViSession session;
+  ViReal64 reading;
+  
+  status = KtNA_InitWithOptions("MyVisaAlias", VI_TRUE, VI_TRUE, "", &amp;session);
+  status = KtNA_ReadEx(session, 2000, 3, &amp;reading);
+  status = KtNA_close(session);
+}
+</pre>
+											</td>
+										</tr>
+									</table>
+								</span>
+							</div>
+						</div>
+
+                </div>
+            		
+			
+<!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+		</div>
+	</body>
+</html>

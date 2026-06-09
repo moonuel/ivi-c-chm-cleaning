@@ -1,0 +1,1066 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>Coherence</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="Coherence" />
+		<mshelp:rltitle title="Coherence" />
+		<mshelp:keyword index="K" term="Coherence" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">Coherence</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\ClassicCommands\Sense\SA\Coherence  <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherenceLofthruMonitor.html">GetX Sense Sa Coherence Lofthru Monitor</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_LOFTHRU_MONITOR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherenceLofthruMonitorReceiver.html">GetX Sense Sa Coherence Lofthru Monitor Receiver</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_LOFTHRU_MONITOR_RECEIVER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherenceLofthruMonitorTolerance.html">GetX Sense Sa Coherence Lofthru Monitor Tolerance</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_LOFTHRU_MONITOR_TOLERANCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherenceLofthruMonitorType.html">GetX Sense Sa Coherence Lofthru Monitor Type</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_LOFTHRU_MONITOR_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherenceMultitoneData.html">GetX Sense Sa Coherence Multitone Data</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_MULTITONE_DATA attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherenceMultitoneHreject.html">GetX Sense Sa Coherence Multitone Hreject</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_MULTITONE_HREJECT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherenceMultitoneNyqreject.html">GetX Sense Sa Coherence Multitone Nyqreject</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_MULTITONE_NYQREJECT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherenceMultitonePeriod.html">GetX Sense Sa Coherence Multitone Period</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_MULTITONE_PERIOD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherenceMultitoneReference.html">GetX Sense Sa Coherence Multitone Reference</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_MULTITONE_REFERENCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherenceMultitoneSpacing.html">GetX Sense Sa Coherence Multitone Spacing</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_MULTITONE_SPACING attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherenceMultitoneState.html">GetX Sense Sa Coherence Multitone State</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_MULTITONE_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePhaseDisplayLevel.html">GetX Sense Sa Coherence Phase Display Level</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PHASE_DISPLAY_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePhaseState.html">GetX Sense Sa Coherence Phase State</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PHASE_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePhaseStitching.html">GetX Sense Sa Coherence Phase Stitching</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PHASE_STITCHING attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePhaseStitchingCommon.html">GetX Sense Sa Coherence Phase Stitching Common</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PHASE_STITCHING_COMMON attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePhaseStitchingHwTstamp.html">GetX Sense Sa Coherence Phase Stitching Hw Tstamp</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PHASE_STITCHING_HW_TSTAMP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePhaseStitchingLevel.html">GetX Sense Sa Coherence Phase Stitching Level</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PHASE_STITCHING_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePhaseStitchingReceiverAuto.html">GetX Sense Sa Coherence Phase Stitching Receiver Auto</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PHASE_STITCHING_RECEIVER_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePhaseStitchingReceiverName.html">GetX Sense Sa Coherence Phase Stitching Receiver Name</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PHASE_STITCHING_RECEIVER_NAME attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePulseSearchCount.html">GetX Sense Sa Coherence Pulse Search Count</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_COUNT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePulseSearchDutyTolerance.html">GetX Sense Sa Coherence Pulse Search Duty Tolerance</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_DUTY_TOLERANCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePulseSearchPeriod.html">GetX Sense Sa Coherence Pulse Search Period</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_PERIOD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePulseSearchPeriodTolerance.html">GetX Sense Sa Coherence Pulse Search Period Tolerance</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_PERIOD_TOLERANCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePulseSearchPriority.html">GetX Sense Sa Coherence Pulse Search Priority</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_PRIORITY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePulseSearchWidth.html">GetX Sense Sa Coherence Pulse Search Width</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_WIDTH attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherencePulseSearchWidthTolerance.html">GetX Sense Sa Coherence Pulse Search Width Tolerance</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_WIDTH_TOLERANCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherenceVectorAverage.html">GetX Sense Sa Coherence Vector Average</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_VECTOR_AVERAGE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaCoherenceVectorAverageValue.html">GetX Sense Sa Coherence Vector Average Value</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_COHERENCE_VECTOR_AVERAGE_VALUE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSACoherenceLOFThruMonitorLastFailed.html">LOF Thru Monitor Last Failed</a></td>
+    <td>
+        Return the last monitor result of LO feedthru monitor.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSACoherenceLOFThruMonitorLastValueQuery.html">LOF Thru Monitor Last Value Query</a></td>
+    <td>
+        Return the last monitor value of LO feedthru monitor.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSACoherenceMultitoneValidQuery.html">Multitone Valid Query</a></td>
+    <td>
+        Read the current multitone settings and determine if they are valid or not.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSACoherencePulseSearchExecute.html">Pulse Search Execute</a></td>
+    <td>
+        Executes the pulse search.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSACoherencePulseSearchInitialize.html">Pulse Search Initialize</a></td>
+    <td>
+        Sets all the search parameters to their default values.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSACoherencePulseSearchItemCountQuery.html">Pulse Search Item Count Query</a></td>
+    <td>
+        Returns the number of possible pulse configurations found.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSACoherencePulseSearchItemPeriodQuery.html">Pulse Search Item Period Query</a></td>
+    <td>
+        Returns the pulse period for found pulse configuration number num.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSACoherencePulseSearchItemSelect.html">Pulse Search Item Select</a></td>
+    <td>
+        Selects the found configuration number num, and applies it to the measurements.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSACoherencePulseSearchItemWidthQuery.html">Pulse Search Item Width Query</a></td>
+    <td>
+        Returns the pulse width for found pulse configuration number num.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherenceLofthruMonitor.html">SetX Sense Sa Coherence Lofthru Monitor</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_LOFTHRU_MONITOR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherenceLofthruMonitorReceiver.html">SetX Sense Sa Coherence Lofthru Monitor Receiver</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_LOFTHRU_MONITOR_RECEIVER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherenceLofthruMonitorTolerance.html">SetX Sense Sa Coherence Lofthru Monitor Tolerance</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_LOFTHRU_MONITOR_TOLERANCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherenceLofthruMonitorType.html">SetX Sense Sa Coherence Lofthru Monitor Type</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_LOFTHRU_MONITOR_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherenceMultitoneData.html">SetX Sense Sa Coherence Multitone Data</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_MULTITONE_DATA attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherenceMultitoneHreject.html">SetX Sense Sa Coherence Multitone Hreject</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_MULTITONE_HREJECT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherenceMultitoneNyqreject.html">SetX Sense Sa Coherence Multitone Nyqreject</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_MULTITONE_NYQREJECT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherenceMultitonePeriod.html">SetX Sense Sa Coherence Multitone Period</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_MULTITONE_PERIOD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherenceMultitoneReference.html">SetX Sense Sa Coherence Multitone Reference</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_MULTITONE_REFERENCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherenceMultitoneSpacing.html">SetX Sense Sa Coherence Multitone Spacing</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_MULTITONE_SPACING attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherenceMultitoneState.html">SetX Sense Sa Coherence Multitone State</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_MULTITONE_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePhaseDisplayLevel.html">SetX Sense Sa Coherence Phase Display Level</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PHASE_DISPLAY_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePhaseState.html">SetX Sense Sa Coherence Phase State</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PHASE_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePhaseStitching.html">SetX Sense Sa Coherence Phase Stitching</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PHASE_STITCHING attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePhaseStitchingCommon.html">SetX Sense Sa Coherence Phase Stitching Common</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PHASE_STITCHING_COMMON attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePhaseStitchingHwTstamp.html">SetX Sense Sa Coherence Phase Stitching Hw Tstamp</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PHASE_STITCHING_HW_TSTAMP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePhaseStitchingLevel.html">SetX Sense Sa Coherence Phase Stitching Level</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PHASE_STITCHING_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePhaseStitchingReceiverAuto.html">SetX Sense Sa Coherence Phase Stitching Receiver Auto</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PHASE_STITCHING_RECEIVER_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePhaseStitchingReceiverName.html">SetX Sense Sa Coherence Phase Stitching Receiver Name</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PHASE_STITCHING_RECEIVER_NAME attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePulseSearchCount.html">SetX Sense Sa Coherence Pulse Search Count</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_COUNT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePulseSearchDutyTolerance.html">SetX Sense Sa Coherence Pulse Search Duty Tolerance</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_DUTY_TOLERANCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePulseSearchPeriod.html">SetX Sense Sa Coherence Pulse Search Period</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_PERIOD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePulseSearchPeriodTolerance.html">SetX Sense Sa Coherence Pulse Search Period Tolerance</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_PERIOD_TOLERANCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePulseSearchPriority.html">SetX Sense Sa Coherence Pulse Search Priority</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_PRIORITY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePulseSearchWidth.html">SetX Sense Sa Coherence Pulse Search Width</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_WIDTH attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherencePulseSearchWidthTolerance.html">SetX Sense Sa Coherence Pulse Search Width Tolerance</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_PULSE_SEARCH_WIDTH_TOLERANCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherenceVectorAverage.html">SetX Sense Sa Coherence Vector Average</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_VECTOR_AVERAGE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaCoherenceVectorAverageValue.html">SetX Sense Sa Coherence Vector Average Value</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_COHERENCE_VECTOR_AVERAGE_VALUE attribute.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_LOFTHRU_MONITOR.html">Lofthru Monitor</a></td>
+    <td>
+        Set and read the LO feedthru monitoring state.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_LOFTHRU_MONITOR_RECEIVER.html">Lofthru Monitor Receiver</a></td>
+    <td>
+        Set and read the target receiver for LO Feedthru monitor. Select the reference receiver in most cases. Default &quot;a1&quot;.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_LOFTHRU_MONITOR_TOLERANCE.html">Lofthru Monitor Tolerance</a></td>
+    <td>
+        Set and read the threshold level for warning. Default -40.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_LOFTHRU_MONITOR_TYPE.html">Lofthru Monitor Type</a></td>
+    <td>
+        Set and read the monitoring method for LO feedthru monitor. Default Band power.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_MULTITONE_DATA.html">Multitone Data</a></td>
+    <td>
+        Set and read the data display mode. Default All.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_MULTITONE_HREJECT.html">Multitone Hreject</a></td>
+    <td>
+        Set and read the number of test signal harmonics you want to be protected against. This adds constraints to the list of LOs used to cover the span. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_MULTITONE_NYQREJECT.html">Multitone Nyqreject</a></td>
+    <td>
+        Sets and returns the Nyquist protection level. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_MULTITONE_PERIOD.html">Multitone Period</a></td>
+    <td>
+        Set and read the test signal repetition rate (in seconds). Default 1E6.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_MULTITONE_REFERENCE.html">Multitone Reference</a></td>
+    <td>
+        Set and read the multitone image rejection offset frequency. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_MULTITONE_SPACING.html">Multitone Spacing</a></td>
+    <td>
+        Set and read the tone spacing of the multitone signal (in Hz). Default 1000000.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_MULTITONE_STATE.html">Multitone State</a></td>
+    <td>
+        Enables or disables multitone image rejection.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PHASE_DISPLAY_LEVEL.html">Phase Display Level</a></td>
+    <td>
+        Set and read the phase display minimum level in dBm. Default -60 dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PHASE_STATE.html">Phase State</a></td>
+    <td>
+        Enables or disables phase computing.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PHASE_STITCHING.html">Phase Stitching</a></td>
+    <td>
+        Enable or disable phase stitching.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PHASE_STITCHING_COMMON.html">Phase Stitching Common</a></td>
+    <td>
+        Enables or disables selected receiver, or receiver with highest energy in the overlap area, to drive the phase stitching for all receivers.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PHASE_STITCHING_HW_TSTAMP.html">Phase Stitching Hw Tstamp</a></td>
+    <td>
+        Enables or disables phase stitching using hardware time stamps to determine the phase of each LO acquisition and stitch them back together with phase consistency.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PHASE_STITCHING_LEVEL.html">Phase Stitching Level</a></td>
+    <td>
+        Set and read the minimum tone power level to perform phase stitching in dBm. Default -150 dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PHASE_STITCHING_RECEIVER_AUTO.html">Phase Stitching Receiver Auto</a></td>
+    <td>
+        Set and read the receiver for stitching automatically.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PHASE_STITCHING_RECEIVER_NAME.html">Phase Stitching Receiver Name</a></td>
+    <td>
+        Assigns a specified receiver for phase stitching. Default R1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PULSE_SEARCH_COUNT.html">Pulse Search Count</a></td>
+    <td>
+        Set and read the maximum pulse search count. Default 100.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PULSE_SEARCH_DUTY_TOLERANCE.html">Pulse Search Duty Tolerance</a></td>
+    <td>
+        Set and read the duty cycle tolerance.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PULSE_SEARCH_PERIOD.html">Pulse Search Period</a></td>
+    <td>
+        Set and read the period starting point in seconds.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PULSE_SEARCH_PERIOD_TOLERANCE.html">Pulse Search Period Tolerance</a></td>
+    <td>
+        Set and read the period tolerance. Only solutions that ensure this tolerance will be accepted.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PULSE_SEARCH_PRIORITY.html">Pulse Search Priority</a></td>
+    <td>
+        Set and read the priority choice for the search algorithm. Default Width.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PULSE_SEARCH_WIDTH.html">Pulse Search Width</a></td>
+    <td>
+        Set and read the width starting point in seconds.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_PULSE_SEARCH_WIDTH_TOLERANCE.html">Pulse Search Width Tolerance</a></td>
+    <td>
+        Set and read the width tolerance. Only solutions that ensure this tolerance will be accepted.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_VECTOR_AVERAGE.html">Vector Average</a></td>
+    <td>
+        Set and read the ON or OFF state of the vector averaging.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_COHERENCE_VECTOR_AVERAGE_VALUE.html">Vector Average Value</a></td>
+    <td>
+        Set and read the vector averaging value.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

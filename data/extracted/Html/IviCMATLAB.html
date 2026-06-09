@@ -1,0 +1,533 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="save" content="history" />
+		<title>MATLAB</title>
+		<link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+		<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+		<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+		<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+		<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+		<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+		<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+		<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+		<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+		<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+        <xml>
+			<mshelp:toctitle title="MATLAB" />
+			<mshelp:rltitle title="MATLAB" />
+			<mshelp:keyword index="K" term="MATLAB" />
+			<mshelp:attr name="DocSet" value="KtNA" />
+			<mshelp:attr name="DevLang" value="VB" />
+			<mshelp:attr name="DevLang" value="CSharp" />
+			<mshelp:attr name="DevLang" value="C++" />
+			<mshelp:attr name="Locale" value="en-us" />
+			<mshelp:attr name="TopicType" value="kbArticle" />
+		</xml>
+		<!-- begin: Microsoft Help 1.0 -->
+		<meta name="Microsoft.Help.Id" content="" />
+		<meta name="Microsoft.Help.TocParent" content="" />
+		<meta name="Microsoft.Help.TocOrder" content="" />
+		<meta name="Microsoft.Help.ContentType" content="" />
+		<meta name="Microsoft.Help.SelfBranded" content="true" />
+		<meta name="Microsoft.Help.Locale" content="en-us" />
+		<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+		<!--$$Microsoft.Help.F1$$-->
+		<!--$$Microsoft.Help.Keywords$$-->
+		<!-- end: Microsoft Help 1.0 -->
+	</head>
+	<body>
+		<input type="hidden" id="userDataCache" class="userDataStyle" />
+		<input type="hidden" id="hiddenScrollOffset" />
+		<img id="collapseImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse Section" />
+		<img id="expandImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Section" />
+		<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+		<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+		<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+		<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+		<img id="copyImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy Code" />
+		<img id="copyHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="Copy Code" />
+
+		<div id="header">
+			<table id="topTable" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+							<img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+							<label id="collapseAllLabel" for="toggleAllImage" style="display:none;"> Collapse All</label>
+							<label id="expandAllLabel" for="toggleAllImage" style="display:none;"> Expand All</label>
+						</span>
+						<span> &nbsp; &nbsp; </span>
+<!--                        <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span>
+-->					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+
+-->			<table id="bottomTable" cellpadding="0" cellspacing="0">
+				<tr id="headerTableRow1">
+					<td align="left">
+						<span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+					</td>
+					<td align="right">
+						<span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow2">
+					<td align="left">
+						<span id="nsrTitle">MATLAB</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow3">
+					<td align="left">
+						<span id="headfb" class="feedbackhead" />
+					</td>
+				</tr>
+			</table>
+			<table id="gradientTable">
+				<tr>
+					<td class="nsrBottom" id="headerBottom"><img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" /></td>
+				</tr>
+			</table>
+		</div>
+
+        <div id="mainSection">
+
+            <div id="mainBody">
+
+                <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()">
+                    <span style="color: DarkGray"></span>
+                    <p />
+                </div>
+
+                <div class="introduction">
+                    <p>
+                        MATLAB provides rich support for building applications with IVI-C drivers. This section describes how to use the KtNA IVI-C driver with MATLAB.&nbsp; For information on:</p>
+                    <ul>
+<li><strong>Initialization not specific to MATLAB</strong>, see <a href="IviCInitialize.html">Initializing the Driver</a></li>
+<li><strong>Programming with IVI drivers</strong>, see the <em>Getting Started Guide</em> on the <a href="http://www.ivifoundation.org/default.aspx" target="_blank" rel="noopener">IVI Foundation</a> website</li>
+</ul>
+				    
+                </div>
+
+                <h1 class="heading">
+                    <span onclick="ExpandCollapse(section1Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)" tabindex="0">
+                        <img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                        Requirements</span></h1>
+                <div id="section1Section" class="section" name="collapseableSection" style="">
+                    <p>
+                        The following components must be installed:
+                    </p>
+                    <ul>
+                        <li><strong>MATLAB R2015a</strong> (or newer) 32- or 64-bit version</li>
+                        <li><strong>MATLAB Instrument Control Toolbox</strong></li>
+                    </ul>
+                </div>
+
+
+                <h1 class="heading">
+                    <span onclick="ExpandCollapse(section2Toggle)" style="cursor:default;" onkeypress="    ExpandCollapse_CheckKey(section2Toggle, event)" tabindex="0">
+                        <img id="section2Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                        Creating A MATLAB Instrument Driver
+                    </span>
+                </h1>
+                <div id="section3Section" class="section" name="collapseableSection" style="">
+                    The KtNA IVI-C driver must be converted to a <em>MATLAB Instrument Driver</em> (MID) using the <strong>makemid</strong> function.  Follow these steps:
+                    <ol>
+                    <li>Open MATLAB.</li>
+                    <li>From the <strong>Command Prompt</strong>, execute:
+                    <div class="subsection">
+                        <div name="snippetGroup">
+                            <div class="code">
+                                <span codelanguage="MATLAB">
+                                    <table width="100%" cellspacing="0" cellpadding="0">
+                                        <tr><th>MATLAB </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy Code" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <pre>makemid('KtNA', strcat(toolboxdir('instrument'),'\instrument\drivers\KtNA_IVI-C.mdd'), 'IVI-C');</pre>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </span>
+                            </div>
+                        </div>
+                    </div></li>
+</ol>
+                    This creates a MID named <strong>KtNA_IVI-C.mdd</strong>.  This MID:<br />
+                    <ul>
+                    <li>Uses the installed KtNA IVI-C driver</li>
+                    <li>Is saved in the MATLAB <strong>Instrument Control Toolbox\Instrument Drivers</strong> folder and accessible to your MATLAB KtNA driver application programs</li>
+                    </ul>
+                    <p><strong>Note:</strong> you must re-run <strong>makemid</strong> to update the MATLAB Instrument Driver when you either:</p>
+                    <ul>
+                    <li>Update to a new version of the KtNA IVI-C driver, or</li>
+                    <li>Update your driver applications to a new release of MATLAB</li>
+                    </ul>
+                <p>See the MATLAB <strong>mkmid</strong> help for more information.</p>
+                </div>
+
+
+                <h1 class="heading">
+                    <span onclick="ExpandCollapse(section3Toggle)" style="cursor:default;" onkeypress="    ExpandCollapse_CheckKey(section3Toggle, event)" tabindex="0">
+                        <img id="section3Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                        Writing MATLAB Driver Application Programs
+                    </span>
+                </h1>
+                <div id="section2" class="section" name="collapseableSection" style="">
+                   <p>Before accessing the various driver functions and attributes to perform desired tasks, your program must first:</p>
+<ol>
+<li>Create an instrument device object using the MATLAB <strong>icdevice</strong> function. The instrument device object retuned by icdevice includes the:
+<ul>
+<li>VISA resource name for connecting to the instrument</li>
+<li>IVI-C driver initialization option settings</li>
+</ul>
+</li>
+<li>Connect the device object to the instrument using the MATLAB <strong>connect(obj)</strong> function.</li>
+</ol>
+<p>At the end, your program must:&nbsp;</p>
+<ol>
+<li>Disconnect from the instrument using the MATLAB <strong>disconnect(obj)</strong> function.</li>
+<li>Delete and clear the instrument device object using the MATLAB <strong>delete(obj)</strong> and <strong>clear</strong> functions.</li>
+</ol> 
+                   <h2 class="subHeading">Example</h2> 
+
+                    <div class="subsection">
+                        <div name="snippetGroup">
+                            <div class="code">
+                                <span codelanguage="MATLAB">
+                                    <table width="100%" cellspacing="0" cellpadding="0">
+                                        <tr><th>MATLAB </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy Code" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+                                        <tr>
+                                            <td colspan="2">
+<pre>
+% Create instrument device object.  "MyVisaAlias" is a VISA alias for your instrument.
+resourceName = 'MyVisaAlias';
+initOptions = 'QueryInstrStatus=true, Simulate=true, DriverSetup= ';
+KtNA = icdevice('KtNA_IVI-C.mdd', resourceName, 'optionstring', initOptions);
+
+% Connect to the instrument using the device object created above
+connect(KtNA);
+disp('Connected to instrument device: KtNA');
+
+% Perform driver tasks...
+
+% Close and delete the driver device object 
+disconnect(KtNA);
+delete(KtNA);
+clear KtNA;
+</pre>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </span>
+                            </div>
+                        </div>
+                        For additional information, see the MATLAB help for the <strong>icdevice</strong>, <strong>connect</strong>, <strong>disconnect</strong>, <strong>delete</strong>, and <strong>clear</strong> functions.
+                    </div>
+                </div>
+
+
+                <h1 class="heading">
+                    <span onclick="ExpandCollapse(section4Toggle)" style="cursor:default;" onkeypress="    ExpandCollapse_CheckKey(section4Toggle, event)" tabindex="0">
+                        <img id="section4Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                        Using MATLAB Instrument Driver Functions and Properties
+                    </span>
+                </h1>
+                <div id="section2" class="section" name="collapseableSection" style="">
+                    <h3 class="subHeading">MATLAB Instrument Driver Syntax</h3>
+                    <p>
+                        The syntax for accessing the MATLAB instrument driver functions and properties contained in your program&#39;s instrument device object is similar to the IVI-C driver hierarchy documented in the <a href="IviCHierarchy.html">Heirarchy</a> section of the KtNA <a href="IviCDriverReference.html">IVI-C Programming Reference</a>.</p>
+               
+                    <p>
+                        The instrument device object returned by the <code>icdevice</code> function represents the root node of the IVI-C hierarchy.  Use the following syntax to access any function or property in the instrument device object. </p>
+                            <ul>
+                                <li><strong>Property:</strong> <code>&lt;Object&gt;.&lt;NodeName&gt;.&lt;Property_Name&gt;</code></li>
+                               <li><strong>Function:</strong> <code>invoke(&lt;Object&gt;.&lt;NodeName&gt;, &lt;FunctionName&gt;, ...)</code></li>
+                        </ul>
+                       
+                        <p>
+                            In this syntax:</p>
+                        <ul>
+                            <li> <strong>&lt;Object&gt;</strong> is the device object variable returned by <code>icdevice</code></li>
+                            <li> <strong>&lt;NodeName&gt; </strong>is the folder name concatenated with any sub folder names containing the desired function or property</li>
+                            <li> <strong>&lt;Property_Name&gt; </strong>is the name of the desired property (case insensitive)</li>
+                            <li> <strong>&lt;FunctionName&gt;</strong> is the name of the desired function (case insensitive)</li>
+                        </ul>
+                        <p><b>Note:</b> The MATLAB function and property names used by the instrument device object do not use the IVI-C driver prefix "KtNA_" or "KtNA_ATTR_" shown in the help file and are case insensitive. Do not include any spaces in the node path or function names. Any spaces or non-alpha-numeric characters in property (attribute) names must be replaced with the underscore (_) character. 
+                        </p>
+                    <p>See examples in the following sections.</p>
+
+                    <h3 class="subHeading">Data Types</h3>
+                    <div class="subsection">
+                        <p>
+                            The MATLAB instrument device object properties and function parameters of numeric or string types may use matching variable
+                            or literal data values directly.  Boolean may be set as <strong>0</strong> or <strong>false</strong>, <strong>1</strong> or <strong>true</strong>. They return <strong>0</strong> or <strong>1</strong>.
+                            For items of defined enumeration types in the IVI-C driver, the MATLAB device object uses
+                            the integer values listed in this document for each function or attribute using enumerated types.
+                            See examples in the following sections.  <br />
+                        </p>
+                        <p>
+                            <b>Note:</b> Some examples may be from other drivers and are not supported by the KtNA driver.
+                        </p>
+                    </div>
+
+                    <h3 class="subHeading">Getting and Setting Properties</h3>
+                    <div class="subsection">
+                        <p>
+                            Property values may be read or assigned using the <strong>=</strong> operator with the instrument device object hierarchical
+                            path and property name.  You do not need to use the <strong>"Attribute Accessors"</strong> group functions to access properties in the
+                            MATLAB instrument device object.  For example, using an instrument device object named <strong>"KtNA"</strong>:
+                            <div class="subsection">
+                                <div name="snippetGroup">
+                                    <div class="code">
+                                        <span codelanguage="MATLAB">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tr><th>MATLAB </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy Code" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+                                                <tr>
+                                                    <td colspan="2">
+<pre>
+model = KtNA.InherentIviAttributesInstrumentIdentification.Instrument_Model;
+KtNA.System.I_O_Timeout = 5000;
+timeoutVal = KtNA.System.I_O_Timeout;
+
+KtScope.Trigger.TriggerType = 1;  % 1 = KTSCOPE_VAL_EDGE_TRIGGER
+</pre>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+
+                    <h3 class="subHeading">Properties in Repeated Capabilities</h3>
+                    <div class="subsection">
+                        <p>
+                            Before setting or getting a property that is defined on a repeated capability in the IVI-C driver, you must set the active
+                            instance using the <strong>RepCapIdentifier</strong> property at the root of the MATLAB instrument device object.  For
+                            example, using an instrument device object named <strong>"KtScope"</strong>, the following code would enable the trace on channel 2:</p>
+                            <div class="subsection">
+                                <div name="snippetGroup">
+                                    <div class="code">
+                                        <span codelanguage="MATLAB">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tr><th>MATLAB </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy Code" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+                                                <tr>
+                                                    <td colspan="2">
+<pre>
+KtScope.RepCapIdentifier = 'Channel2';
+KtScope.Channel.Channel_Enabled = 1; 
+</pre>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p><b>Note:</b> Not all drivers support repeated capabilities.  For more information, see:</p>
+                        <ul><li><a href="IviCAccessingRepCaps.html">Assessing Repeated
+                            Capabilities</a> (if present) for information on your driver's repeated capabilities, including valid names</li>
+                        <li>The documentation for attributes, which indicates whether the attribute is in a repeated capability</li></ul>
+        </div>
+
+                                <h3 class="subHeading">Executing Functions</h3>
+                                <div class="subsection">
+                                    <p>
+                                        Functions are executed using the MATLAB <strong>invoke</strong> function with the instrument device object hierarchical path and
+                                        function name.  If a function is defined on a repeated capability, it includes a parameter for the repeated capability
+                                        instance name.  For example, using an instrument device object named "KtNA":
+                                        <div class="subsection">
+                                            <div name="snippetGroup">
+                                                <div class="code">
+                                                    <span codelanguage="MATLAB">
+                                                        <table width="100%" cellspacing="0" cellpadding="0">
+                                                            <tr><th>MATLAB </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy Code" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+                                                            <tr>
+                                                                <td colspan="2">
+<pre>
+invoke(KtNA.Utility, 'Reset');
+[code, message] = invoke(KtNA.Utility, 'errorquery');
+invoke(KtNA.InstrumentSpecificStatus, 'StatusSetRegister', 12, 128);       % 12 = STATUS_REGISTER_STANDARD_EVENT_ENABLE
+[value] = invoke(KtNA.InstrumentSpecificStatus, 'StatusGetRegister', 11);  % 11 = STATUS_REGISTER_STANDARD_EVENT
+
+inputImpedance = 50;
+maxFreq = 200e6;
+invoke(KtScope.ConfigurationChannel, 'ConfigureChannelCharacteristics', 'Channel2', inputImpedance, maxFreq);
+</pre>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <h1 class="heading">
+                                <span onclick="ExpandCollapse(section5Toggle)" style="cursor:default;" onkeypress="    ExpandCollapse_CheckKey(section5Toggle, event)" tabindex="0">
+                                    <img id="section5Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                                    Complete Example
+                                </span>
+                            </h1>
+                            <div id="section4Section" class="section" name="collapseableSection" style="">
+                                <p>
+                                    The following code demonstrates a simple console application that creates and initializes the driver, reads some properties,
+                                    checks the instrument for errors, and closes the driver.
+                                </p>
+                                <p>
+                                    For complete, working example programs, go to <strong>Windows Start Menu &gt; All Programs &gt; Keysight Instrument Drivers &gt; IVI-C KtNA 3.0.8</strong>.
+                                </p>
+                                <div name="snippetGroup">
+                                    <div class="code">
+                                        <span codelanguage="MATLAB">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tr><th>MATLAB</th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy Code" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+                                                <tr>
+                                                    <td colspan="2">
+<pre class="code">
+% Creates a MATLAB instrument device object, reads a few Identification
+% attributes, and checks the instrument error queue.
+% May include additional instrument specific functionality.
+% 
+% Runs in simulation mode without an instrument.
+disp(blanks(1)');
+disp('  ML_Example1');
+
+% Create and install the MATLAB Instrument Driver.  This may be executed here or from the MATLAB
+% Command Window and only needs to be done once after installing the Keysight IVI-C driver.
+% makemid('KtNA', strcat(toolboxdir('instrument'),'\instrument\drivers\KtNA_IVI-C.mdd'), 'IVI-C');
+
+% Create the instrument device object.  Edit resourceName and options as needed.  Resource is ignored if option Simulate=true
+% "MyVisaAlias" is a VISA alias for your instrument.
+resourceName = 'MyVisaAlias';
+initOptions = 'QueryInstrStatus=true, Simulate=true, DriverSetup= ';
+KtNA = icdevice('KtNA_IVI-C.mdd', resourceName, 'optionstring', initOptions);
+
+% Connect to the instrument using the device object created above
+connect(KtNA);
+disp('Connected to instrument device: KtNA');
+
+% Print a few IIviDriver.Identity properties
+disp(['Prefix:          ', KtNA.InherentIviAttributesDriverIdentification.Specific_Driver_Prefix]);
+disp(['Revision:        ', KtNA.InherentIviAttributesDriverIdentification.Specific_Driver_Revision]);
+disp(['Vendor:          ', KtNA.InherentIviAttributesDriverIdentification.Specific_Driver_Vendor]);
+disp(['Description:     ', KtNA.InherentIviAttributesDriverIdentification.Specific_Driver_Description]);
+disp(['InstrumentModel: ', KtNA.InherentIviAttributesInstrumentIdentification.Instrument_Model]);
+disp(['FirmwareRev:     ', KtNA.InherentIviAttributesInstrumentIdentification.Instrument_Firmware_Revision]);
+simulate = KtNA.InherentIviAttributesUserOptions.Simulate;
+if simulate == true
+    disp('Simulate:        True');
+else
+    disp('Simulate:        False');
+end
+disp(blanks(1));
+
+% TODO: Exercise driver functions and properties
+invoke(KtNA.Utility, 'Reset');
+
+% Check instrument for errors
+errorNum = -1;
+errorMsg = ('');
+disp(blanks(1)');
+while (errorNum ~= 0)
+    [errorNum, errorMsg] = invoke(KtNA.Utility, 'ErrorQuery');
+    disp(['ErrorQuery: ', num2str(errorNum), ', ', errorMsg]);
+end
+
+% Close and delete the driver device object 
+disconnect(KtNA);
+delete(KtNA);
+clear KtNA;
+disp('Done');
+</pre>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <h1 class="heading">
+                                <span onclick="ExpandCollapse(section6Toggle)" style="cursor:default;" onkeypress="    ExpandCollapse_CheckKey(section6Toggle, event)" tabindex="0">
+                                    <img id="section6Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                                    Further Information
+                                </span>
+                            </h1>
+                            <div id="section5Section" class="section" name="collapseableSection" style="">
+                                <p>MATLAB also supports:</p>
+<ul>
+<li>Additional techniques for using IVI-C drivers, including creating Instrument Control Device objects using the IVI Configuration Store</li>
+<li>IVI interchangeability using IVI instrument class compliant drivers</li>
+<li>MATLAB<strong> Instrument Control Toolbox</strong> and <strong>Driver Editor</strong>&nbsp;for exploring MATLAB instrument drivers and device objects</li>
+</ul>
+<p>For additional information on using MATLAB with IVI drivers, see the following at <a href="http://www.mathworks.com/keysight">www.mathworks.com</a>:</p>
+<ul>
+<li><a href="http://www.mathworks.com/help/instrument/getting-started-with-ivi-drivers.html">Getting Started with IVI Drivers</a></li>
+<li><a href="http://www.mathworks.com/ivi">IVI Instrument Drivers and MATLAB</a></li>
+<li><a href="http://www.mathworks.com/keysight">Keysight Instruments and MATLAB</a></li>
+</ul>
+                            </div>
+
+
+
+                        </div>
+                        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+                    </div>
+</body>
+</html>

@@ -1,0 +1,670 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>Hardware</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="Hardware" />
+		<mshelp:rltitle title="Hardware" />
+		<mshelp:keyword index="K" term="Hardware" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">Hardware</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\ClassicCommands\System\Capability\Hardware  <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWAttenuatorReceiverExistsQuery.html">Attenuator Receiver Exists Query</a></td>
+    <td>
+        Returns whether or not there is a receiver attenuator on the specified port.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWAttenuatorReceiverMaximumQuery.html">Attenuator Receiver Maximum Query</a></td>
+    <td>
+        Returns the maximum amount of receiver attenuation on the specified port.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWAttenuatorReceiverStepQuery.html">Attenuator Receiver Step Query</a></td>
+    <td>
+        Returns the step size of the receiver attenuator on the specified port.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWAttenuatorSourceMaximumQuery.html">Attenuator Source Maximum Query</a></td>
+    <td>
+        Returns the maximum amount of source attenuation on the specified port.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWAttenuatorSourceStepQuery.html">Attenuator Source Step Query</a></td>
+    <td>
+        Returns the step size of the source attenuator on the specified port.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWDCReceiverInternalCatalogQuery.html">DC Receiver Internal Catalog Query</a></td>
+    <td>
+        Returns a list of names of the internal DC receivers.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWDCReceiverInternalCountQuery.html">DC Receiver Internal Count Query</a></td>
+    <td>
+        Returns the number of internal DC receivers in the analyzer.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWDCSourceInternalCatalogQuery.html">DC Source Internal Catalog Query</a></td>
+    <td>
+        Returns a list of names of the internal DC sources.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWDCSourceInternalCountQuery.html">DC Source Internal Count Query</a></td>
+    <td>
+        Returns the number of internal DC sources in the analyzer.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSystemCapabilityHwPowerPort.html">GetX System Capability Hw Power Port</a></td>
+    <td>
+        Gets the value of the X_SYSTEM_CAPABILITY_HW_POWER_PORT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSystemCapabilityHwPowerRangeFrequencyStart.html">GetX System Capability Hw Power Range Frequency Start</a></td>
+    <td>
+        Gets the value of the X_SYSTEM_CAPABILITY_HW_POWER_RANGE_FREQUENCY_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSystemCapabilityHwPowerRangeFrequencyStop.html">GetX System Capability Hw Power Range Frequency Stop</a></td>
+    <td>
+        Gets the value of the X_SYSTEM_CAPABILITY_HW_POWER_RANGE_FREQUENCY_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSystemCapabilityHwPowerType.html">GetX System Capability Hw Power Type</a></td>
+    <td>
+        Gets the value of the X_SYSTEM_CAPABILITY_HW_POWER_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWLFExtensionExistsQuery.html">LF Extension Exists Query</a></td>
+    <td>
+        Returns whether or not the VNA has the low frequency extension (LFE) installed.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPortsCatalogQuery.html">Ports Catalog Query</a></td>
+    <td>
+        Returns a list of test port names including external testset ports.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPortsCountQuery.html">Ports Count Query</a></td>
+    <td>
+        Returns the number of test ports including external testset ports.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPortsInternalCatalogQuery.html">Ports Internal Catalog Query</a></td>
+    <td>
+        Returns a list of internal test port names.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPortsInternalCountQuery.html">Ports Internal Count Query</a></td>
+    <td>
+        Returns the number of internal test ports.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPortsPNumberQuery.html">Ports PNumber Query</a></td>
+    <td>
+        Returns the port number associated with the specified port name.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPortsSourceCatalogQuery.html">Ports Source Catalog Query</a></td>
+    <td>
+        Returns a list of source port names, including any configured external sources.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPortsSourceCountQuery.html">Ports Source Count Query</a></td>
+    <td>
+        Returns the number of source ports, including any configured external sources.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPortsSourceInternalCatalogQuery.html">Ports Source Internal Catalog Query</a></td>
+    <td>
+        Returns a list of internal source port names.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPortsSourceInternalCountQuery.html">Ports Source Internal Count Query</a></td>
+    <td>
+        Returns the number of internal source ports.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPowerDiscreteFrequencyList.html">Power Discrete Frequency List</a></td>
+    <td>
+        Sets the list of discrete frequencies corresponding to the powers returned by the discrete min and max power list functions.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPowerDiscreteFrequencyListQuery.html">Power Discrete Frequency List Query</a></td>
+    <td>
+        Returns the list of discrete frequencies corresponding to the powers returned by the discrete min and max power list functions.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPowerDiscreteMaximumListQuery.html">Power Discrete Maximum List Query</a></td>
+    <td>
+        Returns an array of max leveled power values (in dBm), where each element corresponds to the maximum leveled power possible for CW stimulus at the corresponding frequency</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPowerDiscreteMaximumQuery.html">Power Discrete Maximum Query</a></td>
+    <td>
+        Returns a single max leveled power value (in dBm) indicating the most restrictive maximum for all discrete maximum powers (the minimum of all max leveled powers).</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPowerDiscreteMinimumListQuery.html">Power Discrete Minimum List Query</a></td>
+    <td>
+        Returns an array of minimum power values (in dBm), where each element corresponds to the minimum power possible for CW stimulus at the corresponding frequency set</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPowerDiscreteMinimumQuery.html">Power Discrete Minimum Query</a></td>
+    <td>
+        Returns a single minimum power value (in dBm) indicating the most restrictive minimum for all discrete minimum powers (the maximum of all minimum powers).</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPowerPathConfigElement.html">Power Path Config Element</a></td>
+    <td>
+        Sets the value of a path element.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPowerPathConfigElementCatalogQuery.html">Power Path Config Element Catalog Query</a></td>
+    <td>
+        Returns a string with the names of all valid RF path configuration elements.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPowerPathConfigElementQuery.html">Power Path Config Element Query</a></td>
+    <td>
+        Returns the name of the value for the given path element name.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPowerPathConfigElementValueCatalogQuery.html">Power Path Config Element Value Catalog Query</a></td>
+    <td>
+        Returns all valid values for the given path configuration element.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPowerRangeMaximumQuery.html">Power Range Maximum Query</a></td>
+    <td>
+        Returns the minimum of all max leveled power values (in dBm) from range start frequency to stop frequency (inclusive).</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPowerRangeMinimumQuery.html">Power Range Minimum Query</a></td>
+    <td>
+        The maximum of all min power values (in dBm) from range start frequency to stop frequency (inclusive).</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWPowerReset.html">Power Reset</a></td>
+    <td>
+        Resets all power range properties to default values, as if the instrument had been preset.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWRBSwitchExistsQuery.html">RB Switch Exists Query</a></td>
+    <td>
+        Returns whether or not the specified port number has a reference bypass switch.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWReceiverGainCoupControlQuery.html">Receiver Gain Coup Control Query</a></td>
+    <td>
+        </td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWReceiverInternalCountQuery.html">Receiver Internal Count Query</a></td>
+    <td>
+        Returns the number of receivers in the analyzer.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWReceiverDAccessQuery.html">ReceiverD Access Query</a></td>
+    <td>
+        Returns whether or not the analyzer has direct receiver access (front-panel jumpers).</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSystemCapabilityHwPowerPort.html">SetX System Capability Hw Power Port</a></td>
+    <td>
+        Sets the value of the X_SYSTEM_CAPABILITY_HW_POWER_PORT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSystemCapabilityHwPowerRangeFrequencyStart.html">SetX System Capability Hw Power Range Frequency Start</a></td>
+    <td>
+        Sets the value of the X_SYSTEM_CAPABILITY_HW_POWER_RANGE_FREQUENCY_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSystemCapabilityHwPowerRangeFrequencyStop.html">SetX System Capability Hw Power Range Frequency Stop</a></td>
+    <td>
+        Sets the value of the X_SYSTEM_CAPABILITY_HW_POWER_RANGE_FREQUENCY_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSystemCapabilityHwPowerType.html">SetX System Capability Hw Power Type</a></td>
+    <td>
+        Sets the value of the X_SYSTEM_CAPABILITY_HW_POWER_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSystemCapabilityHWSourceCountQuery.html">Source Count Query</a></td>
+    <td>
+        Returns the number of source ports, including any configured external sources.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SYSTEM_CAPABILITY_HW_POWER_PORT.html">Power Port</a></td>
+    <td>
+        Sets and reads the port number for power range data.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SYSTEM_CAPABILITY_HW_POWER_RANGE_FREQUENCY_START.html">Power Range Frequency Start</a></td>
+    <td>
+        Sets or returns the lower bound of the frequency range used for range based power min and max.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SYSTEM_CAPABILITY_HW_POWER_RANGE_FREQUENCY_STOP.html">Power Range Frequency Stop</a></td>
+    <td>
+        Sets or returns the upper bound of the frequency range used for range based power min and max.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SYSTEM_CAPABILITY_HW_POWER_TYPE.html">Power Type</a></td>
+    <td>
+        Sets and reads the type of power range data (specified or typical) to be returned. Default Specified.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

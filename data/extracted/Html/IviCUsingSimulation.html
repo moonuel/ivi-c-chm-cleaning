@@ -1,0 +1,281 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="save" content="history" />
+		<title>Simulating an Instrument</title>
+		<link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+		<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+		<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+		<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+		<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+		<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+		<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+		<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+		<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+		<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+		<xml>
+		<mshelp:toctitle title="Simulating an Instrument" />
+		<mshelp:rltitle title="Simulating an Instrument" />
+		<mshelp:keyword index="K" term="Simulating an Instrument" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbArticle" />
+		</xml>
+
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+	</head>
+	<body>
+		<input type="hidden" id="userDataCache" class="userDataStyle" />
+		<input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+		<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+		<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+		<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+		<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+		<div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+						<img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+							<label id="collapseAllLabel" for="toggleAllImage" style="display:none;"> Collapse All</label>
+							<label id="expandAllLabel" for="toggleAllImage" style="display:none;"> Expand All</label>
+						</span>
+						<span> &nbsp; &nbsp; </span>
+<!--                        <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+				<tr id="headerTableRow1">
+					<td align="left">
+						<span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+					</td>
+					<td align="right">
+						<span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow2">
+					<td align="left">
+						<span id="nsrTitle">Simulating an Instrument</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow3">
+					<td align="left">
+						<span id="headfb" class="feedbackhead" />
+					</td>
+				</tr>
+			</table>
+			<table id="gradientTable">
+				<tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+				</tr>
+			</table>
+		</div>
+
+	
+		<div id="mainSection">
+
+			<div id="mainBody">
+
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+					<span style="color: DarkGray"></span>
+
+				<div class="introduction">
+					<p>
+						An IVI driver can operate without connecting to an actual instrument by using <strong>simulation</strong> mode. 
+						When simulation is enabled, the driver does not perform instrument I/O. For output parameters that represent instrument data, the driver functions return simulated values.
+					</p>
+                    <p>
+						To enable simulation, either:
+					</p>
+					<ul>
+						<li>Pass the <strong>"simulate=VI_TRUE"</strong> option string parameter to the <b>InitWithOptions</b> function</li>
+						<li>Set the <b>SIMULATE</b> attribute to <strong>VI_TRUE </strong>or<strong> true</strong></li>
+					</ul>
+					<p>
+						The IVI-C driver contains a <b>SIMULATE</b> attribute.  Note that you can turn
+					simulation on, if you initialize a driver with it off.  However, if you initialize
+					an IVI-C driver with simulation turned on, you will get an error if you attempt to later
+					turn it off.  This is because you cannot initiate a live I/O session with an instrument
+						after you have called the <b>InitWithOptions</b> function.
+					</p>
+				</div>
+
+			
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section1Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)" tabindex="0">
+						<img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+						Using The Option String
+					</span>
+				</h1>
+				<div id="section1Section" class="section" name="collapseableSection" style="">
+					<p>
+						The fourth and last parameter to the <b>InitWithOptions</b> function is the <em>option string </em>(see <a href="KtNA_InitWithOptions.html">InitWithOptions</a> in the Reference section for more details).
+						To turn simulation on, include the following in the option string:
+						</p>
+						<p><code>simulate=VI_TRUE</code>
+					</p>
+					<p>
+						For example, the <b>InitWithOptions</b> call might look like this:
+					</p>
+					<p>
+					<code>KtNA_InitWithOptions("MyVisaAlias", VI_TRUE, VI_TRUE, "Simulate=VI_TRUE", &amp;session);</code>
+					</p>
+					<p>
+						When the simulate option is set VI_TRUE, the value of the resource descriptor parameter 
+						("MyVisaAlias") is ignored because no I/O connection is made
+						with the instrument (as is required by <i>IVI-3.2: Inherent Capabilities Specification</i>).
+					</p>
+				</div>
+
+			
+				
+
+			
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section3Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section3Toggle, event)" tabindex="0">
+						<img id="section3Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" /> Specifying the Instrument Model to Simulate</span></h1>
+				<div id="section3Section" class="section" name="collapseableSection" style="">
+					<p>
+						Many drivers support more than one instrument model. Applications can select the model to simulate by specifying the model in the option string. If not specified, the driver uses a default instrument model for simulation. </p>
+                    
+						<p>Specify the model to simulate at runtime during the
+						    initialization call. The complete <strong>InitWithOptions</strong> call becomes (for example): </p>
+                        <p><code>KtNA_InitWithOptions("MyVisaAlias"::INSTR", VI_TRUE, VI_TRUE, "Simulate=VI_TRUE, DriverSetup= Model=E5080A", &amp;session);</code></p>
+                        <p>
+                            <strong>Note:</strong> <strong>"MyVisaAlias"</strong> is a VISA alias for your instrument.  If you set the model to a value not supported by the driver, the driver returns an error.
+					</p>
+                  
+					
+				</div>
+
+			
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section4Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section4Toggle, event)" tabindex="0">
+						<img id="section4Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+						Limitations of Simulation
+					</span>
+				</h1>
+				<div id="section4Section" class="section" name="collapseableSection" style="">
+					<p>
+						Simulation is designed to allow the driver to be used without an instrument or any I/O software or hardware. However, simulation is not intended to fully emulate the instrument. Be aware of the following differences:</p>
+					<ul>
+						<li>
+							Many instruments have status systems, and these are not live. For instance, you can set 
+							<em>Enable</em> and <em>Transition</em> registers. However, queries of <em>Condition</em> and <em>Event</em> registers always 
+							return a fixed value (typically zero).
+						</li>
+						<li>
+							Parameter range checking or coercion is typically not done, unless done in the driver. 
+							Most drivers depend on the instrument to perform range checking and coercion of 
+							parameter values. In simulation mode, this does not occur. For example, setting a 
+							frequency parameter to 1E99 will be accepted without error in simulation, while an 
+							instrument would return a "parameter out of range" error.
+						</li>
+						<li>
+							<strong>KtNA_error_query</strong> typically returns no error.
+						</li>
+						<li>
+							Measurement data is not live. Note that:
+                            <ul>
+                                <li>Most measurement queries return a fixed or random value.</li>
+                                <li>Most parameter queries return the value that was set.</li>
+                                <li>Modular instruments typically validate all settings in simulation mode.</li>
+                            </ul>
+						</li>
+					</ul>
+				</div>
+
+                <h1 class="heading">
+					<span onclick="ExpandCollapse(section2Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section2Toggle, event)" tabindex="0">
+						<img id="section2Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+						The Driver Session Simulate Attribute
+					</span>
+				</h1>
+				<div id="section2Section" class="section" name="collapseableSection" style="">
+					<p>
+						A DriverSession in the <a href="IviConfigStore.html">IVI Configuration Store</a> contains properties for the items that can be set with the option string parameter. The name of a driver session (or of a logical name that points to a driver session) can be used as the first 
+						parameter to <b>InitWithOptions</b>. If the <b>SIMULATE</b> attribute in the driver session is <strong>true</strong>, the 
+						driver is initialized in simulation mode.
+					</p>
+                    <p>
+						<strong>Note: </strong>Keysight does not provide a Config Store editor. See <a href="IviConfigStore.html">IVI Configuration Store</a> for more information.
+					</p>
+				</div>
+
+			
+			</div>
+<!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+		</div>
+	</body>
+</html>

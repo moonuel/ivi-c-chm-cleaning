@@ -1,0 +1,910 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>Correction</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="Correction" />
+		<mshelp:rltitle title="Correction" />
+		<mshelp:keyword index="K" term="Correction" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">Correction</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\Channel\Correction <!-- Branches -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(branchTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(branchTableToggle, event)"
+        tabindex="0">
+        <img id="branchTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Branches</span>
+</h1>
+<div id="branchTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="nameColumn">
+                Name</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.Channel.Correction.CalKit.html">CalKit</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.Channel.Correction.ConfidenceCheck.html">ConfidenceCheck</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.Channel.Correction.Noise.html">Noise</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.Channel.Correction.PortSubset.html">PortSubset</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.Channel.Correction.Preference.html">Preference</a></td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelCorrectionAcquire.html">Acquire</a></td>
+    <td>
+        For UNGUIDED calibration, measures the specified standards from the selected calibration kit.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelCorrectionAcquireWithSync.html">AcquireWithSync</a></td>
+    <td>
+        For UNGUIDED calibration, measures the specified standards from the selected calibration kit.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelCorrectionApplyErrorTerms.html">ApplyErrorTerms</a></td>
+    <td>
+        Applies error terms to the measurement that is selected.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelCorrectionClearAllFlags.html">ClearAllFlags</a></td>
+    <td>
+        Clears ALL flags for channels to sweep during calibration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelCorrectionDisableAllWindows.html">DisableAllWindows</a></td>
+    <td>
+        Clears the flags for windows to be shown during calibrations.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionAsyncSweepingEnabled.html">Get Channel Correction Async Sweeping Enabled</a></td>
+    <td>
+        Gets the value of the ASYNC_SWEEPING_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionCacheMode.html">Get Channel Correction Cache Mode</a></td>
+    <td>
+        Gets the value of the CACHE_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionCalMethod.html">Get Channel Correction Cal Method</a></td>
+    <td>
+        Gets the value of the CAL_METHOD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionEnrNoiseSourceSerialNo.html">Get Channel Correction Enr Noise Source Serial No</a></td>
+    <td>
+        Gets the value of the ENR_NOISE_SOURCE_SERIAL_NO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionEnrTableId.html">Get Channel Correction Enr Table Id</a></td>
+    <td>
+        Gets the value of the ENR_TABLEID attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionErrorTermModel.html">Get Channel Correction Error Term Model</a></td>
+    <td>
+        Gets the value of the ERROR_TERM_MODEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionForwardCalEnabled.html">Get Channel Correction Forward Cal Enabled</a></td>
+    <td>
+        Gets the value of the FORWARD_CAL_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionGcCalkit.html">Get Channel Correction Gc Calkit</a></td>
+    <td>
+        Gets the value of the GC_CAL_KIT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionGcConnectorType.html">Get Channel Correction Gc Connector Type</a></td>
+    <td>
+        Gets the value of the GC_CONNECTOR_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionGcPowerLevel.html">Get Channel Correction Gc Power Level</a></td>
+    <td>
+        Gets the value of the GC_POWER_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionInterpolationEnabled.html">Get Channel Correction Interpolation Enabled</a></td>
+    <td>
+        Gets the value of the INTERPOLATION_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionIsolAveragingIncrement.html">Get Channel Correction Isol Averaging Increment</a></td>
+    <td>
+        Gets the value of the ISOL_AVERAGING_INCREMENT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionIsolEnabled.html">Get Channel Correction Isol Enabled</a></td>
+    <td>
+        Gets the value of the ISOL_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionNoiseSourceTemp.html">Get Channel Correction Noise Source Temp</a></td>
+    <td>
+        Gets the value of the NOISE_SOURCE_TEMP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionReceiverPowerOffset.html">Get Channel Correction Receiver Power Offset</a></td>
+    <td>
+        Gets the value of the RECEIVER_POWER_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionSystemImpedance.html">Get Channel Correction System Impedance</a></td>
+    <td>
+        Gets the value of the SYSTEM_IMPEDANCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionTwoStandardsEnabled.html">Get Channel Correction Two Standards Enabled</a></td>
+    <td>
+        Gets the value of the TWO_STANDARDS_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionVelocityFactor.html">Get Channel Correction Velocity Factor</a></td>
+    <td>
+        Gets the value of the VELOCITY_FACTOR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionWaveCorrMethod.html">Get Channel Correction Wave Corr Method</a></td>
+    <td>
+        Gets the value of the WAVE_CORR_METHOD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelCorrectionWaveNormMethod.html">Get Channel Correction Wave Norm Method</a></td>
+    <td>
+        Gets the value of the WAVE_NORM_METHOD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelCorrectionGetCalTypeCatalog.html">GetCalTypeCatalog</a></td>
+    <td>
+        Lists the Cal Types in the VNA by either GUID or registered name.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelCorrectionQueryENRCalData.html">QueryENRCalData</a></td>
+    <td>
+        Read the ENR (Excess Noise Ratio) calibration data.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelCorrectionSave.html">Save</a></td>
+    <td>
+        For UNGUIDED calibrations ONLY.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionAsyncSweepingEnabled.html">Set Channel Correction Async Sweeping Enabled</a></td>
+    <td>
+        Sets the value of the ASYNC_SWEEPING_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionCacheMode.html">Set Channel Correction Cache Mode</a></td>
+    <td>
+        Sets the value of the CACHE_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionCalMethod.html">Set Channel Correction Cal Method</a></td>
+    <td>
+        Sets the value of the CAL_METHOD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionEnrNoiseSourceSerialNo.html">Set Channel Correction Enr Noise Source Serial No</a></td>
+    <td>
+        Sets the value of the ENR_NOISE_SOURCE_SERIAL_NO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionEnrTableId.html">Set Channel Correction Enr Table Id</a></td>
+    <td>
+        Sets the value of the ENR_TABLEID attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionErrorTermModel.html">Set Channel Correction Error Term Model</a></td>
+    <td>
+        Sets the value of the ERROR_TERM_MODEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionForwardCalEnabled.html">Set Channel Correction Forward Cal Enabled</a></td>
+    <td>
+        Sets the value of the FORWARD_CAL_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionGcCalkit.html">Set Channel Correction Gc Calkit</a></td>
+    <td>
+        Sets the value of the GC_CAL_KIT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionGcConnectorType.html">Set Channel Correction Gc Connector Type</a></td>
+    <td>
+        Sets the value of the GC_CONNECTOR_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionGcPowerLevel.html">Set Channel Correction Gc Power Level</a></td>
+    <td>
+        Sets the value of the GC_POWER_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionInterpolationEnabled.html">Set Channel Correction Interpolation Enabled</a></td>
+    <td>
+        Sets the value of the INTERPOLATION_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionIsolAveragingIncrement.html">Set Channel Correction Isol Averaging Increment</a></td>
+    <td>
+        Sets the value of the ISOL_AVERAGING_INCREMENT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionIsolEnabled.html">Set Channel Correction Isol Enabled</a></td>
+    <td>
+        Sets the value of the ISOL_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionNoiseSourceTemp.html">Set Channel Correction Noise Source Temp</a></td>
+    <td>
+        Sets the value of the NOISE_SOURCE_TEMP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionReceiverPowerOffset.html">Set Channel Correction Receiver Power Offset</a></td>
+    <td>
+        Sets the value of the RECEIVER_POWER_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionSystemImpedance.html">Set Channel Correction System Impedance</a></td>
+    <td>
+        Sets the value of the SYSTEM_IMPEDANCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionTwoStandardsEnabled.html">Set Channel Correction Two Standards Enabled</a></td>
+    <td>
+        Sets the value of the TWO_STANDARDS_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionVelocityFactor.html">Set Channel Correction Velocity Factor</a></td>
+    <td>
+        Sets the value of the VELOCITY_FACTOR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionWaveCorrMethod.html">Set Channel Correction Wave Corr Method</a></td>
+    <td>
+        Sets the value of the WAVE_CORR_METHOD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelCorrectionWaveNormMethod.html">Set Channel Correction Wave Norm Method</a></td>
+    <td>
+        Sets the value of the WAVE_NORM_METHOD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelCorrectionSetENRCalData.html">SetENRCalData</a></td>
+    <td>
+        Set and read the ENR (Excess Noise Ratio) calibration data.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelCorrectionSetFlagEnabled.html">SetFlagEnabled</a></td>
+    <td>
+        Specifies an alternate channel (other than the calibration channel) to be viewed while using the calibration wizard. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelCorrectionSetWindowEnabled.html">SetWindowEnabled</a></td>
+    <td>
+        Set the 'show' state of the window to be displayed during a calibration to view the measurements/channels. Default off.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_ASYNC_SWEEPING_ENABLED.html">AsyncSweepingEnabled</a></td>
+    <td>
+        This command enables/disables asynchronous sweeping during a calibration acquisition. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_CACHE_MODE.html">CacheMode</a></td>
+    <td>
+        Set this mode at ON for SNP file fast saving.  Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_CAL_METHOD.html">CalMethod</a></td>
+    <td>
+        For UNGUIDED calibration, sets the calibration method (also known as 'Calibration Type' on calibration dialog box.)</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_ENR_NOISE_SOURCE_SERIAL_NO.html">ENRNoiseSourceSerialNo</a></td>
+    <td>
+        Sets and returns the serial number of noise source.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_ENR_TABLE_ID.html">ENRTableID</a></td>
+    <td>
+        Sets and returns ID of ENR table.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_ERROR_TERM_MODEL.html">ErrorTermModel</a></td>
+    <td>
+        Sets and returns the error term model. Default Term10.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_FORWARD_CAL_ENABLED.html">ForwardCalEnabled</a></td>
+    <td>
+        Sets the direction a calibration will be performed when only one set of standards is used. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_GC_CALKIT.html">GCCalKit</a></td>
+    <td>
+        Set and read the cal kit to be used for calibrating at the port 1 reference plane when the power sensor connector is different from the DUT port 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_GC_CONNECTOR_TYPE.html">GCConnectorType</a></td>
+    <td>
+        Set and read the power sensor connector type which is used to perform the Source Power Cal portion of a Gain Compression Calibration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_GC_POWER_LEVEL.html">GCPowerLevel</a></td>
+    <td>
+        Set and read the power level at which to perform the Source Power Cal portion of a Gain Compression (Opt S93086A/B) Calibration. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_INTERPOLATION_ENABLED.html">InterpolationEnabled</a></td>
+    <td>
+        Turns correction interpolation ON or OFF. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_ISOL_AVERAGING_INCREMENT.html">IsolAveragingIncrement</a></td>
+    <td>
+        Specifies amount to increment (increase) the channel averaging factor during isolation measurement of the ECal module during an unguided ECal calibration. Default 8.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_ISOL_ENABLED.html">IsolEnabled</a></td>
+    <td>
+        Specifies whether or not the isolation state of the ECal module will be measured as part of an unguided ECal calibration. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_NOISE_SOURCE_TEMP.html">NoiseSourceTemp</a></td>
+    <td>
+        Sets and returns the temperature of the noise source connector.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_RECEIVER_POWER_OFFSET.html">ReceiverPowerOffset</a></td>
+    <td>
+        Adjusts a receiver power cal to account for components or adapters that are added between the source port and receiver while performing this cal. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_SYSTEM_IMPEDANCE.html">SystemImpedance</a></td>
+    <td>
+        Sets and returns the system impedance value for the analyzer. Default 50.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_TWO_STANDARDS_ENABLED.html">TwoStandardsEnabled</a></td>
+    <td>
+        Specifies the acquisition of calibration data using ONE or TWO sets of standards. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_VELOCITY_FACTOR.html">VelocityFactor</a></td>
+    <td>
+        Sets the velocity factor to be used with Electrical Delay and Port Extensions. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_WAVE_CORR_METHOD.html">WaveCorrMethod</a></td>
+    <td>
+        Sets and returns the wave correction method. Default MATC.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_CORRECTION_WAVE_NORM_METHOD.html">WaveNormMethod</a></td>
+    <td>
+        Sets and returns the wave normalization method. Deafult POW.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

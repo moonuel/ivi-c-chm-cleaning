@@ -1,0 +1,909 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>Distortion</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="Distortion" />
+		<mshelp:rltitle title="Distortion" />
+		<mshelp:keyword index="K" term="Distortion" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">Distortion</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\Channel\Distortion <!-- Branches -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(branchTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(branchTableToggle, event)"
+        tabindex="0">
+        <img id="branchTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Branches</span>
+</h1>
+<div id="branchTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="nameColumn">
+                Name</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.Channel.Distortion.BandTable.html">BandTable</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.Channel.Distortion.Carrier.html">Carrier</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.Channel.Distortion.Measure.html">Measure</a></td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelDistortionAutotune.html">Autotune</a></td>
+    <td>
+        Auto tunes all measurement bands for the modulation distortion channel.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionAdcFilterType.html">Get Channel Distortion Adc Filter Type</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_ADC_FILTER_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionAmplifierGain.html">Get Channel Distortion Amplifier Gain</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_AMPLIFIER_GAIN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionAttenuatorIncluded.html">Get Channel Distortion Attenuator Included</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_ATTENUATOR_INCLUDED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionCarrierFrequency.html">Get Channel Distortion Carrier Frequency</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_CARRIER_FREQUENCY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionCarrierPowerLevelForTest.html">Get Channel Distortion Carrier Power Level For Test</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_CARRIER_POWER_LEVEL_FOR_TEST attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionDutGain.html">Get Channel Distortion Dut Gain</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_DUT_GAIN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionDutInputPortNo.html">Get Channel Distortion Dut Input Port No</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_DUT_INPUT_PORT_NO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionDutMode.html">Get Channel Distortion Dut Mode</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_DUT_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionDutNoiseFigure.html">Get Channel Distortion Dut Noise Figure</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_DUT_NOISE_FIGURE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionDutOutputPortNo.html">Get Channel Distortion Dut Output Port No</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_DUT_OUTPUT_PORT_NO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionEvmScalingFactor.html">Get Channel Distortion Evm Scaling Factor</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_EVM_SCALING_FACTOR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionMeasureLowerAcpIbw.html">Get Channel Distortion Measure Lower Acp Ibw</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_MEASURE_LOWER_ACP_IBW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionMeasureLowerAcpOffset.html">Get Channel Distortion Measure Lower Acp Offset</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_MEASURE_LOWER_ACP_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionMeasureUpperAcpIbw.html">Get Channel Distortion Measure Upper Acp Ibw</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_MEASURE_UPPER_ACP_IBW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionMeasureUpperAcpOffset.html">Get Channel Distortion Measure Upper Acp Offset</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_MEASURE_UPPER_ACP_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionModSourceName.html">Get Channel Distortion Mod Source Name</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_MOD_SOURCE_NAME attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionNoiseFigureIncluded.html">Get Channel Distortion Noise Figure Included</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_NOISE_FIGURE_INCLUDED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionReceiverTimingAutoEnabled.html">Get Channel Distortion Receiver Timing Auto Enabled</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_RECEIVER_TIMING_AUTO_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionSparameterBw.html">Get Channel Distortion Sparameter Bw</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_SPARAMETER_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionSparameterEnabled.html">Get Channel Distortion Sparameter Enabled</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_SPARAMETER_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionSparameterPowerLevel.html">Get Channel Distortion Sparameter Power Level</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_SPARAMETER_POWER_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionSparameterReuseEnabled.html">Get Channel Distortion Sparameter Reuse Enabled</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_SPARAMETER_REUSE_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionSparameterStepSize.html">Get Channel Distortion Sparameter Step Size</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_SPARAMETER_STEP_SIZE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionSweepDelay.html">Get Channel Distortion Sweep Delay</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_SWEEP_DELAY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelDistortionSweepType.html">Get Channel Distortion Sweep Type</a></td>
+    <td>
+        Gets the value of the CHANNEL_DISTORTION_SWEEP_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionAdcFilterType.html">Set Channel Distortion Adc Filter Type</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_ADC_FILTER_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionAmplifierGain.html">Set Channel Distortion Amplifier Gain</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_AMPLIFIER_GAIN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionAttenuatorIncluded.html">Set Channel Distortion Attenuator Included</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_ATTENUATOR_INCLUDED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionCarrierFrequency.html">Set Channel Distortion Carrier Frequency</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_CARRIER_FREQUENCY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionCarrierPowerLevelForTest.html">Set Channel Distortion Carrier Power Level For Test</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_CARRIER_POWER_LEVEL_FOR_TEST attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionDutGain.html">Set Channel Distortion Dut Gain</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_DUT_GAIN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionDutInputPortNo.html">Set Channel Distortion Dut Input Port No</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_DUT_INPUT_PORT_NO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionDutMode.html">Set Channel Distortion Dut Mode</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_DUT_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionDutNoiseFigure.html">Set Channel Distortion Dut Noise Figure</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_DUT_NOISE_FIGURE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionDutOutputPortNo.html">Set Channel Distortion Dut Output Port No</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_DUT_OUTPUT_PORT_NO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionEvmScalingFactor.html">Set Channel Distortion Evm Scaling Factor</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_EVM_SCALING_FACTOR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionMeasureLowerAcpIbw.html">Set Channel Distortion Measure Lower Acp Ibw</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_MEASURE_LOWER_ACP_IBW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionMeasureLowerAcpOffset.html">Set Channel Distortion Measure Lower Acp Offset</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_MEASURE_LOWER_ACP_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionMeasureUpperAcpIbw.html">Set Channel Distortion Measure Upper Acp Ibw</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_MEASURE_UPPER_ACP_IBW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionMeasureUpperAcpOffset.html">Set Channel Distortion Measure Upper Acp Offset</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_MEASURE_UPPER_ACP_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionModSourceName.html">Set Channel Distortion Mod Source Name</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_MOD_SOURCE_NAME attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionNoiseFigureIncluded.html">Set Channel Distortion Noise Figure Included</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_NOISE_FIGURE_INCLUDED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionReceiverTimingAutoEnabled.html">Set Channel Distortion Receiver Timing Auto Enabled</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_RECEIVER_TIMING_AUTO_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionSparameterBw.html">Set Channel Distortion Sparameter Bw</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_SPARAMETER_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionSparameterEnabled.html">Set Channel Distortion Sparameter Enabled</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_SPARAMETER_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionSparameterPowerLevel.html">Set Channel Distortion Sparameter Power Level</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_SPARAMETER_POWER_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionSparameterReuseEnabled.html">Set Channel Distortion Sparameter Reuse Enabled</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_SPARAMETER_REUSE_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionSparameterStepSize.html">Set Channel Distortion Sparameter Step Size</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_SPARAMETER_STEP_SIZE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionSweepDelay.html">Set Channel Distortion Sweep Delay</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_SWEEP_DELAY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelDistortionSweepType.html">Set Channel Distortion Sweep Type</a></td>
+    <td>
+        Sets the value of the CHANNEL_DISTORTION_SWEEP_TYPE attribute.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_ADC_FILTER_TYPE.html">ADC Filter Type</a></td>
+    <td>
+        Selects between a narrow and wide IF filter anti-aliasing path.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_AMPLIFIER_GAIN.html">Amplifier Gain</a></td>
+    <td>
+        Sets and returns the nominal gain of an external source amplifier. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_ATTENUATOR_INCLUDED.html">Attenuator Included</a></td>
+    <td>
+        Enables or disables the external modulated source to pass through the attenuator of the specified PNA source and the attenuator setting is used to calculate the power levels.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_CARRIER_FREQUENCY.html">Carrier Frequency</a></td>
+    <td>
+        Sets and returns the carrier center frequency. Default 1.5GHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_CARRIER_POWER_LEVEL_FOR_TEST.html">Carrier Power Level For Test</a></td>
+    <td>
+        Sets and returns the carrier power level used for the distortion test at either the input or output of the DUT. Default -10dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_DUT_GAIN.html">DUT Gain</a></td>
+    <td>
+        Sets and returns the nominal DUT gain. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_DUT_INPUT_PORT_NO.html">DUT Input Port No</a></td>
+    <td>
+        Sets and returns the VNA port number connected to the DUT input. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_DUT_MODE.html">DUT Mode</a></td>
+    <td>
+        Set and read where to apply power to the DUT (input or output). Default DIN1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_DUT_NOISE_FIGURE.html">DUT Noise Figure</a></td>
+    <td>
+        Sets and returns the nominal DUT noise figure. This value is used by the EVM measurement. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_DUT_OUTPUT_PORT_NO.html">DUT Output Port No</a></td>
+    <td>
+        Sets and returns the VNA port number connected to the DUT output. Default 2.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_EVM_SCALING_FACTOR.html">EVM Scaling Factor</a></td>
+    <td>
+        Sets and returns the scaling factor applied to the EVM measurements.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_MOD_SOURCE_NAME.html">Mod Source Name</a></td>
+    <td>
+        Sets and returns the distortion modulation source name.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_NOISE_FIGURE_INCLUDED.html">Noise Figure Included</a></td>
+    <td>
+        Include or exclude the nominal DUT noise figure value. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_RECEIVER_TIMING_AUTO_ENABLED.html">Receiver Timing Auto Enabled</a></td>
+    <td>
+        Enables or disables receiver timing auto generation from the source pulse timing.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_SPARAMETER_BW.html">S ParameterBW</a></td>
+    <td>
+        Sets and returns the IF bandwidth for the linear S21 sweep. Default 1 kHz</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_SPARAMETER_ENABLED.html">Sparameter Enabled</a></td>
+    <td>
+        Enable or disable S-parameter sweep. If disabled, curve fitting (smoothing) is used instead of the S-parameter sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_SPARAMETER_POWER_LEVEL.html">Sparameter Power Level</a></td>
+    <td>
+        Sets and returns the power level used to measure the DUT S-parameters when operating in its linear region. Default -30dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_SPARAMETER_REUSE_ENABLED.html">Sparameter Reuse Enabled</a></td>
+    <td>
+        Enable or disable the re-use of the previous linear S-parameter measurements if available and skip sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_SPARAMETER_STEP_SIZE.html">Sparameter Step Size</a></td>
+    <td>
+        Sets and returns the step size for the linear S21 sweep. Default 1 MHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_SWEEP_DELAY.html">Sweep Delay</a></td>
+    <td>
+        Sets and returns the delay in seconds before the test signal to allow the RF source to settle. Default 0s.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_DISTORTION_SWEEP_TYPE.html">Sweep Type</a></td>
+    <td>
+        Selects between a fixed or power sweep type of sweep. Default Fixed.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

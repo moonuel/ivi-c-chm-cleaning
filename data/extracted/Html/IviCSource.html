@@ -1,0 +1,192 @@
+<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+	<head>
+		<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+		<meta NAME="save" CONTENT="history" />
+		<title>Using Driver Source Code</title>
+		<link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+		<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+		<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+		<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+		<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+		<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+		<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+		<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+		<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+		<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+		<xml>
+			<MSHelp:TOCTitle Title="Using Driver Source Code" />
+            <mshelp:rltitle title="Using Driver Source Code" />
+            <mshelp:keyword index="K" term="Using Driver Source Code" />
+			<MSHelp:Attr Name="DocSet" Value="KtNA" />
+			<MSHelp:Attr Name="DevLang" Value="VB" />
+			<MSHelp:Attr Name="DevLang" Value="CSharp" />
+			<MSHelp:Attr Name="DevLang" Value="C++" />
+			<MSHelp:Attr Name="Locale" Value="en-us" />
+			<MSHelp:Attr Name="TopicType" Value="kbArticle" />
+		</xml>
+
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+	</head>
+	<body>
+		<input type="hidden" id="userDataCache" class="userDataStyle" />
+		<input type="hidden" id="hiddenScrollOffset" />
+
+
+	<img id="collapseImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+    <img id="collapseAllImage" height="0" width="0" style="display: none; height: 0; width: 0;" src="../icons/collapse_all.gif" />
+    <img id="expandAllImage" height="0" width="0" style="display: none; height: 0; width: 0;" src="../icons/expand_all.gif" />
+	<img id="copyImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+	<div id="header" style="border: 0px">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td>
+                        <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor: default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                            <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+                            <label id="collapseAllLabel" for="toggleAllImage" style="display: none;"> Collapse All</label>
+                            <label id="expandAllLabel" for="toggleAllImage" style="display: none;"> Expand All</label>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+            <table id="bottomTable" cellpadding="0" cellspacing="0">
+                <tr id="headerTableRow1">
+                    <td align="left">
+                        <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                    </td>
+                    <td align="right">
+                        <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                    </td>
+                </tr>
+				<tr id="headerTableRow2">
+					<td align="left">
+						<span id="nsrTitle">Using  Driver Source Code</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow3">
+					<td align="left">
+						<span id="headfb" class="feedbackhead" />
+					</td>
+				</tr>
+			</table>
+			<table id="gradientTable">
+				<tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div id="mainSection">
+
+
+			<div id="mainBody">
+
+				<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()">
+					<font color="DarkGray"></font>
+					<p />
+				</div>
+                <div class="introduction">
+
+                    <p>
+                        This topic provides an introduction to using the KtNA driver source code. See the subtopics for more information:</p>
+                    <ul>
+                        <li><span sdata="link"><a href="IviCSourceFiles.html"><strong>Driver Source Code Files</strong></a></span> describes the source code files and explains how they relate to each other</li>
+                        <li><span sdata="link"><a href="IviCSourceBuildAndDeploy.html"><strong>Modifying the Driver</strong></a></span> explains how to build the source code and deploy the new driver assembly to other systems</li>
+                    </ul>
+                    <h1 class="heading"><span onclick="ExpandCollapse(section5Toggle)" onkeypress="ExpandCollapse_CheckKey(section5Toggle, event)" style="cursor:default;" tabindex="0">
+                        <img id="section5Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" /> Introduction to Source Code </span></h1>
+                    <div id="section5Section" class="section" name="collapseableSection" style="">
+                        <p>
+                            Driver source code is not installed by default — it is selected and installed during driver installation. To install the source code later:
+                        </p>
+                        <ol>
+                            <li>
+                                Select <i><b>Programs and Features</b></i> from
+                                the Windows Control Panel.
+                            </li>
+                            <li>
+                                In the <strong>Programs and Features</strong> list, select the KtNA driver.
+                            </li>
+                            <li>
+                                Click <strong>Change</strong> to modify the driver installation.
+                            </li>
+                        </ol>
+                        <p>
+                            <b>Visual Studio 2017</b> or greater is required to build the driver.  You may also need an active internet connection the first time you build the driver.
+                            This is needed for the build to automatically download the Nimbus Build Tools NuGet package, which is required for building.
+                            An internet connection will not be required for subsequent builds.
+                        </p>
+                        <p>
+                            This driver uses an external C++ dll library (CppApi) which performs the instrument I/O and contains the
+                            SCPI commands and queries used to control the instrument.
+                        </p>
+                        <p>
+                            Several techniques are available to see the SCPI mnemeonics sent by a driver item:
+                            <ul>
+                                <li>View the item's help page or refer to the <a href="IviCCommandReference.html">Instrument Command Reference</a> page in this help file.</li>
+                                <li>Enable the driver's tracing functionality using the SYSTEM_TRACING_ENABLED attribute with SYSTEM_TRACING_LEVEL set to Debug.</li>
+                                <li>Use the Keysight I/O Libraries Suite, I/O Monitor utility to monitor the VISA traffic.</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            Note that, in general:
+                        </p>
+                        <ul>
+                            <li>
+                                Keysight provides source code for drivers that communicate with
+                                devices using message-based protocols.  SCPI has a relatively expressive,
+                                friendly syntax and has become a staple of message-based communication over the last
+                                twenty-five years.
+                            </li>
+                            <li>
+                                Keysight does <em>not</em> provide source for modular instruments (such as PXI or
+                                AXIe instruments).  These instruments use register-based I/O to manipulate instrument
+                                registers.  Register-based  I/O is relatively low-level, non-intuitive, and not stable
+                                from revision to revision of an instrument, and so the source is not useful.
+                            </li>
+                        </ul>
+                        <p>
+                            There are license restrictions on the use of the source code. For details, see the <b>Keysight IVI Drivers Supplemental License Terms.rtf</b> file installed in the main <strong>Keysight.KtNA 3.0.8</strong> driver
+                            directory.
+                        </p>
+                    </div></div>
+
+                    
+
+                    <!-- Extending the Driver -->
+                    <!-- <p>
+                        <span sdata="link"><a href="SourceExtending.html">Extending the Driver</a></span>
+                        explains how to add methods and properties to the driver.  It also gives an overview of
+                        .NET extension methods, another mechanism that can be used to extend the driver.
+                    </p> -->
+           
+
+                <!-- End of main body section -->
+			</div>
+<!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+		</div>
+	</body>
+</html>

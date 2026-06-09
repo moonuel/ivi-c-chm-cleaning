@@ -1,0 +1,239 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="save" content="history" />
+		<title>LabVIEW or Keysight VEE Pro</title>
+		<link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+		<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+		<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+		<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+		<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+		<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+		<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+		<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+		<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+		<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+        <xml>
+            <mshelp:toctitle title="LabVIEW or Keysight VEE Pro" />
+            <mshelp:rltitle title="LabVIEW or Keysight VEE Pro" />
+            <mshelp:keyword index="K" term="LabVIEW or Keysight VEE Pro" />
+			<mshelp:attr name="DocSet" value="KtNA" />
+			<mshelp:attr name="DevLang" value="VB" />
+			<mshelp:attr name="DevLang" value="CSharp" />
+			<mshelp:attr name="DevLang" value="C++" />
+			<mshelp:attr name="Locale" value="en-us" />
+			<mshelp:attr name="TopicType" value="kbArticle" />
+		</xml>
+		<!-- begin: Microsoft Help 1.0 -->
+		<meta name="Microsoft.Help.Id" content="" />
+		<meta name="Microsoft.Help.TocParent" content="" />
+		<meta name="Microsoft.Help.TocOrder" content="" />
+		<meta name="Microsoft.Help.ContentType" content="" />
+		<meta name="Microsoft.Help.SelfBranded" content="true" />
+		<meta name="Microsoft.Help.Locale" content="en-us" />
+		<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+		<!--$$Microsoft.Help.F1$$-->
+		<!--$$Microsoft.Help.Keywords$$-->
+		<!-- end: Microsoft Help 1.0 -->
+	</head>
+	<body>
+		<input type="hidden" id="userDataCache" class="userDataStyle" />
+		<input type="hidden" id="hiddenScrollOffset" />
+		<img id="collapseImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse Section" />
+		<img id="expandImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Section" />
+		<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+		<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+		<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+		<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+		<img id="copyImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy Code" />
+		<img id="copyHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="Copy Code" />
+
+		<div id="header">
+			<table id="topTable" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+							<img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+							<label id="collapseAllLabel" for="toggleAllImage" style="display:none;"> Collapse All</label>
+							<label id="expandAllLabel" for="toggleAllImage" style="display:none;"> Expand All</label>
+						</span>
+						<span> &nbsp; &nbsp; </span>
+<!--                        <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span>
+-->					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+
+-->			<table id="bottomTable" cellpadding="0" cellspacing="0">
+				<tr id="headerTableRow1">
+					<td align="left">
+						<span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+					</td>
+					<td align="right">
+						<span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow2">
+					<td align="left">
+						<span id="nsrTitle">LabVIEW or Keysight VEE Pro</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow3">
+					<td align="left">
+						<span id="headfb" class="feedbackhead" />
+					</td>
+				</tr>
+			</table>
+			<table id="gradientTable">
+				<tr>
+					<td class="nsrBottom" id="headerBottom"><img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" /></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="mainSection">
+
+			<div id="mainBody">
+
+				<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()">
+					<span style="color: DarkGray"></span>
+					<p />
+				</div>
+
+				<div class="introduction">
+                    <p>
+                        You can use the KtNA IVI-C driver with<strong> National Instruments LabVIEW </strong>or
+                        <a href="http://www.keysight.com/find/vee" target="_blank"><strong>Keysight VEE Pro</strong></a>.  
+                        To do so, you must also use <strong><a href="http://www.keysight.com/find/commandexpert" target="_blank">Keysight Command Expert</a></strong>, which can generate IVI-C 
+                        driver sequences that can be used directly in LabVIEW or VEE.
+                    </p>
+                    <p>
+                        For additional information on using LabVIEW or VEE Pro with IVI-C drivers, see the following topics in the Command Expert help:</p>
+                    <ul>
+                        <li><strong>Command Expert for IVI-C</strong></li>
+                        <li><strong>Command Expert for LabVIEW</strong></li>
+                        <li><strong>Command Expert for VEE</strong></li>
+                    </ul>
+                    
+
+                    <h1 class="heading">Requirements</h1>
+                        <p>To use the KtNA IVI-C driver in LabVIEW or VEE, you must install either:</p>
+                        <ul>
+                        <li><strong>NI LabVIEW 2010</strong> or newer, 32- or 64-bit</li>
+                        <li><strong>
+                        <a href="http://www.keysight.com/find/vee" target="_blank">Keysight VEE Pro</a> 9.0</strong> or newer</li>
+                        </ul>
+                        <p>You also need:</p>
+                        <ul>
+                        <li><strong><a href="http://www.keysight.com/find/commandexpert" target="_blank">Keysight Command Expert</a> 1.4</strong> or newer, available for free download from the Keysight Technologies website. Install (or re-install) Command Expert after you install LabVIEW or VEE Pro.</li>
+                        </ul>
+</div>
+
+				<!--<h1 class="heading">
+					<span onclick="ExpandCollapse(section2Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section2Toggle, event)" tabindex="0">
+						<img id="section2Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+						Using the LabVIEW Instrument Driver Import Wizard
+					</span>
+				</h1>
+				<div id="section2Section" class="section" name="collapseableSection" style="">
+                    <p>
+                        This technique provides full access to all instrument specific and IVI Class (if any) functionality supported by the 
+                        KtNA driver.  
+                    </p>
+					<p>
+						National Instruments provides the LabVIEW Instrument Driver Import Wizard as a means
+						to convert an IVI-C driver into a series of classic LabVIEW VIs arranged in standard
+						LabVIEW menu palettes.  This utility is <b>not</b> installed with the LabVIEW product, but it
+						is freely available as a separate download from the National Instruments website.
+						Unlike the IVI Class Driver VIs which only provide access to IVI-defined functions, 
+						the VIs produced by this utility provide access to the driver's instrument-specific functions.
+						If interchangeability is not a requirement, then the LabVIEW Instrument Driver Import Wizard
+						is a viable option.
+					</p>
+                    <p>
+                        Although the import wizard produces convenient wrapper VIs for accessing the KtNA
+                        driver, it has some important shortcomings that should be considered when designing a LabVIEW
+                        application with IVI drivers.  First, the import wizard only generates wrapper VIs for accessing
+                        IVI driver functions. No VIs are generated for any driver attributes.  Since IVI drivers typically
+                        contain more attributes than functions, this means that most of the IVI driver functionality will
+                        <b>not</b> be accessible via the VIs produced by the import wizard.  To access the attributes of the
+                        KtNA driver, the LabVIEW <b>Property Node</b> must be used.
+                    </p>
+				</div>
+
+			
+                <h1 class="heading">
+                    <span onclick="ExpandCollapse(section1Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)" tabindex="0">
+                        <img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                        Using the LabVIEW Class Driver VIs
+                    </span>
+                </h1>
+                <div id="section1Section" class="section" name="collapseableSection" style="">
+                    <p>
+                        This technique limits access to only the IVI Class (if any) functionality supported by the KtNA driver.  
+                        NoClass is supported by this driver.
+                    </p>
+                    <p>
+                        LabVIEW provides IVI Class Driver VIs that can be used to write
+                        interchangeable IVI applications.  If interchangeability is the overriding requirement or if
+                        only the IVI-defined functions are needed in an application, then using the LabVIEW IVI Class Driver VIs
+                        is the preferred way to access the KtNA driver in LabVIEW.  These VIs are located on the
+                        <b>Functions</b> palette under <b>Instrument I/O, IVI Class Drivers</b>.
+                        You can use these VIs to load and access the underlying KtNA IVI-C
+                        driver.
+                    </p>
+                    <p>
+                        Please see the National Instruments documentation for more details on using the IVI Class Driver VIs.
+                    </p>
+                </div>-->
+
+			</div>
+<!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+		</div>
+	</body>
+</html>

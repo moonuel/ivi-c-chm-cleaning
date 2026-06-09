@@ -1,0 +1,850 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>IMD</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="IMD" />
+		<mshelp:rltitle title="IMD" />
+		<mshelp:keyword index="K" term="IMD" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">IMD</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\ClassicCommands\Sense\IMD  <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdFrequencyDfrequency.html">GetX Sense Imd Frequency Dfrequency</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_FREQUENCY_DFREQUENCY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdFrequencyDfrequencyStart.html">GetX Sense Imd Frequency Dfrequency Start</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_FREQUENCY_DFREQUENCY_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdFrequencyDfrequencyStop.html">GetX Sense Imd Frequency Dfrequency Stop</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_FREQUENCY_DFREQUENCY_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdFrequencyFcenter.html">GetX Sense Imd Frequency Fcenter</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_FREQUENCY_FCENTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdFrequencyFcenterCenter.html">GetX Sense Imd Frequency Fcenter Center</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_FREQUENCY_FCENTER_CENTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdFrequencyFcenterSpan.html">GetX Sense Imd Frequency Fcenter Span</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_FREQUENCY_FCENTER_SPAN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdFrequencyFcenterStart.html">GetX Sense Imd Frequency Fcenter Start</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_FREQUENCY_FCENTER_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdFrequencyFcenterStop.html">GetX Sense Imd Frequency Fcenter Stop</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_FREQUENCY_FCENTER_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdFrequencyF1.html">GetX Sense Imd FrequencyF1</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_FREQUENCY_F1 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdFrequencyF2.html">GetX Sense Imd FrequencyF2</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_FREQUENCY_F2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdIfbwidthImtone.html">GetX Sense Imd Ifbwidth Imtone</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_IFBWIDTH_IMTONE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdIfbwidthMain.html">GetX Sense Imd Ifbwidth Main</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_IFBWIDTH_MAIN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdSweepType.html">GetX Sense Imd Sweep Type</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_SWEEP_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdTpowerCouple.html">GetX Sense Imd Tpower Couple</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_TPOWER_COUPLE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdTpowerLevel.html">GetX Sense Imd Tpower Level</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_TPOWER_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdTpowerF1.html">GetX Sense Imd TpowerF1</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_TPOWER_F1 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdTpowerF1Start.html">GetX Sense Imd TpowerF1 Start</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_TPOWER_F1_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdTpowerF1Stop.html">GetX Sense Imd TpowerF1 Stop</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_TPOWER_F1_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdTpowerF2.html">GetX Sense Imd TpowerF2</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_TPOWER_F2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdTpowerF2Start.html">GetX Sense Imd TpowerF2 Start</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_TPOWER_F2_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseImdTpowerF2Stop.html">GetX Sense Imd TpowerF2 Stop</a></td>
+    <td>
+        Gets the value of the X_SENSE_IMD_TPOWER_F2_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseIMDHOProductActiveQuery.html">HO Product Active Query</a></td>
+    <td>
+        Returns the highest order product measured by SweptIMD.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseIMDHOProductQuery.html">HO Product Query</a></td>
+    <td>
+        Returns the highest order product that can be measured by SweptIMD. Default 9.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseIMDPMap.html">P Map</a></td>
+    <td>
+        Sets the input port and output port of an IMD or IMDx channel. Default 1,2.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseIMDPMapInputQuery.html">P Map Input Query</a></td>
+    <td>
+        Returns the VNA test port to be connected to the DUT input for an IMD or IMDx channel. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseIMDPMapOutputQuery.html">P Map Output Query</a></td>
+    <td>
+        Returns the VNA test port to be connected to the DUT output for an IMD or IMDx channel. Default 2.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseIMDSOrderActiveQuery.html">S Order Active Query</a></td>
+    <td>
+        Returns the state of whether or not 2nd order parameters are measured. A &quot;1&quot; or &quot;ON&quot; indicates 2nd order parameters are measured.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdFrequencyDfrequency.html">SetX Sense Imd Frequency Dfrequency</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_FREQUENCY_DFREQUENCY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdFrequencyDfrequencyStart.html">SetX Sense Imd Frequency Dfrequency Start</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_FREQUENCY_DFREQUENCY_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdFrequencyDfrequencyStop.html">SetX Sense Imd Frequency Dfrequency Stop</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_FREQUENCY_DFREQUENCY_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdFrequencyFcenter.html">SetX Sense Imd Frequency Fcenter</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_FREQUENCY_FCENTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdFrequencyFcenterCenter.html">SetX Sense Imd Frequency Fcenter Center</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_FREQUENCY_FCENTER_CENTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdFrequencyFcenterSpan.html">SetX Sense Imd Frequency Fcenter Span</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_FREQUENCY_FCENTER_SPAN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdFrequencyFcenterStart.html">SetX Sense Imd Frequency Fcenter Start</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_FREQUENCY_FCENTER_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdFrequencyFcenterStop.html">SetX Sense Imd Frequency Fcenter Stop</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_FREQUENCY_FCENTER_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdFrequencyF1.html">SetX Sense Imd FrequencyF1</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_FREQUENCY_F1 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdFrequencyF2.html">SetX Sense Imd FrequencyF2</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_FREQUENCY_F2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdIfbwidthImtone.html">SetX Sense Imd Ifbwidth Imtone</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_IFBWIDTH_IMTONE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdIfbwidthMain.html">SetX Sense Imd Ifbwidth Main</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_IFBWIDTH_MAIN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdSweepType.html">SetX Sense Imd Sweep Type</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_SWEEP_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdTpowerCouple.html">SetX Sense Imd Tpower Couple</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_TPOWER_COUPLE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdTpowerLevel.html">SetX Sense Imd Tpower Level</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_TPOWER_LEVEL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdTpowerF1.html">SetX Sense Imd TpowerF1</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_TPOWER_F1 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdTpowerF1Start.html">SetX Sense Imd TpowerF1 Start</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_TPOWER_F1_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdTpowerF1Stop.html">SetX Sense Imd TpowerF1 Stop</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_TPOWER_F1_STOP attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdTpowerF2.html">SetX Sense Imd TpowerF2</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_TPOWER_F2 attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdTpowerF2Start.html">SetX Sense Imd TpowerF2 Start</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_TPOWER_F2_START attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseImdTpowerF2Stop.html">SetX Sense Imd TpowerF2 Stop</a></td>
+    <td>
+        Sets the value of the X_SENSE_IMD_TPOWER_F2_STOP attribute.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_FREQUENCY_DFREQUENCY.html">Frequency Dfrequency</a></td>
+    <td>
+        Sets and returns fixed tone spacing. Default 1MHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_FREQUENCY_DFREQUENCY_START.html">Frequency Dfrequency Start</a></td>
+    <td>
+        Sets and returns the starting main tone separation for sweep type DFRequency (delta frequency). Default 1MHz</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_FREQUENCY_DFREQUENCY_STOP.html">Frequency Dfrequency Stop</a></td>
+    <td>
+        Sets and returns the stopping main tone separation for sweep type DFRequency (delta frequency). Default 10MHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_FREQUENCY_F1.html">Frequency F1</a></td>
+    <td>
+        Sets and returns the frequency of the F1 tone. Default 0.9995 GHz</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_FREQUENCY_F2.html">Frequency F2</a></td>
+    <td>
+        Sets and returns the frequency of the F2 tone. Default 1.0005 GHz</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_FREQUENCY_FCENTER.html">Frequency Fcenter</a></td>
+    <td>
+        Sets and returns the center frequency of the main tones. Default 1.0GHz</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_FREQUENCY_FCENTER_CENTER.html">Frequency Fcenter Center</a></td>
+    <td>
+        Sets and returns the sweep center frequency when sweeping the main tones. Default 13.255 GHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_FREQUENCY_FCENTER_SPAN.html">Frequency Fcenter Span</a></td>
+    <td>
+        Sets and returns the frequency span when sweeping the main tones. 26.489 GHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_FREQUENCY_FCENTER_START.html">Frequency Fcenter Start</a></td>
+    <td>
+        Sets and returns the start frequency when sweeping the main tones. Default 10.4 MHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_FREQUENCY_FCENTER_STOP.html">Frequency Fcenter Stop</a></td>
+    <td>
+        Sets and returns the stop frequency when sweeping the main tones. Default 26.4995 GHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_IFBWIDTH_IMTONE.html">Ifbwidth Imtone</a></td>
+    <td>
+        Sets and returns the IF Bandwidth for measurement of the intermodulation products. Default 1kHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_IFBWIDTH_MAIN.html">Ifbwidth Main</a></td>
+    <td>
+        Sets and returns the IF Bandwidth for measurement of the main F1 and F2 tones. Default 1kHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_SWEEP_TYPE.html">Sweep Type</a></td>
+    <td>
+        Sets and returns the sweep type for the IMD measurement. Default CenterFrequency.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_TPOWER_COUPLE.html">Tpower Couple</a></td>
+    <td>
+        Sets and returns the state of power coupling for F1 and F2.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_TPOWER_F1.html">Tpower F1</a></td>
+    <td>
+        Sets and returns the power level of the F1 tone. Default -24dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_TPOWER_F1_START.html">Tpower F1 Start</a></td>
+    <td>
+        Sets and returns the start power level of the F1 tone. Default -24 dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_TPOWER_F1_STOP.html">Tpower F1 Stop</a></td>
+    <td>
+        Sets and returns the stop power level of the F1 tone. Default -10dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_TPOWER_F2.html">Tpower F2</a></td>
+    <td>
+        Sets and returns the power level of the F2 tone. Default -24 dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_TPOWER_F2_START.html">Tpower F2 Start</a></td>
+    <td>
+        Sets and returns the start power level of the F2 tone. Default -24 dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_TPOWER_F2_STOP.html">Tpower F2 Stop</a></td>
+    <td>
+        Sets and returns the stop power level of the F2 tone. Default -10dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_IMD_TPOWER_LEVEL.html">Tpower Level</a></td>
+    <td>
+        Sets and returns the tone power leveling mode. Default None.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

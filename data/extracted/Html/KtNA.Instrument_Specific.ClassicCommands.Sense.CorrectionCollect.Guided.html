@@ -1,0 +1,833 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>Guided</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="Guided" />
+		<mshelp:rltitle title="Guided" />
+		<mshelp:keyword index="K" term="Guided" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">Guided</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\ClassicCommands\Sense\CorrectionCollect\Guided <!-- Branches -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(branchTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(branchTableToggle, event)"
+        tabindex="0">
+        <img id="branchTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Branches</span>
+</h1>
+<div id="branchTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="nameColumn">
+                Name</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Sense.CorrectionCollect.Guided.List.html">List</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Sense.CorrectionCollect.Guided.ListStep.html">ListStep</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Sense.CorrectionCollect.Guided.ListStepStandard.html">ListStepStandard</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.ClassicCommands.Sense.CorrectionCollect.Guided.PSensor.html">PSensor</a></td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedAbort.html">Abort</a></td>
+    <td>
+        Aborts the acquiring of a guided calibration that has been initialized but has not yet been concluded using the save command.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedAcquire.html">Acquire</a></td>
+    <td>
+        Initiates the measurement of the specified calibration standard.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedAcquireWithSync.html">Acquire With Sync</a></td>
+    <td>
+        Initiates the measurement of the specified calibration standard.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedAdapterCountQuery.html">Adapter Count Query</a></td>
+    <td>
+        </td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedAdapterCountZero.html">Adapter Count Zero</a></td>
+    <td>
+        </td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedAdapterCreateQuery.html">Adapter Create Query</a></td>
+    <td>
+        </td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedAdapterDelay.html">Adapter Delay</a></td>
+    <td>
+        </td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedAdapterDelayWithCoax.html">Adapter Delay With Coax</a></td>
+    <td>
+        </td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedAdapterDelayWithWGPhase.html">Adapter Delay WithWG Phase</a></td>
+    <td>
+        </td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedAdapterDescription.html">Adapter Description</a></td>
+    <td>
+        </td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedCKitCatalogQuery.html">CKit Catalog Query</a></td>
+    <td>
+        Returns a comma-separated list of valid kits that use the specified connector type.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedCKitPortSelect.html">CKit Port Select</a></td>
+    <td>
+        Specifies the calibration kit (mechanical or ECal) for each port to be used during a guided calibration. An unused port does NOT need to have a specified Cal Kit.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedCKitPortSelectQuery.html">CKit Port Select Query</a></td>
+    <td>
+        Returns the calibration kit (mechanical or ECal) for each port to be used during a guided calibration. An unused port does NOT need to have a specified Cal Kit.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedConnectorCatalogQuery.html">Connector Catalog Query</a></td>
+    <td>
+        Returns a list of valid connectors based on the connector descriptions of the available cal kits.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedConnectorPortSelect.html">Connector Port Select</a></td>
+    <td>
+        Specifies a DUT connector type for every port during the Guided Calibration procedure.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedConnectorPortSelectQuery.html">Connector Port Select Query</a></td>
+    <td>
+        Returns a DUT connector type for every port during the Guided Calibration procedure.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedData.html">Data</a></td>
+    <td>
+        Sets the measurement data for a specified measurement parameter of a particular step of a guided cal</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedDataCatalogQuery.html">Data Catalog Query</a></td>
+    <td>
+        Returns a comma-delimited CSV string of measurement parameters (with parameter names) for STANn at State x.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedDataForECal.html">Data For ECal</a></td>
+    <td>
+        Sets the measurement data for a specified measurement parameter of a particular step of a guided cal and for a specific state of an ECal.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedDataQuery.html">Data Query</a></td>
+    <td>
+        Returns the measurement data for a specified measurement parameter of a particular step of a guided cal</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedDataQueryForECal.html">Data Query For ECal</a></td>
+    <td>
+        Returns the measurement data for a specified measurement parameter of a particular step of a guided cal and for a specific state of an ECal.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedDescriptionQuery.html">Description Query</a></td>
+    <td>
+        Returns the connection description for the specified calibration step.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedDMatchApply.html">DMatch Apply</a></td>
+    <td>
+        Specifies a Delta Match Cal Set to be used for delta match correction.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedDMatchApplyInitiate.html">DMatch Apply Initiate</a></td>
+    <td>
+        Initiates a global delta match calibration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedDMatchApplyPortsQuery.html">DMatch Apply Ports Query</a></td>
+    <td>
+        Returns the port numbers for which delta match correction is required.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedECALAcquire.html">ECAL Acquire</a></td>
+    <td>
+        Execute the Ecal calibration with specified Ecal.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedETermsCompute.html">ETerms Compute</a></td>
+    <td>
+        Computes the error correction terms, turns Correction ON, and saves the calibration to an existing, specified Cal Set.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedETermsLoad.html">ETerms Load</a></td>
+    <td>
+        Loads 1-port error terms from a Cal Set into the current Guided Cal sequence.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedETermsLoadWithFromPortNo.html">ETerms Load With From Port No</a></td>
+    <td>
+        Loads 1-port error terms from a Cal Set into the current Guided Cal sequence.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseCorrectionCollectGuidedChannelMode.html">GetX Sense Correction Collect Guided Channel Mode</a></td>
+    <td>
+        Gets the value of the X_SENSE_CORRECTION_COLLECT_GUIDED_CHANNEL_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseCorrectionCollectGuidedEcalSelect.html">GetX Sense Correction Collect Guided Ecal Select</a></td>
+    <td>
+        Gets the value of the X_SENSE_CORRECTION_COLLECT_GUIDED_ECAL_SELECT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseCorrectionCollectGuidedIsolationAverageIncr.html">GetX Sense Correction Collect Guided Isolation Average Incr</a></td>
+    <td>
+        Gets the value of the X_SENSE_CORRECTION_COLLECT_GUIDED_ISOLATION_AVERAGE_INCR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseCorrectionCollectGuidedPreferenceSlidingLoad.html">GetX Sense Correction Collect Guided Preference Sliding Load</a></td>
+    <td>
+        Gets the value of the X_SENSE_CORRECTION_COLLECT_GUIDED_PREFERENCE_SLIDING_LOAD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedInitiate.html">Initiate</a></td>
+    <td>
+        Initiates a guided calibration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedInitiateWithMatch.html">Initiate With Match</a></td>
+    <td>
+        Initiates a guided calibration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedInitiateWithMatchAndSync.html">Initiate With Match And Sync</a></td>
+    <td>
+        Initiates a guided calibration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedIsolationPaths.html">Isolation Paths</a></td>
+    <td>
+        Specifies the paths (port pairs) to make isolation measurements on during a guided calibration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedIsolationPathsQuery.html">Isolation Paths Query</a></td>
+    <td>
+        Returns the paths (port pairs) to make isolation measurements on during a guided calibration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedIsolationPathsWithPortPairs.html">Isolation Paths With Port Pairs</a></td>
+    <td>
+        Specifies the paths (port pairs) to make isolation measurements on during a guided calibration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedIterationsCountQuery.html">Iterations Count Query</a></td>
+    <td>
+        Designed to be used for an iterative cal standard such as a sliding load, this command returns the number of iterative measurement acquisitions that has been made for the specified step.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedIterationsMinimumQuery.html">Iterations Minimum Query</a></td>
+    <td>
+        Designed to be used for an iterative cal standard such as a sliding load, this command returns the minimum number of required iterative measurement acquisitions for the specified step.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedIterationsReset.html">Iterations Reset</a></td>
+    <td>
+        Resets the specified guided cal connection step as unmeasured. This clears all previous measurements made for that step.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedPAcquire.html">PAcquire</a></td>
+    <td>
+        Show the Cal Window, and optionally one or more other specific windows before acquiring a Cal standard.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedPathCMethod.html">Path CMethod</a></td>
+    <td>
+        Specifies the calibration method for each port pair.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedPathCMethodQuery.html">Path CMethod Query</a></td>
+    <td>
+        Returns the calibration method for each port pair.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedPathTMethod.html">Path TMethod</a></td>
+    <td>
+        Specifies the calibration THRU method for each port pair.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedPathTMethodQuery.html">Path TMethod Query</a></td>
+    <td>
+        Returns the calibration THRU method for each port pair.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedPortsQuery.html">Ports Query</a></td>
+    <td>
+        Returns the list of ports being calibrated by an active calibration session.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedSave.html">Save</a></td>
+    <td>
+        Completes the guided cal by computing the error correction terms, turning Correction ON, and saving the calibration to a Cal Set.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedSaveCSet.html">Save CSet</a></td>
+    <td>
+        Completes the guided cal by computing the error correction terms, turning Correction ON, and saving the calibration to an existing, specified Cal Set.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedSaveWithMode.html">Save With Mode</a></td>
+    <td>
+        Completes the guided cal by computing the error correction terms, turning Correction ON, and saving the calibration to a Cal Set.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseCorrectionCollectGuidedChannelMode.html">SetX Sense Correction Collect Guided Channel Mode</a></td>
+    <td>
+        Sets the value of the X_SENSE_CORRECTION_COLLECT_GUIDED_CHANNEL_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseCorrectionCollectGuidedEcalSelect.html">SetX Sense Correction Collect Guided Ecal Select</a></td>
+    <td>
+        Sets the value of the X_SENSE_CORRECTION_COLLECT_GUIDED_ECAL_SELECT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseCorrectionCollectGuidedIsolationAverageIncr.html">SetX Sense Correction Collect Guided Isolation Average Incr</a></td>
+    <td>
+        Sets the value of the X_SENSE_CORRECTION_COLLECT_GUIDED_ISOLATION_AVERAGE_INCR attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseCorrectionCollectGuidedPreferenceSlidingLoad.html">SetX Sense Correction Collect Guided Preference Sliding Load</a></td>
+    <td>
+        Sets the value of the X_SENSE_CORRECTION_COLLECT_GUIDED_PREFERENCE_SLIDING_LOAD attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedStatesCatalogQuery.html">States Catalog Query</a></td>
+    <td>
+        Returns an array of ecal states used for the standard number.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedStepsQuery.html">Steps Query</a></td>
+    <td>
+        Returns the number of measurement steps required to complete the current guided calibration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedThruPorts.html">Thru Ports</a></td>
+    <td>
+        For calibrating more than 2-ports ONLY. Specifies the port pairs for the Thru connections of the calibration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseCorrectionCollectGuidedThruPortsQuery.html">Thru Ports Query</a></td>
+    <td>
+        For calibrating more than 2-ports ONLY. Returns the port pairs for the Thru connections of the calibration.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_CORRECTION_COLLECT_GUIDED_CHANNEL_MODE.html">Channel Mode</a></td>
+    <td>
+        Determines whether or not to honor the channel argument in guided calibration SCPI commands.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_CORRECTION_COLLECT_GUIDED_ECAL_SELECT.html">ECal Select</a></td>
+    <td>
+        Specifies the Ecal Kit for Ecal Calibration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_CORRECTION_COLLECT_GUIDED_ISOLATION_AVERAGE_INCR.html">Isolation Average Increment</a></td>
+    <td>
+        Specifies amount to increment (increase) the channels averaging factor during measurement of isolation standards in a guided calibration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_CORRECTION_COLLECT_GUIDED_PREFERENCE_SLIDING_LOAD.html">Preference Sliding Load</a></td>
+    <td>
+        Specifies the behavior for guided cal steps that involve a sliding load in a cal that is about to be performed.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

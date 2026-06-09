@@ -1,0 +1,1048 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>Data</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="Data" />
+		<mshelp:rltitle title="Data" />
+		<mshelp:keyword index="K" term="Data" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">Data</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\ClassicCommands\Sense\SA\Data  <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataBinsCountQuery.html">Bins Count Query</a></td>
+    <td>
+        Read the number of DFT points to be exported across the total RF span.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataFifoState.html">GetX Sense Sa Data Fifo State</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_FIFO_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataFileBinaryState.html">GetX Sense Sa Data File Binary State</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_FILE_BINARY_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataFileErase.html">GetX Sense Sa Data File Erase</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_FILE_ERASE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataFilePrefix.html">GetX Sense Sa Data File Prefix</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_FILE_PREFIX attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataFileText.html">GetX Sense Sa Data File Text</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_FILE_TEXT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataFileTextMarkers.html">GetX Sense Sa Data File Text Markers</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_FILE_TEXT_MARKERS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataFileTextMarkersAll.html">GetX Sense Sa Data File Text Markers All</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_FILE_TEXT_MARKERS_ALL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataFileTextVerbose.html">GetX Sense Sa Data File Text Verbose</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_FILE_TEXT_VERBOSE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataIqAligned.html">GetX Sense Sa Data Iq Aligned</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_IQ_ALIGNED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataIqCarrierFrequency.html">GetX Sense Sa Data Iq Carrier Frequency</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_IQ_CARRIER_FREQUENCY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataIqFileBinary.html">GetX Sense Sa Data Iq File Binary</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_IQ_FILE_BINARY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataIqFileText.html">GetX Sense Sa Data Iq File Text</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_IQ_FILE_TEXT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataIqSampleCount.html">GetX Sense Sa Data Iq Sample Count</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_IQ_SAMPLE_COUNT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataIqSampleRate.html">GetX Sense Sa Data Iq Sample Rate</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_IQ_SAMPLE_RATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataIqState.html">GetX Sense Sa Data Iq State</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_IQ_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataKeepReceiversList.html">GetX Sense Sa Data Keep Receivers List</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_KEEP_RECEIVERS_LIST attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataKeepState.html">GetX Sense Sa Data Keep State</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_KEEP_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataReceiversList.html">GetX Sense Sa Data Receivers List</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_RECEIVERS_LIST attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataSharedName.html">GetX Sense Sa Data Shared Name</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_SHARED_NAME attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataSharedState.html">GetX Sense Sa Data Shared State</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_SHARED_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataThresholdState.html">GetX Sense Sa Data Threshold State</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_THRESHOLD_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataThresholdValue.html">GetX Sense Sa Data Threshold Value</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_THRESHOLD_VALUE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseSaDataType.html">GetX Sense Sa Data Type</a></td>
+    <td>
+        Gets the value of the X_SENSE_SA_DATA_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataIQAutofillQuery.html">IQ Autofill Query</a></td>
+    <td>
+        Fill in the IQ settings automatically.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataIQDurationQuery.html">IQ Duration Query</a></td>
+    <td>
+        Read the IQ record duration.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataIQErrorQuery.html">IQ Error Query</a></td>
+    <td>
+        Read the IQ error code to indicate whether the IQ settings are valid or not.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataIQErrorTextQuery.html">IQ Error Text Query</a></td>
+    <td>
+        Read the error text to determine if the IQ settings are valid or not.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataIQGetQuery.html">IQ Get Query</a></td>
+    <td>
+        Gets the raw IQ data as a Visa arbitrary binary block of data.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataIQGetQueryWithPosition.html">IQ Get Query With Position</a></td>
+    <td>
+        Gets the raw IQ data as a Visa arbitrary binary block of data.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataKeepFrequenciesCountQuery.html">Keep Frequencies Count Query</a></td>
+    <td>
+        Read the number of frequency domain points in memory.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataKeepReceiversCountQuery.html">Keep Receivers Count Query</a></td>
+    <td>
+        Read the number of receivers that have been stored in memory.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataKeepReceiversQuery.html">Keep Receivers Query</a></td>
+    <td>
+        Read the current list of receivers that have been stored in memory.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataKeepScalarGetQuery.html">Keep Scalar Get Query</a></td>
+    <td>
+        Read the scalar data. Scalar data is amplitude only values, when the Compute phase mode is not turned on.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataKeepScalarGetQueryWithPosition.html">Keep Scalar Get Query With Position</a></td>
+    <td>
+        Read the scalar data. Scalar data is amplitude only values, when the Compute phase mode is not turned on.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataKeepVectorGetQuery.html">Keep Vector Get Query</a></td>
+    <td>
+        Read the vector data. Vector data is amplitude and phase, when the Compute phase mode is not turned on.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataKeepVectorGetQueryWithPosition.html">Keep Vector Get Query With Position</a></td>
+    <td>
+        Read the vector data. Vector data is amplitude and phase, when the Compute phase mode is not turned on.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataReceiversCountQuery.html">Receivers Count Query</a></td>
+    <td>
+        Read the number of currently exported receivers.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataReceiversQuery.html">Receivers Query</a></td>
+    <td>
+        Read the list of receivers that will be exported to a data file.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataFifoState.html">SetX Sense Sa Data Fifo State</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_FIFO_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataFileBinaryState.html">SetX Sense Sa Data File Binary State</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_FILE_BINARY_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataFileErase.html">SetX Sense Sa Data File Erase</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_FILE_ERASE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataFilePrefix.html">SetX Sense Sa Data File Prefix</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_FILE_PREFIX attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataFileText.html">SetX Sense Sa Data File Text</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_FILE_TEXT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataFileTextMarkers.html">SetX Sense Sa Data File Text Markers</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_FILE_TEXT_MARKERS attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataFileTextMarkersAll.html">SetX Sense Sa Data File Text Markers All</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_FILE_TEXT_MARKERS_ALL attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataFileTextVerbose.html">SetX Sense Sa Data File Text Verbose</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_FILE_TEXT_VERBOSE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataIqAligned.html">SetX Sense Sa Data Iq Aligned</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_IQ_ALIGNED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataIqCarrierFrequency.html">SetX Sense Sa Data Iq Carrier Frequency</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_IQ_CARRIER_FREQUENCY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataIqFileBinary.html">SetX Sense Sa Data Iq File Binary</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_IQ_FILE_BINARY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataIqFileText.html">SetX Sense Sa Data Iq File Text</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_IQ_FILE_TEXT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataIqSampleCount.html">SetX Sense Sa Data Iq Sample Count</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_IQ_SAMPLE_COUNT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataIqSampleRate.html">SetX Sense Sa Data Iq Sample Rate</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_IQ_SAMPLE_RATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataIqState.html">SetX Sense Sa Data Iq State</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_IQ_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataKeepReceiversList.html">SetX Sense Sa Data Keep Receivers List</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_KEEP_RECEIVERS_LIST attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataKeepState.html">SetX Sense Sa Data Keep State</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_KEEP_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataReceiversList.html">SetX Sense Sa Data Receivers List</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_RECEIVERS_LIST attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataSharedName.html">SetX Sense Sa Data Shared Name</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_SHARED_NAME attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataSharedState.html">SetX Sense Sa Data Shared State</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_SHARED_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataThresholdState.html">SetX Sense Sa Data Threshold State</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_THRESHOLD_STATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataThresholdValue.html">SetX Sense Sa Data Threshold Value</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_THRESHOLD_VALUE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseSaDataType.html">SetX Sense Sa Data Type</a></td>
+    <td>
+        Sets the value of the X_SENSE_SA_DATA_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataSizeBinQuery.html">Size Bin Query</a></td>
+    <td>
+        Read the byte size of one data bin in binary mode.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataSizeHighQuery.html">Size High Query</a></td>
+    <td>
+        Read the most significant bytes (MSB) of the byte size of the data to be exported.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataSizeLowQuery.html">Size Low Query</a></td>
+    <td>
+        Read the least significant bytes (LSB) of the byte size of the data to be exported.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataSizeQuery.html">Size Query</a></td>
+    <td>
+        Read the byte size of the data to be exported in binary mode.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataStartQuery.html">Start Query</a></td>
+    <td>
+        Read the frequency of the first RF bin.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseSADataWFactor.html">W Factor</a></td>
+    <td>
+        Read the windowing factor for band power computation. This factor is derived from the window type (Gaussian, flat top, etc.).</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_FIFO_STATE.html">Fifo State</a></td>
+    <td>
+        Enables or disables exporting data to the FIFO (First-IN, First-OUT) data buffer.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_FILE_BINARY_STATE.html">File Binary State</a></td>
+    <td>
+        Enables or disables binary file (.bin) output. Data is not exported until the next new sweep occurs.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_FILE_ERASE.html">File Erase</a></td>
+    <td>
+        Enables or disables erasing output data files after each sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_FILE_PREFIX.html">File Prefix</a></td>
+    <td>
+        Set and return the file name prefix for the data file.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_FILE_TEXT.html">File Text</a></td>
+    <td>
+        Enables or disables text file (.txt) output. Data is not exported until the next new sweep occurs.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_FILE_TEXT_MARKERS.html">File Text Markers</a></td>
+    <td>
+        Enables or disables adding marker data to the text file (.txt) output.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_FILE_TEXT_MARKERS_ALL.html">File Text Markers All</a></td>
+    <td>
+        Enables or disables adding all marker data to the text file (.txt) output.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_FILE_TEXT_VERBOSE.html">File Text Verbose</a></td>
+    <td>
+        Enables or disables exporting frequency and data for text files.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_IQ_ALIGNED.html">Iq Aligned</a></td>
+    <td>
+        Enable or disable recomputing the advanced IQ parameters (IQ center, IQ sample rate, IQ number of points) automatically if a SA sweep parameter change is performed.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_IQ_CARRIER_FREQUENCY.html">Iq Carrier Frequency</a></td>
+    <td>
+        Set and read the IQ carrier frequency.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_IQ_FILE_BINARY.html">Iq File Binary</a></td>
+    <td>
+        Enables or disables binary file (.bin) output. Data is not exported until the next new sweep occurs.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_IQ_FILE_TEXT.html">Iq File Text</a></td>
+    <td>
+        Enables or disables text file (.txt) output. Data is not exported until the next new sweep occurs.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_IQ_SAMPLE_COUNT.html">Iq Sample Count</a></td>
+    <td>
+        Set and read the number of IQ samples.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_IQ_SAMPLE_RATE.html">Iq Sample Rate</a></td>
+    <td>
+        Set and read the IQ sample rate.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_IQ_STATE.html">Iq State</a></td>
+    <td>
+        Enable or disable computing time domain IQ.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_KEEP_RECEIVERS_LIST.html">Keep Receivers List</a></td>
+    <td>
+        </td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_KEEP_STATE.html">Keep State</a></td>
+    <td>
+        Set and read the ON or OFF state of the end of sweep processing.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_RECEIVERS_LIST.html">Receivers List</a></td>
+    <td>
+        Set and read the list of receivers to export. The order set using this command will determine the order in which data will be exported to the FIFO data buffer.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_SHARED_NAME.html">Shared Name</a></td>
+    <td>
+        Assigns a specified name to the Microsoft Windows shared data mechanism.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_SHARED_STATE.html">Shared State</a></td>
+    <td>
+        Enables or disables exporting data to shared memory, which is the fastest way to transfer data between applications.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_THRESHOLD_STATE.html">Threshold State</a></td>
+    <td>
+        Enables or disables data level threshold mode</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_THRESHOLD_VALUE.html">Threshold Value</a></td>
+    <td>
+        Set and read the threshold value (dBm). Default -60 dBm.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_SA_DATA_TYPE.html">Type</a></td>
+    <td>
+        Set and read the data format.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

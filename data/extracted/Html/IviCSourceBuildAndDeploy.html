@@ -1,0 +1,333 @@
+<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+	<head>
+		<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+		<meta NAME="save" CONTENT="history" />
+		<title>Modifying the Driver</title>
+		<link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+		<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+		<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+		<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+		<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+		<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+		<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+		<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+		<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+		<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+		<xml>
+            <mshelp:toctitle title="Modifying the Driver" />
+            <mshelp:rltitle title="Modifying the Driverr" />
+            <mshelp:keyword index="K" term="Modifying the Driver" />
+			<MSHelp:Attr Name="DocSet" Value="KtNA" />
+			<MSHelp:Attr Name="DevLang" Value="VB" />
+			<MSHelp:Attr Name="DevLang" Value="CSharp" />
+			<MSHelp:Attr Name="DevLang" Value="C++" />
+			<MSHelp:Attr Name="Locale" Value="en-us" />
+			<MSHelp:Attr Name="TopicType" Value="kbArticle" />
+		</xml>
+
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+	</head>
+	<body>
+		<input type="hidden" id="userDataCache" class="userDataStyle" />
+		<input type="hidden" id="hiddenScrollOffset" />
+
+
+	<img id="collapseImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+    <img id="collapseAllImage" height="0" width="0" style="display: none; height: 0; width: 0;" src="../icons/collapse_all.gif" />
+    <img id="expandAllImage" height="0" width="0" style="display: none; height: 0; width: 0;" src="../icons/expand_all.gif" />
+	<img id="copyImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+	<div id="header" style="border: 0px">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td>
+                        <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor: default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                            <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+                            <label id="collapseAllLabel" for="toggleAllImage" style="display: none;"> Collapse All</label>
+                            <label id="expandAllLabel" for="toggleAllImage" style="display: none;"> Expand All</label>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+            <table id="bottomTable" cellpadding="0" cellspacing="0">
+                <tr id="headerTableRow1">
+                    <td align="left">
+                        <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                    </td>
+                    <td align="right">
+                        <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                    </td>
+                </tr>
+				<tr id="headerTableRow2">
+					<td align="left">
+						<span id="nsrTitle">Modifying the Driver</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow3">
+					<td align="left">
+						<span id="headfb" class="feedbackhead" />
+					</td>
+				</tr>
+			</table>
+			<table id="gradientTable">
+				<tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div id="mainSection">
+
+
+			<div id="mainBody">
+
+				<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()">
+					<font color="DarkGray"></font>
+					<p />
+				</div>
+
+                <!-- Introduction -->
+                <div class="introduction">
+                    <p>
+                        While you can build and redeploy the driver with relative ease,&nbsp;the process is easier if you understand the details explained here.</p>
+                </div>
+
+                <!-- Modifiying the Implementation Section -->
+                <h1 class="heading">
+                    <span onclick="ExpandCollapse(section1Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)" tabindex="0">
+                        <img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Modifiying the Implementation
+                    </span>
+                </h1>
+                <div id="section1Section" class="section" name="collapseableSection" style="">
+                    <p>
+                        The IVI.NET driver's C# source code in the Source directory implements the driver methods and properties by calling into a compiled C++ dll
+                        via the bridge code in the SwigWrappr directory.  To modify the implementation you may replace the generated bridge calls with your custom code and use
+                        the following special bridge methods to directly send SCPI commands and queries to the instrument:
+                        <ul>
+                            <li><b>pCppApi->System()->WriteBytes(std::vector&lt;uint8_t&gt;)</b>  - Writes an array of bytes to the instrument</li>
+                            <li><b>pCppApi->System()->WriteString(String)</b> - Writes a string to the instrument</li>
+                            <li><b>std::vector&lt;uint8_t&gt; pCppApi->System()->ReadBytes()</b>  - Reads an array of bytes response from the instrument</li>
+                            <li><b>String pCppApi->System()->ReadString()</b> - Reads a string response from the instrument</li>
+                        </ul>
+                        <ul>
+                            <b>Note:</b> You may also use the above methods in your driver application programs via the driver's <b>viWrite</b> and <b>viRead</b> functions.  
+                            In some cases this may be a better alternative than modifying the driver source code.
+                        </ul>
+                        <p></p>
+                        For example to change the SCPI sent by a FREQUENCY_CENTER attribute, edit the attribute in Source\KtDriver.cpp, replacing the code with your code as shown:
+                        <div name="snippetGroup">
+                            <div class="code">
+                                <span codelanguage="ManagedCPlusPlus">
+                                    <table width="100%" cellspacing="0" cellpadding="0">
+                                        <tr><th>C++ </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy Code" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+                                        <tr>
+                                            <td colspan="2">
+<pre>
+ViStatus _VI_FUNC KtDriver_get_FREQUENCY_CENTER(ViSession Vi, ViConstString RepCapIdentifier, ViReal64* AttributeValue)
+{
+	ValidateSession(Vi);
+	ObtainLock(Vi);
+	CheckForNull(Vi, AttributeValue);
+	auto status = VI_SUCCESS;
+	try
+	{
+		GetCppApi();
+        //*AttributeValue = pCppApi->Frequency()->GetCenter(); // Original driver code
+
+		pCppApi->System()->WriteString("FREQuency:CW?");
+		auto retVal = pCppApi->System()->ReadString();
+		*AttributeValue = stof(retVal);
+	}
+	catch (const exception&amp; e)
+	{
+		status = TranslateException(Vi, e);
+		return status;
+	}
+    status = PollInstrumentErrors(Vi);
+  
+    return status;
+}
+
+ViStatus _VI_FUNC KtDriver_set_FREQUENCY_CENTER(ViSession Vi, ViConstString RepCapIdentifier, ViReal64 AttributeValue)
+{
+	ValidateSession(Vi);
+	ObtainLock(Vi);
+	auto status = VI_SUCCESS;
+	try
+	{
+		GetCppApi();
+        //pCppApi->Frequency()->SetCenter(AttributeValue); // Original driver code
+
+		pCppApi->System()->WriteString("FREQuency:CW " + to_string(AttributeValue));
+	}
+	catch (const exception&amp; e)
+	{
+		status = TranslateException(Vi, e);
+		return status;
+	}
+    status = PollInstrumentErrors(Vi);
+  
+    return status;
+}
+</pre>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </span>
+                            </div>
+                        </div>
+
+                    </p>
+                </div>      <!-- End of Modifiying the Implementation section -->
+
+
+                    <!-- Changing the Version Section -->
+                    <h1 class="heading">
+                        <span onclick="ExpandCollapse(section2Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section2Toggle, event)" tabindex="0">
+                            <img id="section2Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Changing the Version
+                        </span>
+                    </h1>
+                    <div id="section1Section" class="section" name="collapseableSection" style="">
+                        <p>
+                            If you want to change the driver version, edit all instances of the version number in the files <b>DriverInfo.cpp</b> and <b>Versoin.rc2</b>.<br />
+                            The version format is <strong>Major.Minor.Build.Revision</strong>; integers must be between 0 and 32767.
+                        </p>
+                    </div>      <!-- End of Changing the Version section -->
+
+
+                    <!-- Changing Driver Attributes Section -->
+                    <h1 class="heading">
+                        <span onclick="ExpandCollapse(section4Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section4Toggle, event)" tabindex="0">
+                            <img id="section4Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Changing Driver Attributes
+                        </span>
+                    </h1>
+                    <div id="section1Section" class="section" name="collapseableSection" style="">
+                        <p>
+                            The driver source is installed with the same driver attributes that were used to build the
+                            installed driver dll.  Keysight recommends the following changes to the
+                            <strong>Versoin.rc2</strong> file if you are rebuilding the driver and deploying it.
+                        </p>
+                        <p>
+                            <table cellpadding="5" cellspacing="2" frame="lhs" width="50%">
+                                <tr valign="top">
+                                    <th width="20%">Attribute</th>
+                                    <th width="80%">Recommendation</th>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="20%">
+                                        <strong>
+                                            Comments
+                                        </strong>
+                                    </td>
+                                    <td width="80%">
+                                        Do not change.
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="20%">
+
+                                        <strong>
+                                            FileDescription
+                                        </strong>
+                                    </td>
+                                    <td width="80%">
+                                        Append &quot;(Modified by &lt;your company name&gt;)&quot; to the description.
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="20%">
+                                        <strong>
+                                            CompanyName
+                                        </strong>
+                                    </td>
+                                    <td width="80%">
+                                        Change to your company name.
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="20%">
+                                        <strong>LegalCopyright</strong>
+                                    </td>
+                                    <td width="80%">
+                                        Append a copyright for your company.
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="20%">
+                                        <strong>LegalTrademarks</strong>
+                                    </td>
+                                    <td width="80%">
+                                        Modify as needed for your company.
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="20%">
+                                        <strong>
+                                            FileVersion
+                                            <br />
+                                            ProductVersion
+                                        </strong>
+                                    </td>
+                                    <td width="80%">
+                                        Change as discussed in the versioning section above.
+                                    </td>
+                                </tr>
+                            </table>
+                        </p>
+
+                    </div>      <!-- End of Changing Driver Attributes section -->
+
+                    <!-- Installation -->
+                    <h1 class="heading">
+                        <span onclick="ExpandCollapse(section5Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section5Toggle, event)" tabindex="0">
+                            <img id="section5Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Installation
+                        </span>
+                    </h1>
+                    <div id="section1Section" class="section" name="collapseableSection" style="">
+                        <p>
+                            When you determine how to deploy the rebuilt driver dll, consider the following:
+                        </p>
+                        <ul>
+                            <li>
+                                The easiest way to deploy the driver is to
+                                install it in the same location as the programs that call it.  However, this is only practical if the driver will be used by one application, or for very
+                                informal debugging.
+                            </li>
+                            <li>
+                                If the driver will be used more extensively, it should be installed as described in <a href="http://www.ivifoundation.org/specifications">
+                                    IVI-3.17: Installation Requirements Specification
+                                </a>, which describes how drivers should be installed.  In this case
+                                you only need to install the rebuilt dll
+                                required by the driver. 
+                            </li>
+                        </ul>
+                    </div>      <!-- End of Installation section -->
+
+                    <!-- End of main body section -->
+                </div>
+<!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+		</div>
+	</body>
+</html>

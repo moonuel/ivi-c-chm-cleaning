@@ -1,0 +1,272 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="save" content="history" />
+		<title>IVI Configuration Store</title>  <!-- IVI-C version -->
+		<link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+		<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+		<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+		<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+		<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+		<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+		<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+		<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+		<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+		<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+		<xml>
+		<mshelp:toctitle title="IVI Configuration Store" />
+		<mshelp:rltitle title="IVI Configuration Store" />
+		<mshelp:keyword index="K" term="IVI Configuration Store" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbArticle" />
+		</xml>
+
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+	</head>
+	<body>
+		<input type="hidden" id="userDataCache" class="userDataStyle" />
+		<input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+		<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+		<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+		<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+		<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+		<div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+						<img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+							<label id="collapseAllLabel" for="toggleAllImage" style="display:none;"> Collapse All</label>
+							<label id="expandAllLabel" for="toggleAllImage" style="display:none;"> Expand All</label>
+						</span>
+						<span> &nbsp; &nbsp; </span>
+<!--                        <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+				<tr id="headerTableRow1">
+					<td align="left">
+						<span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+					</td>
+					<td align="right">
+						<span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow2">
+					<td align="left">
+						<span id="nsrTitle">IVI Configuration Store</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow3">
+					<td align="left">
+						<span id="headfb" class="feedbackhead" />
+					</td>
+				</tr>
+			</table>
+			<table id="gradientTable">
+				<tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+				</tr>
+			</table>
+		</div>
+
+	
+		<div id="mainSection">
+
+			<div id="mainBody">
+
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+					<span style="color: DarkGray"></span>
+
+				<div class="introduction">
+					<p>The <strong>IVI Configuration Store</strong> (referred to as <em>Config Store</em>) serves as a central repository for driver registration information. The Config Store is:</p>
+                    <ul>
+                    <li>Part of the <a href="IviSharedComponents.html">IVI Shared Components</a></li>
+                    <li>An XML file named <strong>IviConfigurationStore.xml</strong> that is installed in <strong>&lt;IviInstallDir&gt;\Data\</strong> (typically C:\Program Files\IVI Foundation\IVI\Data)</li>
+                    </ul>
+                    </div>
+                    
+                    <h1 class="heading">
+                    <span onclick="ExpandCollapse(section1)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1, event)" tabindex="0">
+                    <img id="section1" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                    How the Config Store is Used
+                    </span>
+                    </h1>
+                    <div id="section1" class="section" name="collapseableSection" style="">
+              
+                    <p>IVI drivers are required to populate the Config Store with one entry: the <strong>software module</strong>. This entry contains:</p>
+                    <ul>                    
+                       
+                        <li>The instrument driver DLL</li><li>
+							Any <a href="RepeatedCapabilities.html#PhysicalRepeatedCapabilityNames">repeated capability physical names</a></li>
+                        <li>
+							Additional <a href="IviCompliance.html">IVI compliance information</a></li>
+                        <li>
+							A variety of other items</li>
+					</ul>
+					
+                    <p><strong>Note: </strong>The software module is created by the KtNA installer and removed by the uninstaller. <strong>End users should never modify the software module entry.</strong> </p>
+                        <p>End users can add information to the Config Store to describe how they intend to:</p>
+                    <ul>
+                    <li>Use IVI drivers in their system </li>
+                    <li>Specify logical names for IVI drivers </li>
+                    <li>Specify <a href="RepeatedCapabilities.html#VirtualRepeatedCapabilityNames">virtual names</a> for channels</li>
+                    </ul>
+                    <p>If you want to:</p>
+                    <ul>
+                    <li><strong>Access only the driver&#39;s instrument-specific functionality</strong>, no other entries in the Config Store are required.</li>
+                    <li><strong>Use the driver in an interchangeable program</strong>, you must edit the Config Store (see the following section). Instrument vendors and other third parties provide graphical tools for conveniently editing the Config Store.</li>
+                        </ul>
+                   
+                    
+						</div>				
+			
+				<h1 class="heading">
+                <span onclick="ExpandCollapse(section2)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section2, event)" tabindex="0">
+                <img id="section2" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                Editing the IVI Configuration Store
+                </span>
+                </h1>
+                <div id="section2" class="section" name="collapseableSection" style="">
+                <div class="alert">
+						<table>
+							<th>
+								<img src="../icons/alert_note.gif" title="Note" /> <b>Note:</b>
+								<tr>
+									<td>
+										<p>
+											Although the IVI Configuration Store is a human readable
+											XML file, the IVI Foundation strongly discourages you from directly editing this file.  The Config Store
+											file is highly self-referential and easily corrupted if directly modified.  Modifications are typically done with either:</p>
+                                        <ul>
+                                        <li>
+											A third-party utility (search <a href="http://www.google.com/search?q=IVI+Configuration+Store+editor" target="_blank">IVI Configuration Store Editor</a> to see options)</li>
+                                        <li>
+											The&nbsp; 
+											<a href="IviSharedComponents.html">IVI Configuration Server</a>, a programmatic interface to the Config Store that is included in the IVI shared components</li>
+                                        </ul>
+                                        <p><strong>Note: </strong>End users should never modify the software module entry.</p>
+									</td>
+								</tr>
+							</th>
+						</table>
+					</div>
+					<p>
+						To write test programs that allow for interchangeability, you must create three additional entries
+						(described below) in the Config Store: <strong>Hardware Asset</strong>, <strong>Driver Session</strong>, and <strong>Logical Name</strong>. Refer to the documentation for your Config Store editor for detailed instructions on modifying these items. 
+					</p>
+                   
+					<div id="HardwareAsset" class="subsection">
+					<h3 class="subHeading">Hardware Asset</h3>
+						<p>
+							The <strong>hardware asset</strong> identifies a specific piece of instrument hardware. Its main purpose is to house the I/O resource descriptor used to communicate with the device.
+						</p>
+					</div>
+
+					<div id="DriverSession" class="subsection">
+					<h3 class="subHeading">Driver Session</h3>
+						<p>
+							The <strong>driver session</strong> associates the <em>software module</em> with the <em>hardware asset</em> and specifies such things as:</p>                      
+                        <ul>
+                        <li>Driver initialization values</li>
+                        <li>Mappings between any repeated capability physical names and virtual names (which are used by client programs to access repeated capabilities in an interchangeable fashion; see
+							<a href="RepeatedCapabilities.html">Repeated Capabilities</a> for details)</li>                      
+                        </ul>
+
+						<p>
+							Users create a separate driver session for each unique combination of driver software, instrument
+							hardware, and initialization settings.  You can have multiple driver sessions for the same software module,
+							if, for instance, the driver is controlling several instances of the same instrument at different
+							GPIB addresses.
+						</p>
+					</div>
+
+					<div id="LogicalName" class="subsection">
+					<h3 class="subHeading">Logical Name</h3>
+						<p>
+							The <strong>logical name</strong> allows you to associate a name you choose (such as  <em>MyDriverSession1</em>) with a driver session. Because the driver session is tied to a particular driver and instrument, a level of indirection is needed to abstract these details in interchangeable applications. The logical name—a simple string identifier for a driver session—serves as this extra level of abstraction. 
+
+						</p>
+                        <p>
+							Your program must use the logical name to be interchangeable. Applications load IVI-C-specific drivers by passing a logical name to the driver's Initialize function. No instrument-specific details exist in the client program. Swapping instruments in such a system involves merely associating the logical name in the Config Store with a different driver session (in other words, a different driver-instrument combination). 
+
+						</p>
+					</div>
+                    </div>				
+			</div>
+<!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+		</div>
+	</body>
+</html>

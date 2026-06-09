@@ -1,0 +1,468 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="save" content="history" />
+		<title>Visual C++</title>
+		<link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+		<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+		<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+		<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+		<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+		<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+		<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+		<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+		<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+		<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+        <xml>
+			<mshelp:toctitle title="Visual C++" />
+			<mshelp:rltitle title="Visual C++" />
+			<mshelp:keyword index="K" term="Visual C++" />
+			<mshelp:attr name="DocSet" value="KtNA" />
+			<mshelp:attr name="DevLang" value="VB" />
+			<mshelp:attr name="DevLang" value="CSharp" />
+			<mshelp:attr name="DevLang" value="C++" />
+			<mshelp:attr name="Locale" value="en-us" />
+			<mshelp:attr name="TopicType" value="kbArticle" />
+		</xml>
+		<!-- begin: Microsoft Help 1.0 -->
+		<meta name="Microsoft.Help.Id" content="" />
+		<meta name="Microsoft.Help.TocParent" content="" />
+		<meta name="Microsoft.Help.TocOrder" content="" />
+		<meta name="Microsoft.Help.ContentType" content="" />
+		<meta name="Microsoft.Help.SelfBranded" content="true" />
+		<meta name="Microsoft.Help.Locale" content="en-us" />
+		<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+		<!--$$Microsoft.Help.F1$$-->
+		<!--$$Microsoft.Help.Keywords$$-->
+		<!-- end: Microsoft Help 1.0 -->
+	</head>
+	<body>
+		<input type="hidden" id="userDataCache" class="userDataStyle" />
+		<input type="hidden" id="hiddenScrollOffset" />
+		<img id="collapseImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse Section" />
+		<img id="expandImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Section" />
+		<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+		<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+		<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+		<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+		<img id="copyImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy Code" />
+		<img id="copyHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="Copy Code" />
+
+		<div id="header">
+			<table id="topTable" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+							<img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+							<label id="collapseAllLabel" for="toggleAllImage" style="display:none;"> Collapse All</label>
+							<label id="expandAllLabel" for="toggleAllImage" style="display:none;"> Expand All</label>
+						</span>
+						<span> &nbsp; &nbsp; </span>
+<!--                        <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span>
+-->					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+
+-->			<table id="bottomTable" cellpadding="0" cellspacing="0">
+				<tr id="headerTableRow1">
+					<td align="left">
+						<span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+					</td>
+					<td align="right">
+						<span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow2">
+					<td align="left">
+						<span id="nsrTitle">Visual C++</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow3">
+					<td align="left">
+						<span id="headfb" class="feedbackhead" />
+					</td>
+				</tr>
+			</table>
+			<table id="gradientTable">
+				<tr>
+					<td class="nsrBottom" id="headerBottom"><img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" /></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="mainSection">
+
+			<div id="mainBody">
+
+				<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()">
+					<span style="color: DarkGray"></span>
+					<p />
+				</div>
+				<div class="introduction">
+					<p>
+						This section describes how to use the KtNA IVI-C driver with Visual C++.&nbsp; For information on:</p>
+                    <ul>
+<li><strong>Initialization not specific to C++,</strong> see <a href="IviCInitialize.html">Initializing the Driver</a></li>
+<li><strong>Programming with IVI drivers</strong>, see the <em>Getting Started Guide</em> on the <a href="http://www.ivifoundation.org/default.aspx" target="_blank" rel="noopener">IVI Foundation</a> website</li>
+</ul>
+			
+				</div>
+
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section1)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1, event)" tabindex="0">
+						<img id="section1" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+					<span onclick="ExpandCollapse(section1)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1, event)" tabindex="0">
+						Accessing </span>
+				    the Driver
+					</span>
+				</h1>
+				<div id="section1" class="section" name="collapseableSection" style="">
+                    
+						<p>To access the driver, all IVI-C driver programs (and your Visual Studio project) must:
+					</p>
+					<ul>
+						<li>Reference the proper import library: <strong>&nbsp;KtNA.lib </strong></li>
+                        <li>Include the proper header file:<strong> KtNA.h</strong></li>
+						<li>Prefix function calls with <strong>"KtNA_" </strong></li>
+					</ul>
+					<p>
+						To use the KtNA driver, perform the following steps in Visual
+						Studio.
+					</p>
+					<ol type="1">
+						<li>In <strong>Solution Explorer</strong>, right-click on the project and select <b>Properties</b>. </li>
+						<li>In the property pages dialog, expand the <b>Linker</b> node and select <b>Input</b>.</li>
+						<li>In the <b>Additional Dependencies</b> field, enter:<br /><code>&nbsp;&quot;KtNA.lib&quot;</code></li>
+						<li>Click <b>OK</b>. </li>
+						<li>In the main application source file (.cpp), add the following line to the top of
+							the file:		
+							<br />
+							<code>&nbsp;#include "KtNA.h"</code>
+						</li>
+                        <li>Specify the path to your driver's library (.lib) and header (.h) files:
+                            <ol style="list-style-type: lower-alpha;">
+                              <li>Select <strong>Tools &gt; Options &gt; Projects and Solutions &gt; VC++ Directories</strong>.</li>
+                              <li>Enter the following paths. For:
+                                <ul>
+                                <li><strong>Include files</strong>, add:<br /> <code>&nbsp; C:\Program Files\IVI Foundation\IVI\Include</code>&nbsp;(Win32 and x64)</li>
+                                <li><strong>Library files</strong>, add:<br />
+                                 <code>&nbsp; C:\Program Files\IVI Foundation\IVI\Lib_\msc</code>&nbsp;(Win32)<br />
+                                 <code>&nbsp; C:\Program Files\IVI Foundation\IVI\Lib_x64\msc</code> (x64)</li>
+                                </ul>
+                                </li>
+<p>Note that these paths:</p>
+<ul>
+<li>Start with <strong>C:\Program Files (x86) </strong>for 32-bit operating systems</li>
+<li>Also can be entered in the <strong>Project Properties</strong> dialog in the <strong>Configuration Properties</strong>, <strong>C++</strong> and <strong>Linker </strong>panes</li>
+</ul>
+
+</ol>
+</li>
+					</ol>
+				</div>
+
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section2)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section2, event)" tabindex="0">
+						<img id="section2" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+						Initializing the Driver
+					</span>
+				</h1>
+				<div id="section2" class="section" name="collapseableSection" style="">
+					<p>To initialize the driver:</p>
+                <ol>
+                <li>Call <b>KtNA</b><strong>_InitWithOptions</strong> to either:
+                    <ul>
+                <li>Establish an I/O connection to an instrument (often referred to as an "I/O session")&nbsp;</li>
+                <li>Put the driver in simulation mode</li>
+                </ul>
+                </li>
+                    <li>Ensure you also call <strong><b>KtNA</b>_close</strong> at the end of your program (as required by IVI specifications) to:</li>
+                        <ul>
+                            <li>Avoid unpredictable driver behavior</li>
+                            <li>Ensure that any resources held by the driver are properly released</li>
+                        </ul>
+                </ol>
+	
+					<div class="subsection">
+						<p>
+							The driver is typically initialized using
+							a resource descriptor, often a VISA resource descriptor, as shown below.
+						</p>
+						<div name="snippetGroup">
+							<div class="code">
+								<span codelanguage="ManagedCPlusPlus">
+									<table width="100%" cellspacing="0" cellpadding="0">
+									<tr><th>C++ </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy Code" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+									<tr>
+										<td colspan="2">
+<pre>
+ViSession session;
+ViStatus status;
+status = KtNA_InitWithOptions("MyVisaAlias", VI_TRUE, VI_TRUE, "", &amp;session); // "MyVisaAlias" is a VISA alias for your instrument.
+status = KtNA_close(session);
+</pre>
+											</td>
+										</tr>
+									</table>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<h3 class="subHeading">Initializing with Options</h3>
+					<div class="subsection">
+						<p>
+							This example shows how to pass IVI-defined initialization options and driver-specific options to the <strong>Initialize</strong> function. 
+						</p>
+					
+						<div name="snippetGroup">
+							<div class="code">
+								<span codelanguage="ManagedCPlusPlus">
+									<table width="100%" cellspacing="0" cellpadding="0">
+									<tr><th>C++ </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy Code" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+									<tr>
+										<td colspan="2">
+<pre>
+// If true, this will query the instrument model and fail initialization 
+// if the model is not supported by the driver
+ViBoolean idQuery = VI_FALSE;
+
+// If true, the instrument is reset at initialization
+ViBoolean reset = VI_FALSE;
+
+// Setup IVI-defined initialization options
+ViConstString standardInitOptions = 
+  "Cache=true, InterchangeCheck=false, QueryInstrStatus=true, RangeCheck=true, RecordCoercions=false, Simulate=false";
+
+status = KtNA_InitWithOptions("MyVisaAlias", idQuery, reset, standardInitOptions, &amp;session); // "MyVisaAlias" is a VISA alias for your instrument.
+status = KtNA_close(vi);
+</pre>
+											</td>
+										</tr>
+									</table>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section3)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section3, event)" tabindex="0">
+						<img id="section3" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+						Accessing Attributes
+					</span>
+				</h1>
+				<div id="section3" class="section" name="collapseableSection" style="">
+					<p>
+						IVI-C driver attributes are accessed through a set of IVI-defined
+						<i>accessor functions</i>.  Each attribute type has two accessor functions: <strong>Get</strong> for reading attribute values, and <strong>Set</strong> for writing attribute values.
+					</p>
+					<p>
+						The standard <strong>Get</strong> attribute accessors for reading attribute values are:
+					</p>
+					<ul>
+						<li><strong>GetAttributeViInt32</strong></li>
+						<li><strong>GetAttributeViInt64</strong></li>
+						<li><strong>GetAttributeViReal64</strong></li>
+						<li><strong>GetAttributeViBoolean</strong></li>
+						<li><strong>GetAttributeViString</strong></li>
+					</ul>
+					<p>
+						Correspondingly, the standard <strong>Set</strong> attribute accessors for writing attribute values are:
+					</p>
+					<ul>
+						<li><strong>SetAttributeViInt32</strong></li>
+						<li><strong>SetAttributeViInt64</strong></li>
+						<li><strong>SetAttributeViReal64</strong></li>
+						<li><strong>SetAttributeViBoolean</strong></li>
+						<li><strong>SetAttributeViString</strong></li>
+					</ul>
+					<p>
+						Each attribute accessor takes an <strong>attribute ID</strong> that uniquely identifies the attribute to access. These attribute IDs are:</p>
+                    <ul>
+                    <li>
+						&nbsp;<strong>#define'd constants </strong>listed in the <strong>KtNA.h </strong>header file   
+					</li>
+                    <li>
+						Documented in the <strong>Attributes by Name </strong>section of the <a href="IviCDriverReference.html">IVI-C Driver Reference</a></li>
+                    </ul>
+                    <p>
+					The following example shows how to use attribute accessors to read and write IVI-C driver attribute values. 
+					</p>
+                    <p>
+					    <strong>Note: </strong>This code is for illustration only and may not apply to your driver.
+					</p>
+                   
+					<div name="snippetGroup">
+						<div class="code">
+							<span codelanguage="ManagedCPlusPlus">
+								<table width="100%" cellspacing="0" cellpadding="0">
+								<tr><th>C++ </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy Code" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+								<tr>
+									<td colspan="2">
+<pre>
+ViStatus status;
+
+// Set the value of an attribute
+status = KtNA_SetAttributeViReal64(vi, VI_NULL, KTNA_ATTR_VOLTAGE_RANGE, 20.0);
+
+// Get the value of a property 
+ViReal64 voltageRange;
+status = KtNA_GetAttributeViReal64(vi, VI_NULL, KTNA_ATTR_VOLTAGE_RANGE, &amp;voltageRange);
+
+// Set the value of a property (enum)
+// Note use of the #define'd constant for the attribute value
+status = KtNA_SetAttributeViInt32(vi, VI_NULL, KTNA_ATTR_TEMP_TRANSDUCER_TYPE, KTNA_VAL_THERMOCOUPLE);
+</pre>
+										</td>
+									</tr>
+								</table>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section4)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section4, event)" tabindex="0">
+						<img id="section4" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+						Complete Example
+					</span>
+				</h1>
+				<div id="section4" class="section" name="collapseableSection" style="">
+                    <p>
+                       To see complete, working example programs, go to <strong>Windows Start Menu > All Programs > Keysight Instrument Drivers >  IVI-C KtNA 3.0.8</strong>.</p>
+					<div name="snippetGroup">
+						<div class="code">
+							<span codelanguage="ManagedCPlusPlus">
+								<table width="100%" cellspacing="0" cellpadding="0">
+								<tr><th>C++ </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy Code" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+								<tr>
+									<td colspan="2">
+<pre>
+#include "KtNA.h"
+
+void main()
+{
+  ViSession session;
+  ViStatus status;
+  ViChar str[128];
+  ViInt32 ErrorCode;
+  ViChar ErrorMessage[256];
+
+  // Initialize the driver
+  status = KtNA_InitWithOptions("MyVisaAlias", VI_TRUE, VI_TRUE, "", &amp;session); // "MyVisaAlias" is a VISA alias for your instrument.
+  if(status)
+  {
+     // Initialization failed
+     KtNA_GetError(session, &amp;ErrorCode, 255, ErrorMessage);
+     printf("** InitWithOptions() Error: %d, %s\n", ErrorCode, ErrorMessage);
+     printf("\nDone - Press Enter to Exit");
+     getchar();  
+     return;
+  }
+  printf("Driver Initialized \n");
+ 
+  // Read and output a few attributes
+  status = KtNA_GetAttributeViString(session, "", KTNA_ATTR_SPECIFIC_DRIVER_PREFIX, 127, str);
+  assert(status == VI_SUCCESS);
+  printf("DRIVER_PREFIX:      %s\n", str);
+  status = KtNAl_GetAttributeViString(session, "", KTNA_ATTR_SPECIFIC_DRIVER_REVISION, 127, str);
+  assert(status == VI_SUCCESS);
+  printf("DRIVER_REVISION:    %s\n", str);
+  status = KtNA_GetAttributeViString(session, "", KTNA_ATTR_SPECIFIC_DRIVER_VENDOR, 127, str);
+  assert(status == VI_SUCCESS);
+  printf("DRIVER_VENDOR:      %s\n", str);
+  status = KtNA_GetAttributeViString(session, "", KTNA_ATTR_SPECIFIC_DRIVER_DESCRIPTION, 127, str);
+  assert(status == VI_SUCCESS);
+  printf("DRIVER_DESCRIPTION: %s\n", str);
+  status = KtNA_GetAttributeViString(session, "", KTNA_ATTR_INSTRUMENT_MODEL, 127, str);
+  assert(status == VI_SUCCESS);
+  printf("INSTRUMENT_MODEL:   %s\n", str);
+  status = KtNA_GetAttributeViString(session, "", KTNA_ATTR_INSTRUMENT_FIRMWARE_REVISION, 127, str);
+  assert(status == VI_SUCCESS);
+  printf("FIRMWARE_REVISION:  %s\n", str);
+  
+  
+  // TODO: Exercise driver functions and attributes
+  
+  
+  // Check instrument for errors
+  ErrorCode = 1;
+  printf("\n");
+  while(ErrorCode)
+  {
+     status = KtNA_error_query( session, &amp;ErrorCode, ErrorMessage);
+     assert(status == VI_SUCCESS);
+     printf("error_query: %d, %s\n", ErrorCode, ErrorMessage);
+  }
+
+  // Close the session
+  status = KtNA_close(session);
+  if(status)
+  {
+     KtNA_GetError(session, &amp;ErrorCode, 255, ErrorMessage);
+     printf("** Close() Error: %d, %s\n", ErrorCode, ErrorMessage);
+  }
+  else
+     printf("Driver Closed \n");
+}
+</pre>
+										</td>
+									</tr>
+								</table>
+							</span>
+						</div>
+					</div>
+				</div>			
+					
+			</div>
+<!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+		</div>
+	</body>
+</html>

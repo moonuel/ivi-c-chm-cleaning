@@ -1,0 +1,733 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>Measure</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="Measure" />
+		<mshelp:rltitle title="Measure" />
+		<mshelp:keyword index="K" term="Measure" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">Measure</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\ClassicCommands\Sense\Distortion\Measure  <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseDistortionMeasureBandAdd.html">Band Add</a></td>
+    <td>
+        Adds a new distortion measurement band.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseDistortionMeasureBandAutofill.html">Band Autofill</a></td>
+    <td>
+        Automatically fills in the measurement settings for all bands from the currently active modulation file loaded in the source.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseDistortionMeasureBandCountQuery.html">Band Count Query</a></td>
+    <td>
+        Queries the total number of distortion measurement bands.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseDistortionMeasureBandDelete.html">Band Delete</a></td>
+    <td>
+        Deletes the specified distortion measurement band.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_xSenseDistortionMeasureBandInitialize.html">Band Initialize</a></td>
+    <td>
+        This command ignores any specified band number and deletes all existing bands and adds a single default band back into the Measurement Band Table.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureBandAcpLowerIbw.html">GetX Sense Distortion Measure Band Acp Lower Ibw</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_BAND_ACP_LOWER_IBW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureBandAcpLowerOffset.html">GetX Sense Distortion Measure Band Acp Lower Offset</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_BAND_ACP_LOWER_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureBandAcpUpperIbw.html">GetX Sense Distortion Measure Band Acp Upper Ibw</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_BAND_ACP_UPPER_IBW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureBandAcpUpperOffset.html">GetX Sense Distortion Measure Band Acp Upper Offset</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_BAND_ACP_UPPER_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureBandCarrierIbw.html">GetX Sense Distortion Measure Band Carrier Ibw</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_BAND_CARRIER_IBW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureBandCarrierOffset.html">GetX Sense Distortion Measure Band Carrier Offset</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_BAND_CARRIER_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureBandName.html">GetX Sense Distortion Measure Band Name</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_BAND_NAME attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureBandNo.html">GetX Sense Distortion Measure Band No</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_BAND_NO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureBandNotchIbw.html">GetX Sense Distortion Measure Band Notch Ibw</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_BAND_NOTCH_IBW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureBandNotchOffset.html">GetX Sense Distortion Measure Band Notch Offset</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_BAND_NOTCH_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureBandType.html">GetX Sense Distortion Measure Band Type</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_BAND_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureCorrelationAperture.html">GetX Sense Distortion Measure Correlation Aperture</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_CORRELATION_APERTURE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureCorrelationApertureAuto.html">GetX Sense Distortion Measure Correlation Aperture Auto</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_CORRELATION_APERTURE_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureFilter.html">GetX Sense Distortion Measure Filter</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_FILTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureFilterAlpha.html">GetX Sense Distortion Measure Filter Alpha</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_FILTER_ALPHA attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureFilterSrate.html">GetX Sense Distortion Measure Filter Srate</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_FILTER_SRATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetXSenseDistortionMeasureFilterSrateAuto.html">GetX Sense Distortion Measure Filter Srate Auto</a></td>
+    <td>
+        Gets the value of the X_SENSE_DISTORTION_MEASURE_FILTER_SRATE_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureBandAcpLowerIbw.html">SetX Sense Distortion Measure Band Acp Lower Ibw</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_BAND_ACP_LOWER_IBW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureBandAcpLowerOffset.html">SetX Sense Distortion Measure Band Acp Lower Offset</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_BAND_ACP_LOWER_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureBandAcpUpperIbw.html">SetX Sense Distortion Measure Band Acp Upper Ibw</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_BAND_ACP_UPPER_IBW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureBandAcpUpperOffset.html">SetX Sense Distortion Measure Band Acp Upper Offset</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_BAND_ACP_UPPER_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureBandCarrierIbw.html">SetX Sense Distortion Measure Band Carrier Ibw</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_BAND_CARRIER_IBW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureBandCarrierOffset.html">SetX Sense Distortion Measure Band Carrier Offset</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_BAND_CARRIER_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureBandName.html">SetX Sense Distortion Measure Band Name</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_BAND_NAME attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureBandNo.html">SetX Sense Distortion Measure Band No</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_BAND_NO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureBandNotchIbw.html">SetX Sense Distortion Measure Band Notch Ibw</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_BAND_NOTCH_IBW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureBandNotchOffset.html">SetX Sense Distortion Measure Band Notch Offset</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_BAND_NOTCH_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureBandType.html">SetX Sense Distortion Measure Band Type</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_BAND_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureCorrelationAperture.html">SetX Sense Distortion Measure Correlation Aperture</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_CORRELATION_APERTURE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureCorrelationApertureAuto.html">SetX Sense Distortion Measure Correlation Aperture Auto</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_CORRELATION_APERTURE_AUTO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureFilter.html">SetX Sense Distortion Measure Filter</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_FILTER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureFilterAlpha.html">SetX Sense Distortion Measure Filter Alpha</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_FILTER_ALPHA attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureFilterSrate.html">SetX Sense Distortion Measure Filter Srate</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_FILTER_SRATE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetXSenseDistortionMeasureFilterSrateAuto.html">SetX Sense Distortion Measure Filter Srate Auto</a></td>
+    <td>
+        Sets the value of the X_SENSE_DISTORTION_MEASURE_FILTER_SRATE_AUTO attribute.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_BAND_ACP_LOWER_IBW.html">Band Acp Lower Ibw</a></td>
+    <td>
+        Sets and returns the integration bandwidth (IBW) of the lower ACP measurement. Default 100MHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_BAND_ACP_LOWER_OFFSET.html">Band Acp Lower Offset</a></td>
+    <td>
+        Sets and returns the lower ACP measurement offset. Default -100MHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_BAND_ACP_UPPER_IBW.html">Band Acp Upper Ibw</a></td>
+    <td>
+        Sets and returns the integration bandwidth (IBW) of the upper ACP measurement. Defqault 100MHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_BAND_ACP_UPPER_OFFSET.html">Band Acp Upper Offset</a></td>
+    <td>
+        Sets and returns the upper ACP measurement offset. Default 100MHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_BAND_CARRIER_IBW.html">Band Carrier Ibw</a></td>
+    <td>
+        Sets and returns the carrier (Signal) integration bandwidth (IBW) for the distortion measurement. Default 100MHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_BAND_CARRIER_OFFSET.html">Band Carrier Offset</a></td>
+    <td>
+        Sets and returns the carrier offset (Signal). Offsets the Carrier integration bandwidth relative to the Carrier LO used to generate the modulation signal. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_BAND_NAME.html">Band Name</a></td>
+    <td>
+        Assigns a name to the specified distortion measurement band. Default &quot;NewBand&quot;.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_BAND_NO.html">Band No</a></td>
+    <td>
+        Band number from 1 - 100. If unspecified, value is set to 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_BAND_NOTCH_IBW.html">Band Notch Ibw</a></td>
+    <td>
+        Sets and returns the notch integration bandwidth (IBW) for an NPR Notch modulation measurement. Default 10MHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_BAND_NOTCH_OFFSET.html">Band Notch Offset</a></td>
+    <td>
+        Sets and returns the notch offset for an NPR Notch modulation measurement. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_BAND_TYPE.html">Band Type</a></td>
+    <td>
+        Set and read the modulation distortion type.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_CORRELATION_APERTURE.html">Correlation Aperture</a></td>
+    <td>
+        Sets and returns the frequency span window used for modeling the DUT's gain and distortion. Default 500000.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_CORRELATION_APERTURE_AUTO.html">Correlation Aperture Auto</a></td>
+    <td>
+        Enable or disable automatic calculation of the frequency span window used for modeling the DUT's gain and distortion.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_FILTER.html">Filter</a></td>
+    <td>
+        Sets the measurement filter to either None (default) or RRC (root-raised-cosine filter) for EVM and ACP measurements only. Default None.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_FILTER_ALPHA.html">Filter Alpha</a></td>
+    <td>
+        Sets and returns the Alpha factor of the measurement filter.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_FILTER_SRATE.html">Filter Srate</a></td>
+    <td>
+        Sets and returns the Symbol Rate of the filter.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_X_SENSE_DISTORTION_MEASURE_FILTER_SRATE_AUTO.html">Filter Srate Auto</a></td>
+    <td>
+        Enables or disables using the symbol rate from the file.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

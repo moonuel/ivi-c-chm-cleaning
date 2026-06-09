@@ -1,4 +1,5 @@
 .venv/
-data/
+# data/
 *.pyc
-.ivi-chm-index/
+# .ivi-chm-index/
+# .kilo/

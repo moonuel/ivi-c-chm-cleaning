@@ -1,0 +1,513 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="save" content="history" />
+		<title>Initializing the KtNA IVI-C Driver</title>
+		<link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+		<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+		<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+		<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+		<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+		<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+		<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+		<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+		<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+		<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+		<xml>
+		<mshelp:toctitle title="Initializing the IVI-C Driver" />
+		<mshelp:rltitle title="Initializing the IVI-C Driver" />
+		<mshelp:keyword index="K" term="Initializing the IVI-C Driver" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbArticle" />
+		</xml>
+
+		<!-- begin: Microsoft Help 1.0 -->
+		<meta name="Microsoft.Help.Id" content="" />
+		<meta name="Microsoft.Help.TocParent" content="" />
+		<meta name="Microsoft.Help.TocOrder" content="" />
+		<meta name="Microsoft.Help.ContentType" content="" />
+		<meta name="Microsoft.Help.SelfBranded" content="true" />
+		<meta name="Microsoft.Help.Locale" content="en-us" />
+		<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+		<!--$$Microsoft.Help.F1$$-->
+		<!--$$Microsoft.Help.Keywords$$-->
+		<!-- end: Microsoft Help 1.0 -->
+	    <style type="text/css">
+            .auto-style1 {
+                width: 233px;
+            }
+            </style>
+	</head>
+	<body>
+		<input type="hidden" id="userDataCache" class="userDataStyle" />
+		<input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+		<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+		<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+		<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+		<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+		<div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+						<img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+							<label id="collapseAllLabel" for="toggleAllImage" style="display:none;"> Collapse All</label>
+							<label id="expandAllLabel" for="toggleAllImage" style="display:none;"> Expand All</label>
+						</span>
+						<span> &nbsp; &nbsp; </span>
+<!--                        <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+				<tr id="headerTableRow1">
+					<td align="left">
+						<span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+					</td>
+					<td align="right">
+						<span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow2">
+					<td align="left">
+						<span id="nsrTitle">Initializing the IVI-C Driver</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow3">
+					<td align="left">
+						<span id="headfb" class="feedbackhead" />
+					</td>
+				</tr>
+			</table>
+			<table id="gradientTable">
+				<tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+				</tr>
+			</table>
+		</div>
+
+	
+		<div id="mainSection">
+
+			<div id="mainBody">
+
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+					<span style="color: DarkGray"></span>
+                <div class="introduction">
+
+					<p>The application you write must communicate with the driver:</p>
+                <ul>
+                        <li>Through the use of<strong> KtNA</strong> in function call names</li>
+                        <li>By directly referencing<strong> KtNA.h</strong> and <strong>KtNA.lib</strong> (as shown in the example)</li>
+                </ul>
+                    <p>This section describes the use and parameters of the Initialize functions independent of a programming ADE. The example in this section shows how to use the Initialize function with C++. 
+                        If you are using an ADE, we recommend you read this section first, then go to the appropriate section in <strong><span sdata="link"><a href="IviCEnvironments.html">ADE Programming Details</a></span></strong> for information on calling the functions with ADE-specific syntax.
+                    </p>
+
+				</div>
+
+			
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section1Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)" tabindex="0">
+                        <img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" /><span onclick="ExpandCollapse(section2Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section2Toggle, event)" tabindex="0">Calling the Initialize Function</span>
+					</span>
+				</h1>
+				<div id="section1Section" class="section" name="collapseableSection" style="">
+
+                    
+                    <p>
+                        To initialize your driver, invoke the <a href="KtNA_init.html">
+                            Initialize
+                        </a> or <a href="KtNA_InitWithOptions.html">Initialize With Options</a>
+                        functions directly on the KtNA driver. This gives you access to the driver and the instrument's capabilities. The simplest example looks like this:
+					</p>
+					<p>
+                        <code>&nbsp; ViSession session;</code><br />
+                        <code>&nbsp; ViStatus status = KtNA_InitWithOptions("MyVisaAlias", VI_TRUE, VI_TRUE, "", &amp;session);</code><br />               
+					</p>
+
+
+                    <p>The initialize functions use the following parameters (described in the next section) to control fundamental aspects of the driver's behavior:</p><ul>
+<li><strong>ResourceName</strong></li>
+<li><strong>IdQuery</strong></li>
+<li><strong>Reset</strong></li>
+<li><strong>OptionsString</strong> (supported for <em>initWithOptions</em> only)</li>
+<li><strong>Vi</strong> (unique identifier for an IVI session; always set to <em>true</em>)</li>
+                    </ul></div>
+
+                    <h1 class="heading">
+					<span onclick="ExpandCollapse(section1Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)" tabindex="0">
+						<img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Initialize Function Parameters</span></h1>				
+                   <div id="section1Section" class="section" name="collapseableSection" style="">
+						<p>
+						The initialize functions offer a variety of options and parameters that control fundamental aspects of the driver&#39;s behavior. This section describes them and explains how they impact driver operation.
+                        </p>
+                     
+					<h3 class="subHeading">Resource Name</h3>
+                        <p>
+                            The <strong>ResourceName</strong> parameter is either:
+                        </p>
+                            <ul>
+                                <li>
+                                    <b>VISA resource descriptor</b> – VISA resource descriptors include all of the information
+                                    needed to specify the location of the instrument on the specified I/O interface.  The table
+                                    below documents the format of resource descriptors for various I/O interfaces.  VISA aliases
+                                    and IVI logical names both resolve to VISA resource descriptors.
+                                </li>
+                                <li>
+                                    <b>VISA alias</b> – A string (referrred to as <b>MyVisaAlias</b>) that can be used instead of a resource descriptor in VISA programs. In the driver, aliases are passed directly to VISA, which resolves the alias to the VISA
+                                    resource descriptor. Using VISA aliases (rather than hard-coded resource descriptors) makes your programs more portable, and Keysight recommends them for readability and flexibility. You can define VISA aliases for your instruments in Keysight IO Libraries<strong> Connection Expert</strong>. Refer to IO Libraries Connection Expert documentation for instructions.</li>
+                                <li>
+                                    <b>IVI logical name</b> –&nbsp;A name for an instrument defined in the IVI Configuration Store. Refer to the documentation for your Config Store editor for details.
+                                </li>
+                            </ul>
+                      
+                        <table width="100%" cellspacing="2" cellpadding="5" frame="lhs">
+                            <tr valign="top">
+                                <th width="10%">Interface</th>
+                                <th width="90%">Physical Resource Descriptor Syntax</th>
+                            </tr>
+                            <tr valign="top">
+                                <td width="10%">GPIB</td>
+                                <td width="90%">GPIB[board]::primary address[::secondary address][::INSTR]<br /> Example: GPIB0::18::INSTR</td>
+                            </tr>
+                            <tr valign="top">
+                                <td width="10%">ASRL</td>
+                               <td width="90%"> ASRL connections are not supported.</td>
+                            </tr>
+                            <tr valign="top">
+                                <td width="10%"> TCPIP </td>
+                                <td width="90%"> TCPIP[board]::host address[::LAN device name]::INSTR<br /> Example: TCPIP0::127.0.0.1::INSTR</td>
+                            </tr>
+                            <tr valign="top">
+                                <td width="10%"> TCPIP </td>
+                                <td width="90%"> TCPIP[board]::host address::port::SOCKET<br /> Example: TCPIP0::127.0.0.1::5025::SOCKET</td>
+                            </tr>
+                            <tr valign="top">
+                                <td width="10%"> USB</td>
+                                <td width="90%"> USB[board]::manufacturer ID::model code::serial number[::USB interface number][::INSTR]<br /> Example: USB0::2391::291::SN_001001::INSTR</td>
+                            </tr>
+                        </table>
+                       <p>
+                            The following table describes the format of resource descriptors for PXI I/O interfaces.
+                            In the examples:</p>
+
+                        <table width="100%" cellspacing="2" cellpadding="5" frame="lhs">
+							<tr>
+							<th>
+								PXI Interface Physical Resource Descriptor Syntax</th>
+							<th>
+								Examples</th>
+							</tr>
+							<tr>
+								<td>
+								    <code>PXI[interface]::bus-device[.function][::INSTR] </code><br /><strong>&nbsp;&nbsp;&nbsp; Note: </strong>Interface is optional; default is 0. <br />&nbsp;&nbsp;&nbsp; Values in the examples: interface 0, bus 3, device 4, function 5, instrument 6.</td>
+								<td>
+								    <strong>PXI0::3-4.5::6</strong><br />
+								    <strong>PXI::3</strong>
+                                    </td></tr>
+                            
+                            <tr>
+								<td>
+								    <code>PXI[interface]::CHASSISchassis::SLOTslot[::FUNCfunction][::INSTR]</code><br /><strong>&nbsp;&nbsp;&nbsp; Note: </strong>Interface is optional; default is 0.  <br />&nbsp;&nbsp;&nbsp; Values in the examples: interface 2, chassis 1, slot 3, function 6, instrument 8</td>
+								<td>
+								    <strong>PXI2::CHASSIS1::SLOT3::6::8</strong><br />
+								    <strong>PXI2::CHASSIS1::SLOT3</strong></td></tr>
+                            <tr>
+								<td>
+								    <code>PXI[bus]::device[::function][::INSTR]</code><br /><strong>&nbsp;&nbsp;&nbsp; Note: </strong>Legacy syntax.<strong> </strong>Bus is optional; default is 0.  <br />&nbsp;&nbsp;&nbsp; Values in the examples: bus 0, device 5, function 6, instrument 8.</td>
+								<td>
+								    <strong>PXI0::5::6::8</strong><br />
+								    <strong>PXI::5</strong><br /></td></tr>
+                        </table>
+
+					
+					<h3 class="subHeading">IdQuery</h3>
+					<div class="subsection">
+						<p>
+							When enabled, the driver queries the instrument model and compares it with
+							a list of instrument models supported by the driver. If the model is not
+							supported, initialization fails with the <strong>IVI_ERROR_ID_QUERY_FAILED </strong>error code.
+						</p>
+                        <p>
+							<strong>Note:</strong> M<span style="color:black">ost modular instruments ignore this setting and always validate that they are communicating with a supported instrument.</span></p>
+					</div>
+
+					<h3 class="subHeading">Reset</h3>
+					<div class="subsection">
+						<p>
+							When enabled, the instrument is reset when the driver is initialized. If the reset
+							fails, initialization fails with the <strong>IVI_ERROR_RESET_FAILED</strong> error code.
+						</p>
+                        <p>
+							<strong>Note:</strong> <span style="color:black">Most modular instruments ignore this setting and start from a known reset state after initialization.</span></p>
+					</div>
+
+					<h3 class="subHeading">Option String</h3>
+					<div class="subsection">
+						<p>
+							Option string allows you to pass optional settings to the driver.
+						</p>
+                        <p>The string is composed of comma-separated assignment operations in the form <strong>"Operation=value"</strong>. Spaces are ignored except as separators. For example:</p>
+                         <p>
+                            <code>&nbsp;&nbsp; &quot;Simulate=true, DriverSetup= Model=E5080A&quot;, &amp;session)</code></p>
+
+                        <p>The following table describes the operations and values that may be used.</p>
+						<table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+							<tr>
+								<th width="10%">
+								Option Name
+							</th>
+								<th class="auto-style1">
+								Description
+							</th>
+								<th width="10%">
+								Default
+							</th>
+							</tr>
+							<tr>
+								<td width="10%">
+								    <b>QueryInstrStatus
+							</b>
+							</td>
+								<td>
+									Specifies whether the IVI driver queries the instrument status at the end
+									of each user operation. Querying the instrument status is very useful for debugging.
+									After validating the program, the user can set this attribute to <strong>False</strong> to disable
+									status checking and maximize performance. The user specifies this value for the
+								entire IVI driver session.
+							</td>
+								<td width="10%">
+								false
+							</td>
+							</tr>
+							<tr>
+								<td width="10%">
+								    <b>Simulate
+							</b>
+							</td>
+								<td>
+									Specifies whether the IVI driver simulates instrument driver I/O
+									operations. If simulation is enabled, the driver functions do not perform
+									instrument I/O. For output parameters that represent instrument data, the driver functions return simulated values.
+							</td>
+								<td width="10%">
+								false
+							</td>
+							</tr>
+							<tr>
+								<td width="10%">
+								    <b>DriverSetup
+							</b>
+							</td>
+								<td>
+								Specifies additional settings supported by the driver, but not defined by IVI.
+							</td>
+								<td width="10%">
+								""</td>
+							</tr>
+						</table>
+						
+                       <p><strong>Note: </strong><br/>
+                          This driver does not support the <strong>Cache</strong>, <strong>InterchangeCheck</strong>,
+					      <b>RangeCheck</b>, and <b>RecordCoercions</b> options.  These all default to false.</p>
+                        <p>
+                            If the<em> resource name</em> is a <em>logical name</em> defined in the IVI Configuration Store, then:</p>
+                        <ul><li>
+                            Any optional settings that are specified in the IVI Configuration Store are loaded first.  
+                        </li>
+                        <li>
+                            The options parameter is processed next. If there are conflicts, the values specified in the options parameter override those from the Config Store.  Any
+                            setting that is not specified defaults to its default value.  The default values for IVI defined settings are
+                            specified by the IVI Foundation, while the driver defines the default values for driver specific settings.
+                        </li></ul>
+					</div>
+
+
+                    <h4 class="subHeading">DriverSetup</h4>
+					<div class="subsection">
+						<p>
+							DriverSetup is a special token whose subsequent assignments are specific to the driver, but not defined
+							by IVI. When the option string parameter contains the DriverSetup
+							attribute, the Initialize function assumes that everything following <strong>'DriverSetup=' </strong>is part of the assignment. Spaces are ignored, as the <strong>"Operation=Value" </strong>assignments are separated by commas.  
+						</p>
+                        <p>
+							The following settings are supported by the KtNA
+							driver.
+						</p>
+
+                        <!-- LP-Note: If your driver supports custom DriverSetup options, add them to the table below.-->
+						
+						<table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+							<tr>
+								<th width="10%">
+									Option Name
+								</th>
+								<th width="80%">
+									Description
+								</th>
+								<th width="10%">
+									Default
+								</th>
+							</tr>
+							<tr>
+								<td width="30%">
+								Model
+								</td>
+                                <td width="50%">
+                                    Instrument model to use during simulation.  Must be one of the Supported Models strings
+                                    listed on the <a href="IviCompliance.html">IVI Compliance Information</a> page.
+                                </td>
+                                <td width="20%">
+                                    E5080A
+								</td>
+							</tr>
+							<tr valign="top">
+								<td width="10%">
+									<strong>Trace</strong>
+								</td>
+								<td width="80%">
+									If true, append a trace log of all driver calls to a text file in the same directory as the
+									application executable accessing the driver. Additional tracing parameters may be set using the
+                                    driver's SystemTracing functions and SYSTEM_TRACING attributes.
+								</td>
+								<td width="10%">
+									false
+								</td>
+							</tr>
+							<tr valign="top">
+								<td width="10%">
+									<strong>TraceArraySizeMax</strong>
+                                </td>
+								<td width="80%">
+                                    Specifies the maximum number of elements to log for array parameters.
+                                </td>
+									<td width="10%">
+                                    10
+                                </td>
+							</tr>
+						</table>
+					</div></div>
+
+<h1 class="heading">
+					<span onclick="ExpandCollapse(section1Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)" tabindex="0">
+						<img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Example: Accessing the Driver Directly with Simulation
+					</span>
+				</h1>
+                   
+				<div id="section1Section" class="section" name="collapseableSection" style="">
+                     <p class="heading">
+					    The following code:</p>
+
+<ul>
+<li>Initializes the driver in simulation mode (<strong>Simulate=true</strong>)</li>
+<li>Specifies the model to simulate (<strong>DriverSetup=Model=KtNA</strong>)</li>
+</ul>
+                        <p>
+							The following code initializes the driver in simulation mode and specifies the model to simulate.
+                            The VISA alias "MyVisaAlias" must be created before running this example if you do not specifiy 
+                            <strong>Simulate=true</strong>.
+						</p>
+					
+						<div name="snippetGroup">
+							<div class="code">
+						<span codelanguage="ManagedCPlusPlus">
+									<table width="100%" cellspacing="0" cellpadding="0">
+								<tr><th>C++ </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" src="../icons/copycode.gif" />Copy Code</span></th></tr>
+										<tr>
+											<td colspan="2">
+<pre>
+#include "KtNA.h" // Specific driver header file
+
+void main()
+{
+  ViStatus status;
+  ViSession session;
+  
+  // Initialize the driver in simulation mode.  Resource name is ignored when Simulate=true.
+  // IdQuery and Reset options are enabled.
+  // "MyVisaAlias" is a VISA alias for your instrument.
+  status = KtNA_InitWithOptions("MyVisaAlias", VI_TRUE, VI_TRUE, "Simulate=true, DriverSetup= Model=E5080A", &amp;session);
+  
+  // ... call KtNA driver functions
+  
+  status = KtNA_close(session);
+}
+</pre>
+											</td>
+										</tr>
+									</table>
+								</span>
+							</div>
+						</div>
+
+				</div>
+
+
+			
+			</div>
+<!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+		</div>
+	</body>
+</html>

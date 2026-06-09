@@ -1,0 +1,234 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="save" content="history" />
+		<title>IVI Shared Components</title> <!-- IVI-C version -->
+		<link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+		<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+		<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+		<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+		<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+		<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+		<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+		<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+		<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+		<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+		<xml>
+		<mshelp:toctitle title="IVI Shared Components" />
+		<mshelp:rltitle title="IVI Shared Components" />
+		<mshelp:keyword index="K" term="IVI Shared Components" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbArticle" />
+		</xml>
+
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+	</head>
+	<body>
+		<input type="hidden" id="userDataCache" class="userDataStyle" />
+		<input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+		<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+		<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+		<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+		<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+		<div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+						<img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+							<label id="collapseAllLabel" for="toggleAllImage" style="display:none;"> Collapse All</label>
+							<label id="expandAllLabel" for="toggleAllImage" style="display:none;"> Expand All</label>
+						</span>
+						<span> &nbsp; &nbsp; </span>
+<!--                        <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+				<tr id="headerTableRow1">
+					<td align="left">
+						<span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+					</td>
+					<td align="right">
+						<span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow2">
+					<td align="left">
+						<span id="nsrTitle">IVI Shared Components</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow3">
+					<td align="left">
+						<span id="headfb" class="feedbackhead" />
+					</td>
+				</tr>
+			</table>
+			<table id="gradientTable">
+				<tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+				</tr>
+			</table>
+		</div>
+
+	
+		<div id="mainSection">
+
+			<div id="mainBody">
+
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()">
+					<span style="color: DarkGray"></span>		
+			</div>
+
+				<div class="introduction">
+					<p>
+						The IVI Foundation develops and maintains the <em>IVI shared components</em>, a series of free software components that facilitate IVI driver development and ensure a consistent experience for end users. They must be installed on any computer that uses IVI drivers. IVI driver installers are required to verify the presence of the shared components before installing. 
+
+					</p>
+                    <p>
+						The following sections provide a brief overview of some of the most important shared components. 
+					</p>
+				</div>
+			
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section1)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1, event)" tabindex="0">
+						<img id="section1" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+						<span onclick="ExpandCollapse(section1)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1, event)" tabindex="0">
+						IVI Shared Component Installer</span></span></h1>
+				<div id="section1" class="section" name="collapseableSection" style="">
+                   
+					 <p>The IVI Foundation provides an installer for the IVI shared components. The IVI installer:</p>
+                <ul>
+                <li>Is the only IVI-compliant way to install the shared components (third parties are not allowed to develop custom installation programs for these components) </li>
+                    <li>Is included in the <strong><a href="http://www.keysight.com/find/iosuite" target="_blank">Keysight I/O Libraries Suite</a></strong> installation package 
+					</li>
+                    <li>Is also available for download from the <strong>Shared Components</strong> page on the <a target="_blank" href="http://www.ivifoundation.org/shared_components/Default.aspx">IVI Foundation</a> web site</li>
+                <li>Creates a directory structure to house the shared components as well as IVI drivers themselves</li>
+                   
+                </ul>
+                     <p>The installation folder is referred to as the <strong>IVI install directory </strong>(&lt;IviInstallDir&gt;) and is typically <strong>C:\Program Files\IVI Foundation\IVI</strong>.</p>
+				</div>
+
+			
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section2)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section2, event)" tabindex="0">
+						<img id="section2" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+						IVI Configuration Store
+					</span>
+				</h1>
+				<div id="section2" class="section" name="collapseableSection" style="">
+                                       
+					<p>
+						The <em><a href="IviConfigStore.html">IVI Configuration Store</a></em> (called the <em>Config Store</em>)
+						serves as a central repository for IVI driver configuration information. The Config Store is an XML file installed with the IVI shared components in <strong>&lt;IviInstallDir&gt;\Data\ IviConfigurationStore.xml</strong>. 
+					</p>
+					<p>
+						IVI driver installers are required to populate the Config Store with information such as the instrument classes supported, the instrument models for which the driver is designed, and the  <a href="RepeatedCapabilities.html#PhysicalRepeatedCapabilityNames">physical channel names</a> understood by the driver. End users can:</p>
+
+                    <ul><li>
+						Add information to the Config Store that describes how they intend to use IVI drivers in their system</li>
+                    <li>
+						Specify logical names for IVI driver sessions and <a href="RepeatedCapabilities.html#VirtualRepeatedCapabilityNames">virtual names</a> for channels</li></ul>
+					<p>
+						For more information, see:</p>
+                    <ul>
+                    <li>
+						<a href="IviConfigStore.html">IVI Configuration Store</a> for a more detailed explanation </li>
+                    <li>
+						<i>IVI-3.5: Configuration Server Specification</i> available on the IVI Foundation&#39;s <a href="http://www.ivifoundation.org/specifications/default.aspx" target="_blank"><strong>Specifications</strong></a> page</li>
+                        </ul>
+				</div>
+
+			
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section3)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section3, event)" tabindex="0">
+						<img id="section3" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+						<span onclick="ExpandCollapse(section3Toggle)" onkeypress="ExpandCollapse_CheckKey(section3Toggle, event)" style="CURSOR: default" tabindex="0">IVI Configuration Server </span>&nbsp;</span></h1>
+				<div id="section3" class="section" name="collapseableSection" style="">
+                   
+					<p>
+						The IVI Foundation discourages users and driver developers from directly manipulating the Config Store because its file (<strong>IviConfigurationStore.xml</strong>) is highly self-referential and easily corrupted if modified directly. To enable users to modify the Config Store, the Foundation provides a COM component known as the<em> IVI Configuration Server</em>. 
+					</p>
+					<p>
+						The Config Server is installed automatically by the IVI shared component installer.  For more
+						information on how to use the IVI Configuration Server, see <i>IVI-3.5: Configuration Server Specification</i> on the <a target="_blank" href="http://www.ivifoundation.org">IVI Foundation</a> web site.
+					</p>
+				</div>
+
+
+			</div>
+<!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+		</div>
+	</body>
+</html>

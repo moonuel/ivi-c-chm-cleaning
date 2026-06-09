@@ -1,0 +1,1278 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>SA</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+
+<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+
+<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+
+<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+
+<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+
+<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+
+
+	
+    <xml>
+		<mshelp:toctitle title="SA" />
+		<mshelp:rltitle title="SA" />
+		<mshelp:keyword index="K" term="SA" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbSyntax" />
+		<mshelp:attr name="TopicType" value="apiref" />
+	</xml>
+	
+	<!-- begin: Microsoft Help 1.0 -->
+	<meta name="Microsoft.Help.Id" content="" />
+	<meta name="Microsoft.Help.TocParent" content="" />
+	<meta name="Microsoft.Help.TocOrder" content="" />
+	<meta name="Microsoft.Help.ContentType" content="" />
+	<meta name="Microsoft.Help.SelfBranded" content="true" />
+	<meta name="Microsoft.Help.Locale" content="en-us" />
+	<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+	<!--$$Microsoft.Help.F1$$-->
+	<!--$$Microsoft.Help.Keywords$$-->
+	<!-- end: Microsoft Help 1.0 -->
+</head>
+<body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+	<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+	<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+	<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+	<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+    <div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+					<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+                        <img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+						<label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label>
+						<label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label>
+                    </span>
+					<span> &nbsp; &nbsp; </span>
+<!--                    <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+            <tr id="headerTableRow1">
+                <td align="left">
+                    <span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+                </td>
+                <td align="right">
+                    <span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow2">
+                <td align="left">
+                    <span id="nsrTitle">SA</span>
+                </td>
+            </tr>
+            <tr id="headerTableRow3">
+                <td align="left">
+					<a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfb" class="feedbackhead" />
+                </td>
+            </tr>
+        </table>
+        <table id="gradientTable">
+            <tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+            </tr>
+        </table>
+    </div>
+	
+    <div id="mainSection">
+		
+        <div id="mainBody">
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+                <span style="color: DarkGray"></span>
+
+			
+            <div class="summary">
+                <p>
+                </p>
+            </div>
+            <p />
+            <b>Tree Node:</b> \KtNA\Instrument Specific\Channel\SA <!-- Branches -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(branchTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(branchTableToggle, event)"
+        tabindex="0">
+        <img id="branchTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Branches</span>
+</h1>
+<div id="branchTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="nameColumn">
+                Name</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.Channel.SA.ADC.html">ADC</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.Channel.SA.Coherence.html">Coherence</a></td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <a href="KtNA.Instrument_Specific.Channel.SA.Data.html">Data</a></td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Functions -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(methodTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)"
+        tabindex="0">
+        <img id="methodTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Functions</span>
+</h1>
+<div id="methodTableSection" class="section" name="collapseableSection" style="">
+    <table id="Table1" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelSAAutotune.html">Autotune</a></td>
+    <td>
+        Auto tunes and zooms in on a signal within a SA sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelSAAutotuneWithSync.html">Autotune With Sync</a></td>
+    <td>
+        Auto tunes and zooms in on a signal within a SA sweep.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaBasebandEnabled.html">Get Channel Sa Baseband Enabled</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_BASEBAND_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaBwRatio.html">Get Channel Sa Bw Ratio</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_BW_RATIO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaDetectorBypassEnabled.html">Get Channel Sa Detector Bypass Enabled</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_DETECTOR_BYPASS_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaDetectorFunction.html">Get Channel Sa Detector Function</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_DETECTOR_FUNCTION attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaDftBandwidthAutoEnabled.html">Get Channel Sa Dft Bandwidth Auto Enabled</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_DFT_BANDWIDTH_AUTO_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaDftRecordSizeType.html">Get Channel Sa Dft Record Size Type</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_DFT_RECORD_SIZE_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaFftDitherEnabled.html">Get Channel Sa Fft Dither Enabled</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FFT_DITHER_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaForceLoDivider.html">Get Channel Sa Force Lo Divider</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FORCE_LO_DIVIDER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaForceLoEnabled.html">Get Channel Sa Force Lo Enabled</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FORCE_LO_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaForceLoFrequency.html">Get Channel Sa Force Lo Frequency</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FORCE_LO_FREQUENCY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaForceLoMultiplier.html">Get Channel Sa Force Lo Multiplier</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FORCE_LO_MULTIPLIER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaForceLoSource.html">Get Channel Sa Force Lo Source</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FORCE_LO_SOURCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaFreqConverterDualBandConfigEnabled.html">Get Channel Sa Freq Converter Dual Band Config Enabled</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FREQ_CONVERTER_DUAL_BAND_CONFIG_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaFreqConverterInputCenterFreq.html">Get Channel Sa Freq Converter Input Center Freq</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FREQ_CONVERTER_INPUT_CENTER_FREQ attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaFreqConverterInputPort.html">Get Channel Sa Freq Converter Input Port</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FREQ_CONVERTER_INPUT_PORT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaFreqConverterInputSource.html">Get Channel Sa Freq Converter Input Source</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FREQ_CONVERTER_INPUT_SOURCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaFreqConverterInvertingEnabled.html">Get Channel Sa Freq Converter Inverting Enabled</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FREQ_CONVERTER_INVERTING_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaFreqConverterLoOffset.html">Get Channel Sa Freq Converter Lo Offset</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FREQ_CONVERTER_LO_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaFreqConverterOutputCenterFreq.html">Get Channel Sa Freq Converter Output Center Freq</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FREQ_CONVERTER_OUTPUT_CENTER_FREQ attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaFreqConverterOutputPort.html">Get Channel Sa Freq Converter Output Port</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FREQ_CONVERTER_OUTPUT_PORT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaFrequencySpan.html">Get Channel Sa Frequency Span</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_FREQUENCY_SPAN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaImageRejectMode.html">Get Channel Sa Image Reject Mode</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_IMAGE_REJECT_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaImageRejectionStrength.html">Get Channel Sa Image Rejection Strength</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_IMAGE_REJECTION_STRENGTH attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaLoRandomizeEnabled.html">Get Channel Sa Lo Randomize Enabled</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_LO_RANDOMIZE_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaMaxDftNarrowBw.html">Get Channel Sa Max Dft Narrow Bw</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_MAX_DFT_NARROW_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaMaxDftWideBw.html">Get Channel Sa Max Dft Wide Bw</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_MAX_DFT_WIDE_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaMinDftNarrowBw.html">Get Channel Sa Min Dft Narrow Bw</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_MIN_DFT_NARROW_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaMinDftWideBw.html">Get Channel Sa Min Dft Wide Bw</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_MIN_DFT_WIDE_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaOccBwMinSearchFreq.html">Get Channel Sa Occ Bw Min Search Freq</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_OCC_BW_MIN_SEARCH_FREQ attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaResolutionBw.html">Get Channel Sa Resolution Bw</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_RESOLUTION_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaResolutionBwAutoEnabled.html">Get Channel Sa Resolution Bw Auto Enabled</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_RESOLUTION_BW_AUTO_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaResolutionBwShape.html">Get Channel Sa Resolution Bw Shape</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_RESOLUTION_BW_SHAPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaVideoBw.html">Get Channel Sa Video Bw</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_VIDEO_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaVideoBwAutoEnabled.html">Get Channel Sa Video Bw Auto Enabled</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_VIDEO_BW_AUTO_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_GetChannelSaVideoBwAveragingType.html">Get Channel Sa Video Bw Averaging Type</a></td>
+    <td>
+        Gets the value of the CHANNEL_SA_VIDEO_BW_AVERAGING_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelSAGetDFTRecordSize.html">Get DFT Record Size</a></td>
+    <td>
+        Read the current DFT record size.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelSAGetDFTResolution.html">Get DFT Resolution</a></td>
+    <td>
+        Read the DFT resolution.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelSAGetFFTResolution.html">Get FFT Resolution</a></td>
+    <td>
+        Read the FFT resolution.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelSAGetLOAcquisitionCount.html">Get LO Acquisition Count</a></td>
+    <td>
+        Returns the number of LO acquisitions determined by the Image Reject selection and the span.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelSAGetResolutionBWCatalog.html">Get Resolution BW Catalog</a></td>
+    <td>
+        Read the list of all Resolution Bandwidth values currently supported with spectrum analyzer current settings.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_ChannelSAGetVideoBWSweepCount.html">Get Video BW Sweep Count</a></td>
+    <td>
+        Reads the number of Video bandwidth sweeps that are averaged together. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaBasebandEnabled.html">Set Channel Sa Baseband Enabled</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_BASEBAND_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaBwRatio.html">Set Channel Sa Bw Ratio</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_BW_RATIO attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaDetectorBypassEnabled.html">Set Channel Sa Detector Bypass Enabled</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_DETECTOR_BYPASS_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaDetectorFunction.html">Set Channel Sa Detector Function</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_DETECTOR_FUNCTION attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaDftBandwidthAutoEnabled.html">Set Channel Sa Dft Bandwidth Auto Enabled</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_DFT_BANDWIDTH_AUTO_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaDftRecordSizeType.html">Set Channel Sa Dft Record Size Type</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_DFT_RECORD_SIZE_TYPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaFftDitherEnabled.html">Set Channel Sa Fft Dither Enabled</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FFT_DITHER_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaForceLoDivider.html">Set Channel Sa Force Lo Divider</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FORCE_LO_DIVIDER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaForceLoEnabled.html">Set Channel Sa Force Lo Enabled</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FORCE_LO_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaForceLoFrequency.html">Set Channel Sa Force Lo Frequency</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FORCE_LO_FREQUENCY attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaForceLoMultiplier.html">Set Channel Sa Force Lo Multiplier</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FORCE_LO_MULTIPLIER attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaForceLoSource.html">Set Channel Sa Force Lo Source</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FORCE_LO_SOURCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaFreqConverterDualBandConfigEnabled.html">Set Channel Sa Freq Converter Dual Band Config Enabled</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FREQ_CONVERTER_DUAL_BAND_CONFIG_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaFreqConverterInputCenterFreq.html">Set Channel Sa Freq Converter Input Center Freq</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FREQ_CONVERTER_INPUT_CENTER_FREQ attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaFreqConverterInputPort.html">Set Channel Sa Freq Converter Input Port</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FREQ_CONVERTER_INPUT_PORT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaFreqConverterInputSource.html">Set Channel Sa Freq Converter Input Source</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FREQ_CONVERTER_INPUT_SOURCE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaFreqConverterInvertingEnabled.html">Set Channel Sa Freq Converter Inverting Enabled</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FREQ_CONVERTER_INVERTING_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaFreqConverterLoOffset.html">Set Channel Sa Freq Converter Lo Offset</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FREQ_CONVERTER_LO_OFFSET attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaFreqConverterOutputCenterFreq.html">Set Channel Sa Freq Converter Output Center Freq</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FREQ_CONVERTER_OUTPUT_CENTER_FREQ attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaFreqConverterOutputPort.html">Set Channel Sa Freq Converter Output Port</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FREQ_CONVERTER_OUTPUT_PORT attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaFrequencySpan.html">Set Channel Sa Frequency Span</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_FREQUENCY_SPAN attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaImageRejectMode.html">Set Channel Sa Image Reject Mode</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_IMAGE_REJECT_MODE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaImageRejectionStrength.html">Set Channel Sa Image Rejection Strength</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_IMAGE_REJECTION_STRENGTH attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaLoRandomizeEnabled.html">Set Channel Sa Lo Randomize Enabled</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_LO_RANDOMIZE_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaMaxDftNarrowBw.html">Set Channel Sa Max Dft Narrow Bw</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_MAX_DFT_NARROW_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaMaxDftWideBw.html">Set Channel Sa Max Dft Wide Bw</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_MAX_DFT_WIDE_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaMinDftNarrowBw.html">Set Channel Sa Min Dft Narrow Bw</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_MIN_DFT_NARROW_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaMinDftWideBw.html">Set Channel Sa Min Dft Wide Bw</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_MIN_DFT_WIDE_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaOccBwMinSearchFreq.html">Set Channel Sa Occ Bw Min Search Freq</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_OCC_BW_MIN_SEARCH_FREQ attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaResolutionBw.html">Set Channel Sa Resolution Bw</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_RESOLUTION_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaResolutionBwAutoEnabled.html">Set Channel Sa Resolution Bw Auto Enabled</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_RESOLUTION_BW_AUTO_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaResolutionBwShape.html">Set Channel Sa Resolution Bw Shape</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_RESOLUTION_BW_SHAPE attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaVideoBw.html">Set Channel Sa Video Bw</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_VIDEO_BW attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaVideoBwAutoEnabled.html">Set Channel Sa Video Bw Auto Enabled</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_VIDEO_BW_AUTO_ENABLED attribute.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubmethod.gif" alt="Function" /></td>
+    <td>
+        <a href="KtNA_SetChannelSaVideoBwAveragingType.html">Set Channel Sa Video Bw Averaging Type</a></td>
+    <td>
+        Sets the value of the CHANNEL_SA_VIDEO_BW_AVERAGING_TYPE attribute.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+ <!-- Attributes -->
+<h1 class="heading">
+    <span onclick="ExpandCollapse(propertyTableToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(propertyTableToggle, event)"
+        tabindex="0">
+        <img id="propertyTableToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+            src="../icons/collapse_all.gif" />Attributes</span>
+</h1>
+<div id="propertyTableSection" class="section" name="collapseableSection" style="">
+    <table id="memberList" class="members" frame="lhs" cellpadding="2">
+        <tr>
+            <th class="iconColumn">
+            </th>
+            <th class="nameColumn">
+                Name</th>
+            <th class="descriptionColumn">
+                Description</th>
+        </tr>
+        <tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_BASEBAND_ENABLED.html">Baseband Enabled</a></td>
+    <td>
+        Enables and disables baseband sweep independent of the LO sweep to allow signals down to 1 Hz to be analyzed.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_BW_RATIO.html">BW Ratio</a></td>
+    <td>
+        Set and read the RBW or VBW ratio. Default 1.0</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_DETECTOR_BYPASS_ENABLED.html">Detector Bypass Enabled</a></td>
+    <td>
+        Set and read the ON or OFF state of the detector bypass setting.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_DETECTOR_FUNCTION.html">Detector Function</a></td>
+    <td>
+        Set and read the detector type. Default Peak.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_DFT_BANDWIDTH_AUTO_ENABLED.html">DFT Bandwidth Auto Enabled</a></td>
+    <td>
+        Set and read the default values for DFT bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_DFT_RECORD_SIZE_TYPE.html">DFT Record Size Type</a></td>
+    <td>
+        Set and return the DFT record size type. Default Radix.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FFT_DITHER_ENABLED.html">FFT Dither Enabled</a></td>
+    <td>
+        Set and read the ON or OFF state of the FFT grid dither setting</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FORCE_LO_DIVIDER.html">ForceLO Divider</a></td>
+    <td>
+        Set and read the divider in the equation for setting LO frequency. Default 1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FORCE_LO_ENABLED.html">ForceLO Enabled</a></td>
+    <td>
+        Set and read enable force LO to frequency mode.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FORCE_LO_MULTIPLIER.html">ForceLO Multiplier</a></td>
+    <td>
+        Set and read the multiplier in the equation for setting LO frequency. Default1.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FORCE_LO_SOURCE.html">ForceLO Source</a></td>
+    <td>
+        Set and read the source name  in the equation for setting LO frequency.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FREQ_CONVERTER_DUAL_BAND_CONFIG_ENABLED.html">Freq Converter Dual Band Config Enabled</a></td>
+    <td>
+        Set and read the ON on OFF state of the dual band configuration for fast setting of the frequency converter DUT.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FREQ_CONVERTER_INPUT_CENTER_FREQ.html">Freq Converter Input Center Freq</a></td>
+    <td>
+        Set and read the frequency converter DUT input center frequency in Hz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FREQ_CONVERTER_INPUT_PORT.html">Freq Converter Input Port</a></td>
+    <td>
+        Set and read the port number of the VNA connected to the input of the frequency converter DUT. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FREQ_CONVERTER_INPUT_SOURCE.html">Freq Converter Input Source</a></td>
+    <td>
+        Set and read the source name that generates the modulated signal. Default &quot;None&quot;.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FREQ_CONVERTER_INVERTING_ENABLED.html">Freq Converter Inverting Enabled</a></td>
+    <td>
+        Enable or disable inverting the spectrum (or mirror) by the frequency converter operation.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FREQ_CONVERTER_LO_OFFSET.html">Freq Converter LO Offset</a></td>
+    <td>
+        Set and read the LO offset value in Hz. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FREQ_CONVERTER_OUTPUT_CENTER_FREQ.html">Freq Converter Output Center Freq</a></td>
+    <td>
+        Set and read the frequency converter DUT output center frequency in Hz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FREQ_CONVERTER_OUTPUT_PORT.html">Freq Converter Output Port</a></td>
+    <td>
+        Set and read the port number of the VNA connected to the output of the frequency converter DUT. Default 0.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FREQUENCY_SPAN.html">Frequency Span</a></td>
+    <td>
+        Set and read the Frequency Span or RBW ratio.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_IMAGE_REJECT_MODE.html">Image Reject Mode</a></td>
+    <td>
+        Set and read the image reject mode. Default Normal.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_IMAGE_REJECTION_STRENGTH.html">Image Rejection Strength</a></td>
+    <td>
+        Sets and returns the image rejection strength. Default Medium</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_FORCE_LO_FREQUENCY.html">LO Force Frequency</a></td>
+    <td>
+        Set and read enable force LO to the specified frequency in Hz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_LO_RANDOMIZE_ENABLED.html">LO Randomize Enabled</a></td>
+    <td>
+        Set and read the LO randomize state.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_MAX_DFT_NARROW_BW.html">MaxDFT NarrowBW</a></td>
+    <td>
+        Set and read the maximum value for narrow DFT bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_MAX_DFT_WIDE_BW.html">MaxDFT WideBW</a></td>
+    <td>
+        Set and read the maximum value for wide DFT bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_MIN_DFT_NARROW_BW.html">MinDFT NarrowBW</a></td>
+    <td>
+        Set and read the minimum value for narrow DFT bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_MIN_DFT_WIDE_BW.html">MinDFT WideBW</a></td>
+    <td>
+        Set and read the minimum value for wide DFT bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_OCC_BW_MIN_SEARCH_FREQ.html">OccBW Min Search Freq</a></td>
+    <td>
+        Set and read the minimum search frequency to use during an Occupied BW search measurement. Default 250MHz.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_RESOLUTION_BW.html">Resolution Bw</a></td>
+    <td>
+        Set and read the resolution bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_RESOLUTION_BW_AUTO_ENABLED.html">ResolutionBW Auto Enabled</a></td>
+    <td>
+        Set and read how the resolution bandwidth is set. When ON, the resolution bandwidth is set based on Span or RBW ratio.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_RESOLUTION_BW_SHAPE.html">ResolutionBW Shape</a></td>
+    <td>
+        Set and read the resolution bandwidth shape. Default Gaussian.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_VIDEO_BW.html">VideoBW</a></td>
+    <td>
+        Set and read the  video bandwidth.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_VIDEO_BW_AUTO_ENABLED.html">VideoBW Auto Enabled</a></td>
+    <td>
+        Set and read how the video bandwidth is set. When ON, video bandwidth is set based on RBW or VBW ratio.</td>
+</tr>
+
+<tr data="public;declared;">
+    <td>
+        <img src="../icons/pubproperty.gif" alt="Attribute" /></td>
+    <td>
+        <a href="KTNA_ATTR_CHANNEL_SA_VIDEO_BW_AVERAGING_TYPE.html">VideoBW Averaging Type</a></td>
+    <td>
+        Set and read the averaging type. Default Power.</td>
+</tr>
+
+
+    </table>
+    <a href="#mainBody">Top</a>
+</div>
+
+			
+            <h1 class="heading">
+                <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor: default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)"
+                    tabindex="0">
+                    <img id="seeAlsoToggle" onload="OnLoadImage(event)" class="toggle" name="toggleSwitch"
+						 src="../icons/collapse_all.gif" />See Also
+				</span>
+            </h1>
+            <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+                <h4 class="subHeading">
+					Reference
+				</h4>
+                <div class="seeAlsoStyle">
+					<a href="KtNA-FunctionsAndAttributes.html">KtNA</a>
+				</div>
+            </div>
+        </div>
+        <!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+    </div>
+</body>
+</html>

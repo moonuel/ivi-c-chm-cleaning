@@ -1,0 +1,322 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="save" content="history" />
+		<title>Instrument Interchangeability</title> <!-- IVI-C version  -->
+		<link rel="stylesheet" type="text/css" href="../styles/presentation.css" />
+		<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+
+		<script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+		<script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+		<script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+		<script type="text/javascript" src="../scripts/script_loc.js"> </script>
+		<script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+		<script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+		<script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+		<script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+		<xml>
+		<mshelp:toctitle title="Instrument Interchangeability" />
+		<mshelp:rltitle title="Instrument Interchangeability" />
+		<mshelp:keyword index="K" term="Instrument Interchangeability" />
+		<mshelp:attr name="DocSet" value="KtNA" />
+		<mshelp:attr name="DevLang" value="VB" />
+		<mshelp:attr name="DevLang" value="CSharp" />
+		<mshelp:attr name="DevLang" value="C++" />
+		<mshelp:attr name="Locale" value="en-us" />
+		<mshelp:attr name="TopicType" value="kbArticle" />
+		</xml>
+		<!-- begin: Microsoft Help 1.0 -->
+		<meta name="Microsoft.Help.Id" content="" />
+		<meta name="Microsoft.Help.TocParent" content="" />
+		<meta name="Microsoft.Help.TocOrder" content="" />
+		<meta name="Microsoft.Help.ContentType" content="" />
+		<meta name="Microsoft.Help.SelfBranded" content="true" />
+		<meta name="Microsoft.Help.Locale" content="en-us" />
+		<meta name="Microsoft.Help.TopicLocale" content="en-us" />
+		<!--$$Microsoft.Help.F1$$-->
+		<!--$$Microsoft.Help.Keywords$$-->
+		<!-- end: Microsoft Help 1.0 -->
+	</head>
+	<body>
+		<input type="hidden" id="userDataCache" class="userDataStyle" />
+		<input type="hidden" id="hiddenScrollOffset" />
+
+	<img id="collapseImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+	<img id="expandImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+		<img id="collapseAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+		<img id="expandAllImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+		<img id="dropDownImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+		<img id="dropDownHoverImage" height="0" width="0" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+	<img id="copyImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+	<img id="copyHoverImage"  height="0" width="0" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+
+		<div id="header">
+		<table id="topTable" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+						<img id="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" />
+							<label id="collapseAllLabel" for="toggleAllImage" style="display:none;"> Collapse All</label>
+							<label id="expandAllLabel" for="toggleAllImage" style="display:none;"> Expand All</label>
+						</span>
+						<span> &nbsp; &nbsp; </span>
+<!--                        <span id="devlangsDropdown" class="filter" tabindex="0">
+    <img id="devlangsDropdownImage" src="../icons/dropdown.gif" />
+    <label id="devlangsMenuAllLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: All </nobr>
+    </label>
+    <label id="devlangsMenuMultipleLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Multiple </nobr>
+    </label>
+    <label id="devlangsMenuVisualBasicLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual Basic </nobr>
+    </label>
+    <label id="devlangsMenuCSharpLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: C# </nobr>
+    </label>
+    <label id="devlangsMenuManagedCPlusPlusLabel" for="devlangsDropdownImage" style="display: none;">
+        <nobr>
+        Code: Visual C++ </nobr>
+    </label>
+</span> -->
+					</td>
+				</tr>
+			</table>
+<!--			<div id="devlangsMenu">
+    <input id="VisualBasicCheckbox" type="checkbox" data="VisualBasic,vb,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="VisualBasicCheckbox">
+        Visual Basic</label>
+    <br />
+    <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on"
+        onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="CSharpCheckbox">
+        C#</label>
+    <br />
+    <input id="ManagedCPlusPlusCheckbox" type="checkbox" data="ManagedCPlusPlus,cpp,'persist'"
+        value="on" onclick="SetLanguage(this)" />
+    <label class="checkboxLabel" for="ManagedCPlusPlusCheckbox">
+        Visual C++</label>
+    <br />
+</div>
+ -->
+			<table id="bottomTable" cellpadding="0" cellspacing="0">
+				<tr id="headerTableRow1">
+					<td align="left">
+						<span id="runningHeaderText">IVI-C&nbsp;Programming&nbsp;Guide&nbsp;and&nbsp;KtNA&nbsp;Driver&nbsp;Reference</span>
+					</td>
+					<td align="right">
+						<span id="nimbusHeaderText">Keysight&nbsp;Technologies&nbsp;</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow2">
+					<td align="left">
+						<span id="nsrTitle">Instrument Interchangeability</span>
+					</td>
+				</tr>
+				<tr id="headerTableRow3">
+					<td align="left">
+						<span id="headfb" class="feedbackhead" />
+					</td>
+				</tr>
+			</table>
+			<table id="gradientTable">
+				<tr>
+				<td class="nsrBottom" id="headerBottom">
+					<img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+				</td>
+				</tr>
+			</table>
+		</div>
+
+	
+		<div id="mainSection">
+
+			<div id="mainBody">
+
+			<div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+					<span style="color: DarkGray"></span></div>
+
+				<div class="introduction">
+					<p><em>Instrument interchangeability</em> allows test system engineers to replace one instrument in a test system with another, without modifying the code. Code written for an IVI-C class driver is interchangeable because:</p>
+                    <ul>
+                        <li>An instrument-independent <strong>logical name</strong> identifies the instrument driver to be used</li>
+                        <li>The function calls have no instrument-specific references because only IVI class-compliant functionality is used</li>
+                    </ul>
+                    <p>The IVI Foundation supports interchangeability through IVI specifications for instrument classes, as well as a standard API for programming instruments in a particular class. Using this standard, test engineers can build hardware-independent test systems. </p>
+                    <p>This topic provides an overview of interchangeability. For more information, see <strong>Interchangability</strong> in the IVI Foundation&#39;s <a href="http://www.ivifoundation.org/downloads/IVI_GSG%20v1.01.pdf" target="_blank"><strong>Getting Started Guide</strong></a>. </p>
+				</div>
+
+			
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section1Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section1Toggle, event)" tabindex="0">
+						<img id="section1Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" /> About IVI Instrument Classes
+					</span>
+				</h1>
+				<div id="section1Section" class="section" name="collapseableSection" style="">
+					<p>
+						To enable interchangeability, the IVI Foundation creates IVI <em>instrument classes</em> that define the base class capabilities and class extension capabilities for some of the most popular types of instruments. 
+						Although many types of test and measurement instruments offer a variety of functionality, most of them naturally fall into distinct categories. These instruments are often categorized based on the type of measurements they perform or the type of output they produce. 
+					</p>
+                    <p>For each instrument class, the IVI Foundation publishes a <em>class specification</em> that:</p>
+                    <ul>
+                    <li>Details the set of functions and attributes that are required for compliance</li>
+                    <li>Prescribes the exact name of each function, along with the parameter list and the API hierarchy, as well as other behavior details</li>
+                    </ul>
+                    <p>An IVI driver that complies with a class specification is said to be <em>class-compliant</em>. The IVI Foundation currently has specifications for 13 instrument classes (see the <a href="http://www.ivifoundation.org/specifications/default.aspx" rel="noopener" target="_blank">IVI Specifications</a> for details):</p>
+					<ul>
+						<li>IVI-4.1: <strong>IviScope</strong> class </li>
+						<li>IVI-4.2: <strong>IviDmm</strong> class </li>
+						<li>IVI-4.3: <strong>IviFgen</strong> class </li>
+						<li>IVI-4.4: <strong>IviDCPwr</strong> class </li>
+						<li>IVI-4.5: <strong>IviACPwr</strong> class </li>
+						<li>IVI-4.6: <strong>IviSwtch</strong> class </li>
+						<li>IVI-4.7: <strong>IviPwrMeter</strong> class </li>
+						<li>IVI-4.8: <strong>IviSpecAn</strong> class </li>
+						<li>IVI-4.10: <strong>IviRFSigGen</strong> class </li>
+						<li>IVI-4.12: <strong>IviCounter</strong> class </li>
+						<li>IVI-4.13: <strong>IviDownconverter</strong> class </li>
+						<li>IVI-4.14: <strong>IviUpconverter</strong> class </li>
+						<li>IVI-4.15: <strong>IviDigitizer</strong> class </li>
+					</ul>
+                    <p>
+                        <b>Note:</b> For information on this driver's IVI instrument class support (if any), see <a href="IviCompliance.html">IVI Compliance</a>.
+                    </p>
+				</div>
+
+			
+				<h1 class="heading">
+					<span onclick="ExpandCollapse(section2Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section2Toggle, event)" tabindex="0">
+						<img id="section2Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" /> How Interchangeability Works</span></h1>
+                <div id="section2Section" class="section" name="collapseableSection" style="">
+                    <p>
+                        <i>Instrument Interchangeability</i> refers to the ability to exchange an instrument of one class
+                        in a system with a different instrument from that same class.  IVI interchangeability does not
+                        include exchanging instruments from different instrument classes.
+                    </p>
+                    <p>
+                        Client applications achieve interchangeability by implementing code that meets <i>at least</i>
+                        the following two conditions:
+                    </p>
+                    <ul>
+                        <li>Uses only functions and attributes from the IVI class specification</li>
+                        <li>Has no references to a specific IVI instrument driver</li>
+                    </ul>
+                    <p>
+                        Because IVI drivers can contain functionality beyond the class specification (known as <i>instrument-specific</i>
+                        functionality), you must ensure that your application uses only functionality from the IVI specification
+                        if your program is to be interchangeable.  Only the IVI-defined functionality is guaranteed to be supported
+                        by a class-compliant driver.
+                    </p>
+                    <div class="alert">
+                        <table>
+                            <th>
+                                <img src="../icons/alert_note.gif" title="Note" />
+                                <b>Note:</b>
+                            <tr>
+                                <td>
+                                    <p>
+                                        IVI interchangeability does not guarantee that instrument behavior is 100% interchangeable.
+                                        As a general principle, standard programming interfaces insure that syntax is interchangeable, but only
+                                        define "loose" semantics – that is, limited semantics that define the most important elements of behavior, but
+                                        not all.  For example, some instruments may perform more quickly than others, or have different couplings between
+                                        properties, or support different ranges.  Never assume that IVI Interchangeability allows you to simply substitute one
+                                        instrument for another without thoroughly testing the behavior of each instrument in the system.
+                                    </p>
+                                </td>
+                            </tr>
+                            </th>
+                        </table>
+                    </div>
+
+                    <h3 class="subHeading">IVI-C Interchangeability</h3>
+                    <div class="subsection">
+                        <p>
+                            IVI-C interchangeability requires the use of a special third-party component called a <i>class driver</i>.
+                        </p>
+                         <div class="alert">
+                        <table>
+                            <tr>
+                                <th>
+                                    <img src="../icons/alert_note.gif" title="Note" /> <b>Important:</b> </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <strong>Neither Keysight nor the IVI Foundation distribute class drivers. </strong>To write an interchangeable application for your instrument, you must obtain a NoClass class driver from a third-party vendor (search <a href="http://www.google.com/search?q=IVI-C+Class+driver+NoClass" target="_blank">IVI-C Class Driver</a> for options).</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                        <p>
+                            The class driver exposes the functions defined in a particular IVI instrument class.  All class driver functions
+                            have generic names, so that client applications have no driver-specific references.  For example, rather than naming a
+                            function <strong>KtNA_Configure</strong>, which is obviously device-specific, the class driver exposes the function with the name
+                            <strong>IviDmm_Configure</strong>.
+                        </p>
+                        <p>
+                            IVI-C client applications link to the class driver and call into the class driver's <b>Initialize</b>
+                            function using a logical name for the <strong>ResourceDescriptor</strong> parameter.  The logical name identifies the IVI-C instrument driver that the class driver should load.
+                            After the instrument driver is loaded, subsequent function calls on the class driver are delegated to the corresponding
+                            function in the instrument driver.  In this way, IVI-C client applications can be written generically against
+                            a class driver and work with new instrument drivers without modification.
+                            <!--                            For additional informaton and example code, see the
+                                            <a href="IviCClassDriver.html">Writing Interchangeable Code</a> IVI-C topic.
+                -->
+                        </p>
+                    </div>
+
+                </div>
+
+
+                    <h1 class="heading">
+                        <span onclick="ExpandCollapse(section3Toggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(section3Toggle, event)" tabindex="0">
+                            <img id="section3Toggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+                            Base Capabilities and Extension Groups
+                        </span>
+                    </h1>
+                    <div id="section3Section" class="section" name="collapseableSection" style="">
+                        <p>
+                            Each IVI class specification partitions IVI-defined functionality into two groups: <i>base capabilities</i>
+                            and <i>extension groups</i>.
+                        </p>
+
+                        <h3 class="subHeading">Base Capabilities Group</h3>
+                        <div id="BaseCapabilitiesGroup" class="subsection">
+                            <p>The <strong>base capabilities</strong> group:</p>
+                        <ul>
+                        <li>Contains functionality that <em>all</em> IVI drivers must implement if they wish to claim conformance with the instrument class in question</li>
+                        <li>Represents the "least common denominator" of functionality and is the level of capability most commercial instruments are expected to support</li>
+                        </ul>
+                        <p>For example, the <strong>IviDmm</strong> base capabilities group contains functions for range, resolution, and triggering. Most commercial DMMs possess at least these capabilities, so any IVI driver that claims to be IviDmm-compliant must support this group of functionality.</p>
+                        </div>
+
+                        <h3 class="subHeading">Extension Group</h3>
+                        <div id="ExtensionGroups" class="subsection">
+                            <p>The <strong>extension group</strong>:</p>
+                            <ul>
+                            <li>Defines functionality that is found in many instruments of a particular class but is not as common as base capabilities functionality</li>
+                            <li>Can be thought of as providing standard definitions for optional functionality</li>
+                            <li>Enables more advanced instruments to expose functionality in an interchangeable manner, while still allowing simpler instruments to be class-compliant</li>
+                            </ul>
+                            <p>For example, because not all DMMs can measure temperature, the IviDmm class specification has an <strong>IviDmmTemperature</strong> extension group to define temperature measurement capabilities.</p>
+                            <p>Simply put, an extension group tells the driver developer that "you do not have to provide these capabilities in your IVI driver, but if you do, you must do it according to the IVI definition." An IVI driver can be class-compliant without supporting any of the extension groups in its instrument class. All IVI drivers expose a <strong>GroupCapabilities</strong> attribute that returns a comma-separated list of the extension groups supported by the driver. Using this attribute, client applications and tools can programmatically determine the IVI driver&#39;s optional functionality.</p>
+                        </div>
+
+                    </div>            
+                
+<!-- Footer -->
+<div id="footer">
+    <div class="footerLine">
+        <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" />
+    </div>
+    <span id="fb" class="feedbackcss" /> <a href="Copyright.html">Copyright Keysight Technologies 2022-2025</a><br />
+</div>
+
+		</div>
+	</body>
+</html>
