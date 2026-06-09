@@ -1,6 +1,6 @@
 ---
 name: ivi-chm-docs
-description: How coding agents should access and cite the extracted Keysight IVI-C documentation for programming a hardware Vector Network Analyzer (VNA).
+description: How coding agents should use the raw extracted Keysight IVI-C HTML corpus as the source of truth.
 ---
 
 # IVI-C Docs Access
@@ -10,63 +10,43 @@ Use the extracted HTML corpus in this repo as the source of truth.
 ## Canonical paths
 
 - HTML source: `data/extracted/Html/`
-- Search index: `./.ivi-chm-index.sqlite3`
 
 ## Recommended workflow
 
-1. Search by exact symbol first with `./.venv/bin/ivi-chm search <query> ./.ivi-chm-index.sqlite3`.
-2. If the query is partial or normalized, rely on the alias result before broad full-text hits.
-3. Use the returned `source_path` to open the exact HTML page when more detail is needed.
-4. Parse that page with `./.venv/bin/ivi-chm parse <source_path>` to get the full structured record.
-
-If the SQLite index is missing, raise the concern to the user and do not build it during normal doc lookup work.
+1. Find the relevant HTML file directly under `data/extracted/Html/`.
+2. Open that raw HTML page and read the exact source content.
+3. Prefer the page title, headings, and nearby text over any derived index.
+4. If needed, search within `data/extracted/Html/` for filenames or terms, then open the matching page.
+5. Cite the original `source_path` or HTML file path in explanations and changes.
 
 ## How to reference docs in code work
 
-- Prefer exact symbol lookup first.
-- Use keyword search only when the exact symbol is unknown.
-- Cite the original `source_path` in explanations and changes.
-- Treat the parsed JSON fields as the canonical extracted record, not the rendered page text.
-- Search prefers exact symbol/path matches, then normalized aliases, then deterministic text fallback over stored fields.
-- When a search result is ambiguous, prefer the one whose `matched_on` is `exact` or `alias` before opening additional pages.
-- For user-facing answers, cite the canonical `symbol` and `source_path`, not the query string.
+- Prefer exact filename or symbol-page lookup first.
+- Use keyword search only when the exact page is unknown.
+- Treat the raw HTML content as the canonical record, not a parsed summary or search result.
+- When a page is ambiguous, open the page directly and inspect the surrounding HTML.
+- For user-facing answers, cite the canonical page path, not the query string.
 
-## Parsed fields
+## What to extract from pages
 
-The parser returns:
+When reading raw HTML pages, focus on:
 
-- `symbol`
-- `kind`
-- `path_id`
-- `title`
-- `summary`
-- `abstract`
-- `prototype`
-- `keywords`
-- `function_tree_node`
-- `aliases`
-- `parameters`
-- `returns`
-- `remarks`
-- `commands`
-- `requirements`
-- `defined_values`
-- `see_also`
-- `source_path`
-
-## Required vs redistributable
-
-- Required locally: `data/extracted/Html/`, Python, and the `.venv`
-- Redistributable artifacts: `./.ivi-chm-index.sqlite3` and, if built, `dist\ivi-chm.exe`
+- page title
+- section headings
+- prototypes and syntax blocks
+- parameter tables
+- remarks and command sections
+- see-also links
 
 ## Validation habits
 
-- Verify exact symbols such as `KtNA_AFRStandardGetDataFilePath` and `KTNA_ATTR_SIMULATE` with search before opening pages.
-- Use concept queries like `simulation` only to find the right symbol, not as the final citation.
-- Confirm result shape includes `symbol`, `kind`, `title`, `summary`, `snippet`, `source_path`, and `matched_on`.
+- Verify exact pages such as `KtNA_AFRStandardGetDataFilePath.html` and `KTNA_ATTR_SIMULATE.html` by opening the raw HTML.
+- Use concept queries like `simulation` only to find the right page, not as the final citation.
+- Confirm the answer is grounded in the original HTML page and not a rewritten summary.
 
 ## What not to do
 
-- Do not rely on the raw `.chm` file during normal coding tasks.
+- Do not rely on the SQLite index for normal doc lookup work.
+- Do not assume parsed JSON fields are available or required.
 - Do not paste large HTML pages into prompts.
 - Do not assume TOC, index, or project metadata files exist in `data/extracted/`.
