@@ -24,14 +24,16 @@ def lookup_cases() -> list[dict[str, object]]:
 @pytest.fixture(scope="session")
 def real_index_dir(tmp_path_factory: pytest.TempPathFactory) -> Path:
     index_dir = tmp_path_factory.mktemp("real-ivi-chm-index")
-    build_index(REAL_HTML_DIR, index_dir)
+    index_file = index_dir / "index.sqlite3"
+    build_index(REAL_HTML_DIR, index_file)
     return index_dir
 
 
 @pytest.fixture(scope="session")
 def mini_index_dir(tmp_path_factory: pytest.TempPathFactory) -> Path:
     index_dir = tmp_path_factory.mktemp("mini-ivi-chm-index")
-    build_index(MINI_HTML_DIR, index_dir)
+    index_file = index_dir / "index.sqlite3"
+    build_index(MINI_HTML_DIR, index_file)
     return index_dir
 
 

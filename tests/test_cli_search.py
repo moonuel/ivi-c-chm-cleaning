@@ -48,6 +48,15 @@ def test_cli_index_and_search(real_index_dir: Path) -> None:
     assert payload[0]["matched_on"] == "exact"
 
 
+def test_cli_defaults_to_portable_sqlite_index(tmp_path: Path) -> None:
+    index_file = tmp_path / "portable-index.sqlite3"
+    _run_cli("index", str(REAL_HTML_DIR), str(index_file))
+
+    result = _run_cli("search", "KTNA_ATTR_CACHE", str(index_file))
+    payload = json.loads(result.stdout)
+    assert payload[0]["symbol"] == "KTNA_ATTR_CACHE"
+
+
 def test_cli_search_uses_documented_argument_order(mini_index_dir: Path) -> None:
     result = _run_cli("search", "mininormalizedalias", str(mini_index_dir))
     payload = json.loads(result.stdout)

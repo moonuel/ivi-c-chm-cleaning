@@ -10,7 +10,7 @@ Use the extracted HTML corpus in this repo as the source of truth.
 ## Canonical paths
 
 - HTML source: `data/extracted/Html/`
-- Search index: `./.ivi-chm-index/`
+- Search index: `./.ivi-chm-index.sqlite3`
 
 ## Recommended workflow
 
@@ -26,7 +26,7 @@ Use the extracted HTML corpus in this repo as the source of truth.
 - Use keyword search only when the exact symbol is unknown.
 - Cite the original `source_path` in explanations and changes.
 - Treat the parsed JSON fields as the canonical extracted record, not the rendered page text.
-- Search now prefers exact symbol/path matches, then normalized aliases, then boosted full-text results.
+- Search now prefers exact symbol/path matches, then normalized aliases, then FTS5 full-text results.
 - When a search result is ambiguous, prefer the one whose `matched_on` is `exact` or `alias` before opening additional pages.
 - For user-facing answers, cite the canonical `symbol` and `source_path`, not the query string.
 

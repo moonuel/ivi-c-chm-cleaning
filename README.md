@@ -10,8 +10,8 @@ The normal workflow is:
 
 1. Read a page from `data/extracted/Html/`.
 2. Parse it into fields like `symbol`, `path_id`, `abstract`, `keywords`, `prototype`, `parameters`, and `see_also`.
-3. Build a local Whoosh index over the extracted pages.
-4. Query that index with exact-first lookup and boosted full-text fallback.
+3. Build a local SQLite index over the extracted pages.
+4. Query that index with exact-first lookup and FTS5 fallback.
 
 ## Requirements
 
@@ -50,7 +50,7 @@ This prints JSON with the normalized record.
 ./.venv/bin/ivi-chm index data/extracted/Html
 ```
 
-This scans every `*.html` file in `data/extracted/Html/` and writes a local search index to `./.ivi-chm-index/` in the repo.
+This scans every `*.html` file in `data/extracted/Html/` and writes a portable SQLite database to `./.ivi-chm-index.sqlite3` in the repo.
 
 ### Search the index
 
