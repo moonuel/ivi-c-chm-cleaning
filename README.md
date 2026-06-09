@@ -2,23 +2,31 @@
 
 Parse and search the already-extracted Keysight IVI-C help pages in `data/extracted/Html/`.
 
-## What this is for
+## Purpose
 
-This repo is meant to turn the vendor HTML pages into structured records that are easier to search and reuse from code.
+This repo turns the vendor HTML pages into structured records that are easier to search and reuse from code.
 
-The normal workflow is:
+The workflow is:
 
 1. Read a page from `data/extracted/Html/`.
 2. Parse it into fields like `symbol`, `path_id`, `abstract`, `keywords`, `prototype`, `parameters`, and `see_also`.
 3. Build a local SQLite index over the extracted pages.
-4. Query that index with exact-first lookup and FTS5 fallback.
+4. Query that index with exact-first lookup, normalized aliases, and deterministic text fallback.
 
 ## Requirements
 
 - Python 3.12+
 - The existing `.venv`
+- The extracted HTML corpus in `data/extracted/Html/`
 
-The project already assumes the HTML has been extracted. It does not depend on CHM extraction at runtime.
+The project assumes the HTML has already been extracted. It does not depend on CHM extraction at runtime.
+
+## Redistributable Artifacts
+
+- The SQLite index file produced by `ivi-chm index`, defaulting to `./.ivi-chm-index.sqlite3`
+- The optional Windows executable in `dist\ivi-chm.exe`
+
+These artifacts can be copied and shared independently of the source tree.
 
 ## Installation
 
@@ -28,15 +36,15 @@ Install the package in editable mode:
 ./.venv/bin/pip install -e .
 ```
 
-Install the build extra when you want a standalone executable:
+Install the build extra only if you want the standalone executable:
 
 ```bash
 ./.venv/bin/pip install -e .[build]
 ```
 
-## Usage
+## CLI Usage
 
-### Parse one page
+### Parse One Page
 
 ```bash
 ./.venv/bin/ivi-chm parse data/extracted/Html/KtNA_AFRStandardGetDataFilePath.html
@@ -44,36 +52,37 @@ Install the build extra when you want a standalone executable:
 
 This prints JSON with the normalized record.
 
-### Build an index
+### Build an Index
 
 ```bash
 ./.venv/bin/ivi-chm index data/extracted/Html
 ```
 
-This scans every `*.html` file in `data/extracted/Html/` and writes a portable SQLite database to `./.ivi-chm-index.sqlite3` in the repo.
+This scans every `*.html` file in `data/extracted/Html/` and writes a portable SQLite database file to `./.ivi-chm-index.sqlite3` in the repo.
 
-### Search the index
+### Search the Index
 
 ```bash
-./.venv/bin/ivi-chm search KtNA_AFRStandardGetDataFilePath
+./.venv/bin/ivi-chm search KtNA_AFRStandardGetDataFilePath ./.ivi-chm-index.sqlite3
 ```
 
 This returns matching documents as JSON.
 
-If you want a different location, pass an explicit path as the second argument to `index` or the second argument to `search`.
+The second argument is the index file path for both `index` and `search`. If omitted, both commands use `./.ivi-chm-index.sqlite3`.
 
-## Portable executable
+## Optional Executable
 
-Build a single-file executable on Windows:
+This is only for packaging the CLI into a single Windows executable.
+
+Build it with:
 
 ```powershell
-.
-\build_exe.ps1
+./build_exe.ps1
 ```
 
 The executable is written to `dist\ivi-chm.exe`.
 
-## Output fields
+## Output Fields
 
 Parsed documents currently include:
 
@@ -101,3 +110,4 @@ Parsed documents currently include:
 - The parser is tuned for Microsoft Help-style HTML pages in the extracted corpus.
 - It is designed around the existing extracted pages, not the raw `.chm` file.
 - The `ivi-chm` CLI is the main entry point for both parsing and search.
+- `search` takes the query first and the index file second.

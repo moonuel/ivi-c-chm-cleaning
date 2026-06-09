@@ -27,8 +27,8 @@ def _threshold_ratio(passes: int, total: int) -> float:
     return passes / total if total else 1.0
 
 
-def test_lookup_quality_thresholds(real_index_dir: Path, mini_index_dir: Path) -> None:
-    by_corpus = {"real": real_index_dir, "mini": mini_index_dir}
+def test_lookup_quality_thresholds(real_index_file: Path, mini_index_file: Path) -> None:
+    by_corpus = {"real": real_index_file, "mini": mini_index_file}
     evaluated: list[dict[str, object]] = []
 
     for case in CASES:

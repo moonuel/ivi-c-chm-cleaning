@@ -1,10 +1,9 @@
 from __future__ import annotations
 
+import json
+import re
 import sqlite3
 from pathlib import Path
-import re
-import json
-import shutil
 
 from .parser import parse_document
 
@@ -12,21 +11,7 @@ from .parser import parse_document
 DEFAULT_INDEX_FILE = Path(__file__).resolve().parents[2] / ".ivi-chm-index.sqlite3"
 SCHEMA_VERSION = 1
 
-
-DOCUMENT_FIELDS = (
-    "symbol",
-    "kind",
-    "path_id",
-    "title",
-    "summary",
-    "abstract",
-    "prototype",
-    "remarks",
-    "keywords",
-    "function_tree_node",
-    "see_also",
-    "source_path",
-)
+SEARCH_FIELDS = ("symbol", "path_id", "title", "summary", "abstract", "prototype", "remarks", "keywords", "function_tree_node", "see_also", "source_path")
 
 
 def _normalize_query(value: str) -> str:
@@ -37,18 +22,7 @@ def _connect(index_file: str | Path) -> sqlite3.Connection:
     conn = sqlite3.connect(str(index_file))
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys = ON")
-    conn.execute("PRAGMA journal_mode = WAL")
-    conn.execute("PRAGMA synchronous = NORMAL")
     return conn
-
-
-def _has_fts5(conn: sqlite3.Connection) -> bool:
-    try:
-        conn.execute("CREATE VIRTUAL TABLE IF NOT EXISTS __fts5_probe USING fts5(value)")
-        conn.execute("DROP TABLE IF EXISTS __fts5_probe")
-        return True
-    except sqlite3.OperationalError:
-        return False
 
 
 def _ensure_schema(conn: sqlite3.Connection) -> None:
@@ -79,44 +53,9 @@ def _ensure_schema(conn: sqlite3.Connection) -> None:
 
         CREATE INDEX IF NOT EXISTS idx_documents_normalized_symbol ON documents(normalized_symbol);
         CREATE INDEX IF NOT EXISTS idx_documents_normalized_path_id ON documents(normalized_path_id);
-        """
-    )
-    if not _has_fts5(conn):
-        raise RuntimeError("SQLite FTS5 is required for portable search indexes")
-    conn.execute(
-        """
-        CREATE VIRTUAL TABLE IF NOT EXISTS documents_fts USING fts5(
-            symbol,
-            path_id,
-            title,
-            summary,
-            abstract,
-            prototype,
-            remarks,
-            keywords,
-            function_tree_node,
-            see_also,
-            source_path,
-            content='documents_fts_content'
-        )
-        """
-    )
-    conn.execute(
-        """
-        CREATE TABLE IF NOT EXISTS documents_fts_content (
-            rowid INTEGER PRIMARY KEY,
-            symbol TEXT NOT NULL,
-            path_id TEXT NOT NULL,
-            title TEXT NOT NULL,
-            summary TEXT NOT NULL,
-            abstract TEXT NOT NULL,
-            prototype TEXT NOT NULL,
-            remarks TEXT NOT NULL,
-            keywords TEXT NOT NULL,
-            function_tree_node TEXT NOT NULL,
-            see_also TEXT NOT NULL,
-            source_path TEXT NOT NULL
-        )
+        CREATE INDEX IF NOT EXISTS idx_documents_title ON documents(title);
+        CREATE INDEX IF NOT EXISTS idx_documents_summary ON documents(summary);
+        CREATE INDEX IF NOT EXISTS idx_documents_source_path ON documents(source_path);
         """
     )
 
@@ -165,40 +104,6 @@ def _replace_document(conn: sqlite3.Connection, doc: object) -> None:
             aliases_json,
         ),
     )
-    conn.execute(
-        "INSERT OR REPLACE INTO documents_fts_content(rowid, symbol, path_id, title, summary, abstract, prototype, remarks, keywords, function_tree_node, see_also, source_path) VALUES ((SELECT rowid FROM documents WHERE symbol = ?), ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-        (
-            doc.symbol,
-            doc.symbol,
-            doc.path_id,
-            doc.title,
-            summary,
-            doc.abstract,
-            doc.prototype,
-            doc.remarks,
-            " ".join(doc.keywords),
-            doc.function_tree_node,
-            " ".join(item["text"] for item in doc.see_also),
-            doc.source_path,
-        ),
-    )
-    conn.execute(
-        "INSERT OR REPLACE INTO documents_fts(rowid, symbol, path_id, title, summary, abstract, prototype, remarks, keywords, function_tree_node, see_also, source_path) VALUES ((SELECT rowid FROM documents WHERE symbol = ?), ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-        (
-            doc.symbol,
-            doc.symbol,
-            doc.path_id,
-            doc.title,
-            summary,
-            doc.abstract,
-            doc.prototype,
-            doc.remarks,
-            " ".join(doc.keywords),
-            doc.function_tree_node,
-            " ".join(item["text"] for item in doc.see_also),
-            doc.source_path,
-        ),
-    )
 
 
 def build_index(html_dir: str | Path, index_file: str | Path) -> None:
@@ -211,13 +116,8 @@ def build_index(html_dir: str | Path, index_file: str | Path) -> None:
         _ensure_schema(conn)
         for path in sorted(html_dir.glob("*.html")):
             _replace_document(conn, parse_document(path))
-        conn.executemany(
-            "INSERT INTO meta(key, value) VALUES (?, ?)",
-            [
-                ("schema_version", str(SCHEMA_VERSION)),
-                ("build_timestamp", ""),
-            ],
-        )
+        conn.execute("INSERT OR REPLACE INTO meta(key, value) VALUES (?, ?)", ("schema_version", str(SCHEMA_VERSION)))
+        conn.execute("INSERT OR REPLACE INTO meta(key, value) VALUES (?, ?)", ("build_timestamp", ""))
         conn.commit()
 
 
@@ -241,16 +141,35 @@ def _fetch_by_exact_or_alias(conn: sqlite3.Connection, query: str) -> tuple[list
         "SELECT * FROM documents WHERE symbol = ? OR path_id = ? ORDER BY symbol",
         (query, query),
     ).fetchall()
-    alias_matches = conn.execute(
-        "SELECT * FROM documents WHERE normalized_symbol = ? OR normalized_path_id = ? OR instr(aliases_json, ?) > 0 ORDER BY symbol",
-        (normalized, normalized, json.dumps(query, ensure_ascii=False)),
-    ).fetchall()
-    alias_filtered = [row for row in alias_matches if row not in exact and normalized in {
-        row["normalized_symbol"],
-        row["normalized_path_id"],
-        *(_normalize_query(alias) for alias in json.loads(row["aliases_json"])),
-    }]
-    return exact, alias_filtered
+    alias_rows = conn.execute("SELECT * FROM documents ORDER BY symbol").fetchall()
+    alias_matches: list[tuple[float, sqlite3.Row]] = []
+    for row in alias_rows:
+        aliases = {_normalize_query(alias) for alias in json.loads(row["aliases_json"])}
+        if row in exact:
+            continue
+        candidates = {row["normalized_symbol"], row["normalized_path_id"], *aliases}
+        best_score = 0.0
+        for candidate in candidates:
+            if not candidate:
+                continue
+            if candidate == normalized:
+                best_score = max(best_score, 3.0)
+            elif normalized in candidate:
+                best_score = max(best_score, 2.0)
+            elif len(candidate) >= 12 and candidate in normalized:
+                best_score = max(best_score, 1.0)
+        if best_score:
+            alias_matches.append((best_score, row))
+    alias_matches.sort(key=lambda item: (-item[0], item[1]["symbol"]))
+    return exact, [row for _score, row in alias_matches]
+
+
+def _text_score(row: sqlite3.Row, terms: list[str]) -> int:
+    haystack = " ".join(str(row[field]).lower() for field in SEARCH_FIELDS)
+    score = 0
+    for term in terms:
+        score += haystack.count(term)
+    return score
 
 
 def search(index_file: str | Path, query: str, limit: int = 10) -> list[dict[str, str]]:
@@ -262,15 +181,11 @@ def search(index_file: str | Path, query: str, limit: int = 10) -> list[dict[str
         if alias_results:
             return [_ranked_hit(hit, "alias") for hit in alias_results[:limit]]
 
-        rows = conn.execute(
-            """
-            SELECT d.*
-            FROM documents_fts f
-            JOIN documents d ON d.rowid = f.rowid
-            WHERE documents_fts MATCH ?
-            ORDER BY bm25(documents_fts)
-            LIMIT ?
-            """,
-            (query, limit),
-        ).fetchall()
-        return [_ranked_hit(row, "fulltext") for row in rows]
+        terms = [term for term in re.findall(r"[a-z0-9]+", query.lower()) if term]
+        if not terms:
+            return []
+
+        rows = conn.execute("SELECT * FROM documents ORDER BY symbol").fetchall()
+        scored = [(row, _text_score(row, terms)) for row in rows]
+        hits = [row for row, score in sorted(scored, key=lambda item: (-item[1], item[0]["symbol"])) if score > 0]
+        return [_ranked_hit(row, "fulltext") for row in hits[:limit]]

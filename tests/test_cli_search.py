@@ -38,13 +38,13 @@ def test_cli_parse_outputs_json(mini_html_dir: Path) -> None:
     assert payload["path_id"] == "Mini_NormalizedAlias"
 
 
-def test_cli_index_and_search(real_index_dir: Path) -> None:
-    index_dir = real_index_dir
-    _run_cli("index", str(REAL_HTML_DIR), str(index_dir))
+def test_cli_index_and_search(tmp_path: Path) -> None:
+    index_file = tmp_path / "cli-index.sqlite3"
+    _run_cli("index", str(MINI_HTML_DIR), str(index_file))
 
-    result = _run_cli("search", "KTNA_ATTR_CACHE", str(index_dir))
+    result = _run_cli("search", "Mini_NormalizedAlias", str(index_file))
     payload = json.loads(result.stdout)
-    assert payload[0]["symbol"] == "KTNA_ATTR_CACHE"
+    assert payload[0]["symbol"] == "Mini_NormalizedAlias"
     assert payload[0]["matched_on"] == "exact"
 
 
@@ -57,8 +57,8 @@ def test_cli_defaults_to_portable_sqlite_index(tmp_path: Path) -> None:
     assert payload[0]["symbol"] == "KTNA_ATTR_CACHE"
 
 
-def test_cli_search_uses_documented_argument_order(mini_index_dir: Path) -> None:
-    result = _run_cli("search", "mininormalizedalias", str(mini_index_dir))
+def test_cli_search_uses_documented_argument_order(mini_index_file: Path) -> None:
+    result = _run_cli("search", "mininormalizedalias", str(mini_index_file))
     payload = json.loads(result.stdout)
     assert payload[0]["symbol"] == "Mini_NormalizedAlias"
     assert payload[0]["matched_on"] == "alias"
