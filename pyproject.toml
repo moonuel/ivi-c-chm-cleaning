@@ -18,6 +18,9 @@ test = [
     "pytest>=8",
     "pytest-cov>=5",
 ]
+build = [
+    "pyinstaller>=6.0",
+]
 
 [project.scripts]
 ivi-chm = "ivi_chm.cli:main"

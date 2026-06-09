@@ -28,6 +28,12 @@ Install the package in editable mode:
 ./.venv/bin/pip install -e .
 ```
 
+Install the build extra when you want a standalone executable:
+
+```bash
+./.venv/bin/pip install -e .[build]
+```
+
 ## Usage
 
 ### Parse one page
@@ -55,6 +61,17 @@ This scans every `*.html` file in `data/extracted/Html/` and writes a local sear
 This returns matching documents as JSON.
 
 If you want a different location, pass an explicit path as the second argument to `index` or the second argument to `search`.
+
+## Portable executable
+
+Build a single-file executable on Windows:
+
+```powershell
+.
+\build_exe.ps1
+```
+
+The executable is written to `dist\ivi-chm.exe`.
 
 ## Output fields
 
